@@ -1,0 +1,13 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "https://hl7.pt/fhir/community-health/ValueSet/episode-of-care-status-subset",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "EpisodeOfCareStatusSubset",
+      "title" : "Subset of Episode Of Care Status",
+      "description" : "A subset of allowed statuses for EpisodeOfCare.",
+      "systems" : ["http://hl7.org/fhir/episode-of-care-status"]
+    }
+  ]
+}

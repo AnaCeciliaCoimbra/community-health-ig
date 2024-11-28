@@ -1,0 +1,52 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.pt/fhir/Observation/exemplo-observation-duracao-sintomas-localizacao> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "exemplo-observation-duracao-sintomas-localizacao"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://hl7.pt/fhir/community-health/StructureDefinition/observation-symptom-duration-body-site"^^xsd:anyURI ;
+       fhir:link <https://hl7.pt/fhir/community-health/StructureDefinition/observation-symptom-duration-body-site>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation exemplo-observation-duracao-sintomas-localizacao</b></p><a name=\"exemplo-observation-duracao-sintomas-localizacao\"> </a><a name=\"hcexemplo-observation-duracao-sintomas-localizacao\"> </a><a name=\"exemplo-observation-duracao-sintomas-localizacao-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 64748-7}\">Symptoms duration</span></p><p><b>subject</b>: <a href=\"Patient-exemplo-patient-1.html\">John Doe  Male, DoB: 2009-02-09 ( https://ehr.testing.p5.pt/api/fhir#12345678)</a></p><p><b>encounter</b>: <a href=\"Encounter-exemplo-encounter-ia-registo.html\">Encounter: status = finished; class = emergency (ActCode#EMER); type = Avaliador de Sintomas; serviceType = Algoritmo de Inteligência Artificial; period = 2024-11-18 19:20:00+0000 --&gt; 2024-11-18 19:20:00+0000</a></p><p><b>value</b>: 2 days</p><p><b>bodySite</b>: <span title=\"Codes:{https://ehr.p5.pt/terminology/CodeSystem/body-silhouette 2}\">Head</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:64748-7 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "64748-7" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.pt/fhir/Patient/exemplo-patient-1> ;
+     fhir:reference [ fhir:v "Patient/exemplo-patient-1" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <http://hl7.pt/fhir/Encounter/exemplo-encounter-ia-registo> ;
+     fhir:reference [ fhir:v "Encounter/exemplo-encounter-ia-registo" ]
+  ] ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "2"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "days" ]
+  ] ; # 
+  fhir:bodySite [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://ehr.p5.pt/terminology/CodeSystem/body-silhouette"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "2" ] ;
+       fhir:display [ fhir:v "Head" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

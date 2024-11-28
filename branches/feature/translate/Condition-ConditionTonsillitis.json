@@ -1,0 +1,39 @@
+{
+  "resourceType" : "Condition",
+  "id" : "ConditionTonsillitis",
+  "meta" : {
+    "profile" : ["http://triage-counseling-clinical-system.org/fhir/StructureDefinition/Diagnosis"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Condition ConditionTonsillitis</b></p><a name=\"ConditionTonsillitis\"> </a><a name=\"hcConditionTonsillitis\"> </a><a name=\"ConditionTonsillitis-en-US\"> </a><p><b>identifier</b>: <code>http://example.org/identifiers</code>/173</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 90176007}, {http://hl7.org/fhir/sid/icd-10 J03}, {http://www.kith.no/snomed/icpc2 R76}\">Tonsillitis or angina tonsillari</span></p><p><b>subject</b>: <a href=\"Patient-PatientTCCS.html\">John Doe  Male, DoB: 2009-02-09 ( https://ehr.testing.p5.pt/api/fhir#12345678)</a></p><p><b>encounter</b>: <a href=\"Encounter-EncounterFirst.html\">Encounter: status = finished; class = Emergency (ActCode#EMER); type = </a></p></div>"
+  },
+  "identifier" : [{
+    "system" : "http://example.org/identifiers",
+    "value" : "173"
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "90176007",
+      "display" : "Tonsillitis (disorder)"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10",
+      "code" : "J03",
+      "display" : "Acute tonsillitis"
+    },
+    {
+      "system" : "http://www.kith.no/snomed/icpc2",
+      "code" : "R76",
+      "display" : "Tonsillitis acute"
+    }],
+    "text" : "Tonsillitis or angina tonsillari"
+  },
+  "subject" : {
+    "reference" : "Patient/PatientTCCS"
+  },
+  "encounter" : {
+    "reference" : "Encounter/EncounterFirst"
+  }
+}

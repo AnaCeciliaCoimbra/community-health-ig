@@ -1,0 +1,40 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.com/fhir/example/Patient/PatientTCCS4> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "PatientTCCS4"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://ehr.testing.p5.pt/api/fhir/StructureDefinition/PatientTCCS"^^xsd:anyURI ;
+       fhir:link <https://ehr.testing.p5.pt/api/fhir/StructureDefinition/PatientTCCS>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient PatientTCCS4</b></p><a name=\"PatientTCCS4\"> </a><a name=\"hcPatientTCCS4\"> </a><a name=\"PatientTCCS4-en-US\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Christopher Brown  Male, DoB: 2007-12-18 ( https://ehr.testing.p5.pt/api/fhir#24681357)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\"><ul><li><a href=\"tel:+351555555555\">+351555555555</a></li><li><a href=\"mailto:christopher.brown@email.com\">christopher.brown@email.com</a></li></ul></td></tr></table></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://ehr.testing.p5.pt/api/fhir"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "24681357" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Brown" ] ;
+     fhir:given ( [ fhir:v "Christopher" ] )
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "+351555555555" ]
+  ] [
+     fhir:system [ fhir:v "email" ] ;
+     fhir:value [ fhir:v "christopher.brown@email.com" ]
+  ] ) ; # 
+  fhir:gender [ fhir:v "male"] ; # 
+  fhir:birthDate [ fhir:v "2007-12-18"^^xsd:date] . # 
+
+# -------------------------------------------------------------------------------------
+

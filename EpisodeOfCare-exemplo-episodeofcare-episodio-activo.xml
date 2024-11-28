@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<EpisodeOfCare xmlns="http://hl7.org/fhir">
+  <id value="exemplo-episodeofcare-episodio-activo"/>
+  <meta>
+    <profile value="https://hl7.pt/fhir/community-health/StructureDefinition/episodeOfCare-standard"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: EpisodeOfCare exemplo-episodeofcare-episodio-activo</b></p><a name="exemplo-episodeofcare-episodio-activo"> </a><a name="hcexemplo-episodeofcare-episodio-activo"> </a><a name="exemplo-episodeofcare-episodio-activo-en-US"> </a><p><b>status</b>: Active</p><p><b>type</b>: <span title="Codes:{http://localhost:8081/api/fhirValueSet/Urgency 1}">Urgent</span></p><p><b>patient</b>: <a href="Patient-exemplo-patient-1.html">John Doe  Male, DoB: 2009-02-09 ( https://ehr.testing.p5.pt/api/fhir#12345678)</a></p><p><b>managingOrganization</b>: <a href="Organization-P5Organization.html">Organization P5</a></p><p><b>period</b>: 2024-06-10 21:47:44+0000 --&gt; (ongoing)</p><p><b>careManager</b>: <a href="Practitioner-exemplo-practitioner-1.html">Practitioner John Smith </a></p></div>
+  </text>
+  <status value="active"/>
+  <type>
+    <coding>
+      <system value="http://localhost:8081/api/fhirValueSet/Urgency"/>
+      <code value="1"/>
+      <display value="Urgent"/>
+    </coding>
+  </type>
+  <patient>
+    <reference value="Patient/exemplo-patient-1"/>
+  </patient>
+  <managingOrganization>
+    <reference value="Organization/P5Organization"/>
+  </managingOrganization>
+  <period>
+    <start value="2024-06-10T21:47:44+00:00"/>
+  </period>
+  <careManager>
+    <reference value="Practitioner/exemplo-practitioner-1"/>
+  </careManager>
+</EpisodeOfCare>

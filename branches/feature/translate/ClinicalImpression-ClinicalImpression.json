@@ -1,0 +1,24 @@
+{
+  "resourceType" : "ClinicalImpression",
+  "id" : "ClinicalImpression",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ClinicalImpression ClinicalImpression</b></p><a name=\"ClinicalImpression\"> </a><a name=\"hcClinicalImpression\"> </a><a name=\"ClinicalImpression-en-US\"> </a><p><b>status</b>: Completed</p><p><b>subject</b>: <a href=\"Patient-PatientTCCS.html\">John Doe  Male, DoB: 2009-02-09 ( https://ehr.testing.p5.pt/api/fhir#12345678)</a></p><p><b>encounter</b>: <a href=\"Encounter-HumanEncounter.html\">Encounter: status = finished; class = Emergency (ActCode#EMER)</a></p><h3>Findings</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ItemCodeableConcept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://loinc.org 12345-6}\">Symptoms</span></td></tr></table></div>"
+  },
+  "status" : "completed",
+  "subject" : {
+    "reference" : "Patient/PatientTCCS"
+  },
+  "encounter" : {
+    "reference" : "Encounter/HumanEncounter"
+  },
+  "finding" : [{
+    "itemCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "12345-6",
+        "display" : "Symptoms"
+      }]
+    }
+  }]
+}

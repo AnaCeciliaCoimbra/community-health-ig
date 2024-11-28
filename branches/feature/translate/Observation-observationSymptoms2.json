@@ -1,0 +1,24 @@
+{
+  "resourceType" : "Observation",
+  "id" : "observationSymptoms2",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/ObservationSymptoms"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation observationSymptoms2</b></p><a name=\"observationSymptoms2\"> </a><a name=\"hcobservationSymptoms2\"> </a><a name=\"observationSymptoms2-en-US\"> </a><p><b>identifier</b>: <code>http://example.org/identifiers</code>/198</p><p><b>status</b>: Final</p><p><b>subject</b>: <a href=\"Patient-PatientTCCS.html\">John Doe  Male, DoB: 2009-02-09 ( https://ehr.testing.p5.pt/api/fhir#12345678)</a></p><p><b>encounter</b>: <a href=\"Encounter-EncounterFirst.html\">Encounter: status = finished; class = Emergency (ActCode#EMER); type = </a></p><p><b>effective</b>: 2024-02-11 12:30:00+0000</p><p><b>value</b>: Cold</p></div>"
+  },
+  "identifier" : [{
+    "system" : "http://example.org/identifiers",
+    "value" : "198"
+  }],
+  "status" : "final",
+  "subject" : {
+    "reference" : "Patient/PatientTCCS"
+  },
+  "encounter" : {
+    "reference" : "Encounter/EncounterFirst"
+  },
+  "effectiveDateTime" : "2024-02-11T12:30:00Z",
+  "valueString" : "Cold"
+}

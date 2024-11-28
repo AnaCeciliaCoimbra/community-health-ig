@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="exemplo-practitioner-1"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Practitioner exemplo-practitioner-1</b></p><a name="exemplo-practitioner-1"> </a><a name="hcexemplo-practitioner-1"> </a><a name="exemplo-practitioner-1-en-US"> </a><p><b>identifier</b>: <code>http://example.org/practitioner-ids</code>/12345</p><p><b>name</b>: John Smith </p><p><b>telecom</b>: ph: 555-1234(Work), <a href="mailto:john.smith@example.com">john.smith@example.com</a></p><p><b>gender</b>: Male</p></div>
+  </text>
+  <identifier>
+    <system value="http://example.org/practitioner-ids"/>
+    <value value="12345"/>
+  </identifier>
+  <name>
+    <family value="Smith"/>
+    <given value="John"/>
+  </name>
+  <telecom>
+    <system value="phone"/>
+    <value value="555-1234"/>
+    <use value="work"/>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value value="john.smith@example.com"/>
+    <use value="work"/>
+  </telecom>
+  <gender value="male"/>
+</Practitioner>

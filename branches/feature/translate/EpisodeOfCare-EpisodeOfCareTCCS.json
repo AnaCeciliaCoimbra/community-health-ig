@@ -1,0 +1,24 @@
+{
+  "resourceType" : "EpisodeOfCare",
+  "id" : "EpisodeOfCareTCCS",
+  "meta" : {
+    "profile" : ["https://ehr.testing.p5.pt/api/fhir/StructureDefinition/EpisodeOfCareTCCS"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: EpisodeOfCare EpisodeOfCareTCCS</b></p><a name=\"EpisodeOfCareTCCS\"> </a><a name=\"hcEpisodeOfCareTCCS\"> </a><a name=\"EpisodeOfCareTCCS-en-US\"> </a><p><b>status</b>: Active</p><p><b>patient</b>: <a href=\"Patient-PatientTCCS.html\">John Doe  Male, DoB: 2009-02-09 ( https://ehr.testing.p5.pt/api/fhir#12345678)</a></p><p><b>managingOrganization</b>: <a href=\"Organization-P5Organization.html\">Organization P5</a></p><p><b>period</b>: 2024-01-28 08:00:00+0000 --&gt; (ongoing)</p><p><b>careManager</b>: <a href=\"Practitioner-Practitioner1.html\">Practitioner John Smith </a></p></div>"
+  },
+  "status" : "active",
+  "patient" : {
+    "reference" : "Patient/PatientTCCS"
+  },
+  "managingOrganization" : {
+    "reference" : "Organization/P5Organization"
+  },
+  "period" : {
+    "start" : "2024-01-28T08:00:00.000Z"
+  },
+  "careManager" : {
+    "reference" : "Practitioner/Practitioner1"
+  }
+}

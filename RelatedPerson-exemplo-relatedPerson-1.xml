@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelatedPerson xmlns="http://hl7.org/fhir">
+  <id value="exemplo-relatedPerson-1"/>
+  <meta>
+    <profile value="https://hl7.pt/fhir/community-health/StructureDefinition/RelatedPersonTCCS"/>
+    <profile value="https://ehr.testing.p5.pt/api/fhir/StructureDefinition/RelatedPersonTCCS"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: RelatedPerson exemplo-relatedPerson-1</b></p><a name="exemplo-relatedPerson-1"> </a><a name="hcexemplo-relatedPerson-1"> </a><a name="exemplo-relatedPerson-1-en-US"> </a><p><b>pt/api/fhir/StructureDefinition/PatientIdentifier</b>: <a href="Patient-exemplo-patient-2.html">Jane Smith  Female, DoB: 2010-05-15 ( https://ehr.testing.p5.pt/api/fhir#87654321)</a></p><p><b>patient</b>: <a href="Patient-exemplo-patient-1.html">John Doe  Male, DoB: 2009-02-09 ( https://ehr.testing.p5.pt/api/fhir#12345678)</a></p><p><b>name</b>: Emily Smith </p><p><b>telecom</b>: <a href="tel:+351888888888">+351888888888</a></p></div>
+  </text>
+  <extension url="https://ehr.testing.p5.pt/api/fhir/StructureDefinition/PatientIdentifier">
+    <valueReference>
+      <reference value="Patient/exemplo-patient-2"/>
+    </valueReference>
+  </extension>
+  <patient>
+    <reference value="Patient/exemplo-patient-1"/>
+  </patient>
+  <name>
+    <family value="Smith"/>
+    <given value="Emily"/>
+  </name>
+  <telecom>
+    <system value="phone"/>
+    <value value="+351888888888"/>
+  </telecom>
+</RelatedPerson>

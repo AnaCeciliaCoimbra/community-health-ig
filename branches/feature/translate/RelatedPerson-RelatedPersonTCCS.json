@@ -1,0 +1,25 @@
+{
+  "resourceType" : "RelatedPerson",
+  "id" : "RelatedPersonTCCS",
+  "meta" : {
+    "profile" : ["https://ehr.testing.p5.pt/api/fhir/StructureDefinition/RelatedPersonTCCS"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: RelatedPerson RelatedPersonTCCS</b></p><a name=\"RelatedPersonTCCS\"> </a><a name=\"hcRelatedPersonTCCS\"> </a><a name=\"RelatedPersonTCCS-en-US\"> </a><p><b>pt/api/fhir/StructureDefinition/PatientIdentifier</b>: <a href=\"Patient-PatientTCCS.html\">John Doe  Male, DoB: 2009-02-09 ( https://ehr.testing.p5.pt/api/fhir#12345678)</a></p><p><b>name</b>: George Adams </p><p><b>telecom</b>: <a href=\"tel:+351999777777\">+351999777777</a></p></div>"
+  },
+  "extension" : [{
+    "url" : "https://ehr.testing.p5.pt/api/fhir/StructureDefinition/PatientIdentifier",
+    "valueReference" : {
+      "reference" : "Patient/PatientTCCS"
+    }
+  }],
+  "name" : [{
+    "family" : "Adams",
+    "given" : ["George"]
+  }],
+  "telecom" : [{
+    "system" : "phone",
+    "value" : "+351999777777"
+  }]
+}

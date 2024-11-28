@@ -1,0 +1,55 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.com/fhir/example/CarePlan/carePlan> a fhir:CarePlan ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "carePlan"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CarePlan carePlan</b></p><a name=\"carePlan\"> </a><a name=\"hccarePlan\"> </a><a name=\"carePlan-en-US\"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Plan</p><p><b>subject</b>: <a href=\"Patient/PatientTCSS\">Patient/PatientTCSS</a></p><p><b>encounter</b>: <a href=\"Encounter-HumanEncounter.html\">Encounter: status = finished; class = Emergency (ActCode#EMER)</a></p><p><b>period</b>: 2024-02-11 12:00:00+0000 --&gt; 2024-02-15 12:00:00+0000</p><blockquote><p><b>activity</b></p><p><b>reference</b>: <a href=\"MedicationRequest-medicationRequest.html\">MedicationRequest: status = active; intent = order; medication[x] = -&gt;Medication Paracetamol 1000 mg; authoredOn = 2024-02-11 12:00:00+0000</a></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Status</b></td><td><b>DoNotPerform</b></td><td><b>Scheduled[x]</b></td><td><b>Description</b></td></tr><tr><td style=\"display: none\">*</td><td>In Progress</td><td>false</td><td>3 per8 hours</td><td>Take Paracetamol every 8 hours</td></tr></table></blockquote><blockquote><p><b>activity</b></p><p><b>reference</b>: <a href=\"ServiceRequest-reevaluationServiceRequest.html\">ServiceRequest Reevaluation</a></p></blockquote></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "plan"] ; # 
+  fhir:subject [
+     fhir:link <http://example.com/fhir/example/Patient/PatientTCSS> ;
+     fhir:reference [ fhir:v "Patient/PatientTCSS" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <http://example.com/fhir/example/Encounter/HumanEncounter> ;
+     fhir:reference [ fhir:v "Encounter/HumanEncounter" ]
+  ] ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2024-02-11T12:00:00Z"^^xsd:dateTime ] ;
+     fhir:end [ fhir:v "2024-02-15T12:00:00Z"^^xsd:dateTime ]
+  ] ; # 
+  fhir:activity ( [
+     fhir:reference [
+       fhir:link <http://example.com/fhir/example/MedicationRequest/medicationRequest> ;
+       fhir:reference [ fhir:v "MedicationRequest/medicationRequest" ]
+     ] ;
+     fhir:detail [
+       fhir:status [ fhir:v "in-progress" ] ;
+       fhir:doNotPerform [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:scheduled [
+         a fhir:Timing ;
+         fhir:repeat [
+           fhir:frequency [ fhir:v "3"^^xsd:positiveInteger ] ;
+           fhir:period [ fhir:v "8"^^xsd:decimal ] ;
+           fhir:periodUnit [ fhir:v "h" ]
+         ]
+       ] ;
+       fhir:description [ fhir:v "Take Paracetamol every 8 hours" ]
+     ]
+  ] [
+     fhir:reference [
+       fhir:link <http://example.com/fhir/example/ServiceRequest/reevaluationServiceRequest> ;
+       fhir:reference [ fhir:v "ServiceRequest/reevaluationServiceRequest" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

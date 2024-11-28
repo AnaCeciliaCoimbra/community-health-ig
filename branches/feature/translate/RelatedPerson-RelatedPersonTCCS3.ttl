@@ -1,0 +1,39 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.com/fhir/example/RelatedPerson/RelatedPersonTCCS3> a fhir:RelatedPerson ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "RelatedPersonTCCS3"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://ehr.testing.p5.pt/api/fhir/StructureDefinition/RelatedPersonTCCS"^^xsd:anyURI ;
+       fhir:link <https://ehr.testing.p5.pt/api/fhir/StructureDefinition/RelatedPersonTCCS>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: RelatedPerson RelatedPersonTCCS3</b></p><a name=\"RelatedPersonTCCS3\"> </a><a name=\"hcRelatedPersonTCCS3\"> </a><a name=\"RelatedPersonTCCS3-en-US\"> </a><p><b>pt/api/fhir/StructureDefinition/PatientIdentifier</b>: <a href=\"Patient-PatientTCCS3.html\">Emily Williams  Female, DoB: 2011-07-03 ( https://ehr.testing.p5.pt/api/fhir#13579246)</a></p><p><b>name</b>: Olivia Williams </p><p><b>telecom</b>: <a href=\"tel:+351666666666\">+351666666666</a></p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "https://ehr.testing.p5.pt/api/fhir/StructureDefinition/PatientIdentifier"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <http://example.com/fhir/example/Patient/PatientTCCS3> ;
+       fhir:reference [ fhir:v "Patient/PatientTCCS3" ]
+     ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Williams" ] ;
+     fhir:given ( [ fhir:v "Olivia" ] )
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "+351666666666" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

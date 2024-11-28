@@ -1,0 +1,39 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.com/fhir/example/RelatedPerson/RelatedPersonTCCS> a fhir:RelatedPerson ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "RelatedPersonTCCS"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://ehr.testing.p5.pt/api/fhir/StructureDefinition/RelatedPersonTCCS"^^xsd:anyURI ;
+       fhir:link <https://ehr.testing.p5.pt/api/fhir/StructureDefinition/RelatedPersonTCCS>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: RelatedPerson RelatedPersonTCCS</b></p><a name=\"RelatedPersonTCCS\"> </a><a name=\"hcRelatedPersonTCCS\"> </a><a name=\"RelatedPersonTCCS-en-US\"> </a><p><b>pt/api/fhir/StructureDefinition/PatientIdentifier</b>: <a href=\"Patient-PatientTCCS.html\">John Doe  Male, DoB: 2009-02-09 ( https://ehr.testing.p5.pt/api/fhir#12345678)</a></p><p><b>name</b>: George Adams </p><p><b>telecom</b>: <a href=\"tel:+351999777777\">+351999777777</a></p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "https://ehr.testing.p5.pt/api/fhir/StructureDefinition/PatientIdentifier"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <http://example.com/fhir/example/Patient/PatientTCCS> ;
+       fhir:reference [ fhir:v "Patient/PatientTCCS" ]
+     ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Adams" ] ;
+     fhir:given ( [ fhir:v "George" ] )
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "+351999777777" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

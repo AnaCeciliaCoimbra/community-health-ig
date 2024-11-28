@@ -1,0 +1,237 @@
+ExampleIG : Validation Results
+=========================================
+
+err = 63, warn = 72, info = 0
+IG Publisher Version: 1.6.28
+Generated Tue Oct 08 14:57:41 UTC 2024. FHIR version 4.0.1 for my-ig#1.0.0 (canonical = http://example.com/fhir/example)
+ Build Errors : 4 / 25 / 0
+ /github/workspace/fsh-generated/resources/ImplementationGuide-my-ig : 3 / 0 / 1
+ /github/workspace/fsh-generated/resources/Organization-P5Organization : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Organization-TCCSTeam : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-AllergyIntoleranceTCSS : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-CarePlanEncounter : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ClinicalImpressionEncounter : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ConditionDiagnosis : 8 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-DiagnosisProbability : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-EncounterFirst : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-EpisodeOfCareTCCS : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-HumanEncounter : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-HumanMessages : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-MedicationRequestEncounter : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-MedicationStatementEncounter : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ModifierExtensionOrganization : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ObservationSymptomDuration : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ObservationSymptoms : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-PatientIdentifier : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-PatientTCCS : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-RelatedPersonTCCS : 0 / 1 / 1
+ /github/workspace/input/examples/HumanEncounter : 2 / 1 / 1
+ /github/workspace/input/examples/carePlan : 3 / 0 / 1
+ /github/workspace/input/examples/clinicalImpression : 2 / 0 / 1
+ /github/workspace/input/examples/diagnosis : 2 / 2 / 1
+ /github/workspace/input/examples/diagnosis2 : 3 / 2 / 1
+ /github/workspace/input/examples/episodeOfCare1 : 0 / 1 / 1
+ /github/workspace/input/examples/episodeOfCare2 : 2 / 1 / 1
+ /github/workspace/input/examples/episodeOfCare3 : 2 / 1 / 1
+ /github/workspace/input/examples/firstEncounter : 5 / 1 / 1
+ /github/workspace/input/examples/medication : 8 / 0 / 1
+ /github/workspace/input/examples/medicationRequest : 2 / 0 / 1
+ /github/workspace/input/examples/observationSymptoms : 2 / 2 / 1
+ /github/workspace/input/examples/observationSymptoms2 : 2 / 2 / 1
+ /github/workspace/input/examples/observationSymptomsDuration : 1 / 5 / 1
+ /github/workspace/input/examples/patient1 : 0 / 1 / 1
+ /github/workspace/input/examples/patient2 : 0 / 1 / 1
+ /github/workspace/input/examples/patient3 : 0 / 1 / 1
+ /github/workspace/input/examples/patient4 : 0 / 1 / 1
+ /github/workspace/input/examples/patient5 : 0 / 1 / 1
+ /github/workspace/input/examples/practitioner : 0 / 0 / 1
+ /github/workspace/input/examples/relatedPerson1 : 3 / 1 / 1
+ /github/workspace/input/examples/relatedPerson2 : 3 / 1 / 1
+ /github/workspace/input/examples/relatedPerson3 : 3 / 1 / 1
+ /github/workspace/input/examples/relatedPerson4 : 3 / 1 / 1
+ /github/workspace/input/examples/serviceRequest : 3 / 0 / 1
+</table>
+== n/a ==
+WARNING: ImplementationGuide.url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ClinicalImpression/ClinicalImpression.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Condition/ConditionCold.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Condition/ConditionTonsillitis.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Encounter/EncounterFirst.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource EpisodeOfCare/EpisodeOfCareTCCS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource EpisodeOfCare/EpisodeOfCareTCCS1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource EpisodeOfCare/EpisodeOfCareTCCS2.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Encounter/HumanEncounter.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ObservationSymptomsDuration.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/PatientTCCS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/PatientTCCS1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/PatientTCCS2.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/PatientTCCS3.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/PatientTCCS4.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Practitioner/Practitioner1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource RelatedPerson/RelatedPersonTCCS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource RelatedPerson/RelatedPersonTCCS1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource RelatedPerson/RelatedPersonTCCS2.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource RelatedPerson/RelatedPersonTCCS3.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/medicationRequest.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/observationSymptoms1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/observationSymptoms2.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Medication/paracetamol1000mg.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ServiceRequest/reevaluationServiceRequest.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: package.tgz: Error converting pacakge to R4B: Error processing example/Encounter-EncounterFirst.json: Not a JSON Object: null
+ERROR: /github/workspace/output/CarePlan-carePlan.html#/html/body/div/div/div/div/div/div/p/a at Line 192, column 273: The link 'Patient/PatientTCSS' for "Patient/PatientTCSS" cannot be resolved
+ERROR: /github/workspace/output/index.html#/html/body/div/div/div/div/div/p/a at Line 232, column 132: The link 'package.r4.tgz' for "R4 (my-ig.r4)" cannot be resolved
+ERROR: /github/workspace/output/index.html#/html/body/div/div/div/div/div/p/a at Line 232, column 179: The link 'package.r4b.tgz' for "R4B (my-ig.r4b)" cannot be resolved
+== fsh-generated/resources/ImplementationGuide-my-ig.json ==
+ERROR: ImplementationGuide.where(url = 'http://example.com/fhir/example'): Conformance resource /github/workspace/fsh-generated/resources/ImplementationGuide-my-ig.json - the canonical URL (http://example.com/fhir/example/ImplementationGuide/my-ig) does not match the URL (http://example.com/fhir/example)
+ERROR: ImplementationGuide.url: Resource id/url mismatch: my-ig/http://example.com/fhir/example
+ERROR: /github/workspace/fsh-generated/resources/ImplementationGuide-my-ig: URL Mismatch http://example.com/fhir/example/ImplementationGuide/my-ig vs http://example.com/fhir/example
+== fsh-generated/resources/Organization-P5Organization.json ==
+== fsh-generated/resources/Organization-TCCSTeam.json ==
+== fsh-generated/resources/StructureDefinition-AllergyIntoleranceTCSS.json ==
+WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/AllergyIntoleranceTCSS'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-CarePlanEncounter.json ==
+WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/CarePlanEncounter'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-ClinicalImpressionEncounter.json ==
+WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/ClinicalImpressionEncounter'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-ConditionDiagnosis.json ==
+ERROR: StructureDefinition/ConditionDiagnosis: StructureDefinition.snapshot.element[16].binding.extension[0].extension[1].value.ofType(canonical): Canonical URL 'http://hl7.org/fhir/sid/icd-10' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]
+ERROR: StructureDefinition/ConditionDiagnosis: StructureDefinition.snapshot.element[16].binding.valueSet: Canonical URL 'http://snomed.info/sct' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]
+ERROR: StructureDefinition/ConditionDiagnosis: StructureDefinition.differential.element[4].binding.extension[0].extension[1].value.ofType(canonical): Canonical URL 'http://hl7.org/fhir/sid/icd-10' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]
+ERROR: StructureDefinition/ConditionDiagnosis: StructureDefinition.differential.element[4].binding.valueSet: Canonical URL 'http://snomed.info/sct' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]
+ERROR: StructureDefinition/ConditionDiagnosis: StructureDefinition.differential.element[4].binding: The valueSet reference http://snomed.info/sct on element Condition.code points to something that is not a value set (CodeSystem)
+ERROR: StructureDefinition/ConditionDiagnosis: StructureDefinition.differential.element[4].binding.extension[0]: The valueSet reference http://hl7.org/fhir/sid/icd-10 on element Condition.code points to something that is not a value set (CodeSystem)
+ERROR: StructureDefinition/ConditionDiagnosis: StructureDefinition.snapshot.element[16].binding: The valueSet reference http://snomed.info/sct on element Condition.code points to something that is not a value set (CodeSystem)
+ERROR: StructureDefinition/ConditionDiagnosis: StructureDefinition.snapshot.element[16].binding.extension[0]: The valueSet reference http://hl7.org/fhir/sid/icd-10 on element Condition.code points to something that is not a value set (CodeSystem)
+WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/ConditionDiagnosis'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-DiagnosisProbability.json ==
+WARNING: StructureDefinition/DiagnosisProbability: StructureDefinition.context[0]: Review the extension type for DiagnosisProbability: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/DiagnosisProbability'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-EncounterFirst.json ==
+WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/EncounterFirst'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-EpisodeOfCareTCCS.json ==
+WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/EpisodeOfCareTCCS'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-HumanEncounter.json ==
+WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/HumanEncounter'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-HumanMessages.json ==
+WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/HumanMessages'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-MedicationRequestEncounter.json ==
+WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/MedicationRequestEncounter'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-MedicationStatementEncounter.json ==
+WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/MedicationStatementEncounter'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-ModifierExtensionOrganization.json ==
+WARNING: StructureDefinition/ModifierExtensionOrganization: StructureDefinition.context[0]: Review the extension type for ModifierExtensionOrganization: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/ModifierExtensionOrganization'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-ObservationSymptomDuration.json ==
+WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/ObservationSymptomDuration'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-ObservationSymptoms.json ==
+WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/ObservationSymptoms'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-PatientIdentifier.json ==
+WARNING: StructureDefinition/PatientIdentifier: StructureDefinition.context[0]: Review the extension type for PatientIdentifier: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/PatientIdentifier'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-PatientTCCS.json ==
+WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/PatientTCCS'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-RelatedPersonTCCS.json ==
+WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/RelatedPersonTCCS'): The Implementation Guide contains no examples for this profile
+== input/examples/HumanEncounter.json ==
+ERROR: Encounter.episodeOfCare: The property episodeOfCare must be a JSON Array, not an Object (at Encounter)
+ERROR: Encounter.participant[0]: Unrecognized property 'indivual'
+WARNING: Encounter/HumanEncounter: Encounter.meta.profile[0]: Profile reference 'https://ehr.testing.p5.pt/api/fhir/StructureDefinition/HumanEncounter' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
+== input/examples/carePlan.json ==
+ERROR: CarePlan/carePlan: CarePlan.subject: Unable to resolve resource with reference 'Patient/PatientTCSS'
+ERROR: CarePlan/carePlan: CarePlan.activity[0]: Constraint failed: cpl-3: 'Provide a reference or detail, not both'
+ERROR: CarePlan.text.div: Hyperlink 'Patient/PatientTCSS' at 'div/p/a' for 'Patient/PatientTCSS' does not resolve
+== input/examples/clinicalImpression.json ==
+ERROR: ClinicalImpression.finding[0]: Unrecognized property 'reference'
+ERROR: ClinicalImpression/ClinicalImpression: ClinicalImpression.finding[0].itemCodeableConcept.coding[0].code: Unknown code '12345-6' in the CodeSystem 'http://loinc.org' version '2.78'
+== input/examples/diagnosis.json ==
+ERROR: Condition: Unrecognized property 'translation'
+ERROR: Condition: Unrecognized property 'probability'
+WARNING: Condition/ConditionCold: Condition.code.coding[2].system: A definition for CodeSystem 'http://www.kith.no/snomed/icpc2' could not be found, so the code cannot be validated
+WARNING: Condition/ConditionCold: Condition.meta.profile[0]: Profile reference 'http://triage-counseling-clinical-system.org/fhir/StructureDefinition/Diagnosis' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
+== input/examples/diagnosis2.json ==
+ERROR: Condition.code.coding[0].code: Error parsing JSON: the primitive value must be a string
+ERROR: Condition: Unrecognized property 'translation'
+ERROR: Condition: Unrecognized property 'probability'
+WARNING: Condition/ConditionTonsillitis: Condition.code.coding[2]: A definition for CodeSystem 'http://www.kith.no/snomed/icpc2' could not be found, so the code cannot be validated
+WARNING: Condition/ConditionTonsillitis: Condition.meta.profile[0]: Profile reference 'http://triage-counseling-clinical-system.org/fhir/StructureDefinition/Diagnosis' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
+== input/examples/episodeOfCare1.json ==
+WARNING: EpisodeOfCare/EpisodeOfCareTCCS: EpisodeOfCare.meta.profile[0]: Profile reference 'https://ehr.testing.p5.pt/api/fhir/StructureDefinition/EpisodeOfCareTCCS' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
+== input/examples/episodeOfCare2.json ==
+ERROR: EpisodeOfCare/EpisodeOfCareTCCS1: EpisodeOfCare.modifierExtension[0]: The extension https://ehr.p5.pt/api/fhir/StructureDefinition/granted-organization could not be found so is not allowed here
+ERROR: EpisodeOfCare/EpisodeOfCareTCCS1: EpisodeOfCare.modifierExtension[0].value.ofType(Reference): Unable to resolve resource with reference 'Organization/abc12345'
+WARNING: EpisodeOfCare/EpisodeOfCareTCCS1: EpisodeOfCare.meta.profile[0]: Profile reference 'https://ehr.testing.p5.pt/api/fhir/StructureDefinition/EpisodeOfCareTCCS' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
+== input/examples/episodeOfCare3.json ==
+ERROR: EpisodeOfCare/EpisodeOfCareTCCS2: EpisodeOfCare.modifierExtension[0]: The extension https://ehr.p5.pt/api/fhir/StructureDefinition/granted-organization could not be found so is not allowed here
+ERROR: EpisodeOfCare/EpisodeOfCareTCCS2: EpisodeOfCare.modifierExtension[0].value.ofType(Reference): Unable to resolve resource with reference 'Organization/def67890'
+WARNING: EpisodeOfCare/EpisodeOfCareTCCS2: EpisodeOfCare.meta.profile[0]: Profile reference 'https://ehr.testing.p5.pt/api/fhir/StructureDefinition/EpisodeOfCareTCCS' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
+== input/examples/firstEncounter.json ==
+ERROR: Encounter.type: The property type must be a JSON Array, not an Object (at Encounter)
+ERROR: Encounter.type: Unrecognized property 'code'
+ERROR: Encounter.type: Unrecognized property 'system'
+ERROR: Encounter.type: Unrecognized property 'display'
+ERROR: Encounter.episodeOfCare: The property episodeOfCare must be a JSON Array, not an Object (at Encounter)
+WARNING: Encounter/EncounterFirst: Encounter.meta.profile[0]: Profile reference 'https://ehr.testing.p5.pt/api/fhir/StructureDefinition/EncounterFirst' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
+== input/examples/medication.json ==
+ERROR: Medication.ingredient[0].strength: Unrecognized property 'value'
+ERROR: Medication.ingredient[0].strength: Unrecognized property 'unit'
+ERROR: Medication.ingredient[0].strength: Unrecognized property 'system'
+ERROR: Medication.ingredient[0].strength: Unrecognized property 'code'
+ERROR: Medication/paracetamol1000mg: Medication.code.coding[0].code: Unknown code '1015942' in the CodeSystem 'http://www.nlm.nih.gov/research/umls/rxnorm' version '??'
+ERROR: Medication/paracetamol1000mg: Medication.form.coding[0].display: Wrong Display Name 'Tablet dose form' for http://snomed.info/sct#385055001. Valid display is one of 3 choices: 'Tablet', 'Tablet (basic dose form)' or 'A solid single-dose preparation obtained by compressing uniform volumes of particulate solids or by extrusion or moulding. Tablets may be single layer tablets resulting from a single compression of particles and or multilayer tablets consisting of concentric or parallel layers obtained by successive compressions of particles of different composition.' (for the language(s) 'en')
+ERROR: Medication/paracetamol1000mg: Medication.ingredient[0].item.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'Paracetamol' for http://www.nlm.nih.gov/research/umls/rxnorm#198142. Valid display is one of 3 choices: 'prednisolone 5 MG Oral Tablet', 'prednisoLONE 5 MG Oral Tablet' or 'prednisoLONE 5 MG Oral Tablet' (for the language(s) 'en')
+ERROR: Medication/paracetamol1000mg: Medication.ingredient[0].strength: Constraint failed: rat-1: 'Numerator and denominator SHALL both be present, or both are absent. If both are absent, there SHALL be some extension present'
+== input/examples/medicationRequest.json ==
+ERROR: MedicationRequest.substitution: Unrecognized property 'allowed'
+ERROR: MedicationRequest/medicationRequest: MedicationRequest.substitution: MedicationRequest.substitution.allowed[x]: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/MedicationRequest|4.0.1)
+== input/examples/observationSymptoms.json ==
+ERROR: Observation/observationSymptoms1: Observation: Observation.code: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/Observation|4.0.1)
+ERROR: Observation/observationSymptoms1: Observation.meta.profile[0]: Canonical URL 'http://hl7.org/fhir/StructureDefinition/ObservationSymptoms' does not resolve
+WARNING: Observation/observationSymptoms1: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/observationSymptoms1: Observation.meta.profile[0]: Profile reference 'http://hl7.org/fhir/StructureDefinition/ObservationSymptoms' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
+== input/examples/observationSymptoms2.json ==
+ERROR: Observation/observationSymptoms2: Observation: Observation.code: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/Observation|4.0.1)
+ERROR: Observation/observationSymptoms2: Observation.meta.profile[0]: Canonical URL 'http://hl7.org/fhir/StructureDefinition/ObservationSymptoms' does not resolve
+WARNING: Observation/observationSymptoms2: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/observationSymptoms2: Observation.meta.profile[0]: Profile reference 'http://hl7.org/fhir/StructureDefinition/ObservationSymptoms' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
+== input/examples/observationSymptomsDuration.json ==
+ERROR: Observation/ObservationSymptomsDuration: Observation: Observation.status: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/Observation|4.0.1)
+WARNING: Observation/ObservationSymptomsDuration: Observation.bodySite.coding[0].system: A definition for CodeSystem 'https://ehr.testing.p5.pt/api/fhir/ValueSet/bodySiteVS' could not be found, so the code cannot be validated
+WARNING: Observation/ObservationSymptomsDuration: Observation: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Observation/ObservationSymptomsDuration: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/ObservationSymptomsDuration: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Observation/ObservationSymptomsDuration: Observation.meta.profile[0]: Profile reference 'https://ehr.testing.p5.pt/api/fhir/StructureDefinition/ObservationSymptomDuration' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
+== input/examples/patient1.json ==
+WARNING: Patient/PatientTCCS: Patient.meta.profile[0]: Profile reference 'https://ehr.testing.p5.pt/api/fhir/StructureDefinition/PatientTCCS' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
+== input/examples/patient2.json ==
+WARNING: Patient/PatientTCCS1: Patient.meta.profile[0]: Profile reference 'https://ehr.testing.p5.pt/api/fhir/StructureDefinition/PatientTCCS' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
+== input/examples/patient3.json ==
+WARNING: Patient/PatientTCCS2: Patient.meta.profile[0]: Profile reference 'https://ehr.testing.p5.pt/api/fhir/StructureDefinition/PatientTCCS' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
+== input/examples/patient4.json ==
+WARNING: Patient/PatientTCCS3: Patient.meta.profile[0]: Profile reference 'https://ehr.testing.p5.pt/api/fhir/StructureDefinition/PatientTCCS' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
+== input/examples/patient5.json ==
+WARNING: Patient/PatientTCCS4: Patient.meta.profile[0]: Profile reference 'https://ehr.testing.p5.pt/api/fhir/StructureDefinition/PatientTCCS' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
+== input/examples/practitioner.json ==
+== input/examples/relatedPerson1.json ==
+ERROR: RelatedPerson.name: The property name must be a JSON Array, not an Object (at RelatedPerson)
+ERROR: RelatedPerson/RelatedPersonTCCS: RelatedPerson: RelatedPerson.patient: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/RelatedPerson|4.0.1)
+ERROR: RelatedPerson/RelatedPersonTCCS: RelatedPerson.extension[0]: The extension https://ehr.testing.p5.pt/api/fhir/StructureDefinition/PatientIdentifier could not be found so is not allowed here
+WARNING: RelatedPerson/RelatedPersonTCCS: RelatedPerson.meta.profile[0]: Profile reference 'https://ehr.testing.p5.pt/api/fhir/StructureDefinition/RelatedPersonTCCS' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
+== input/examples/relatedPerson2.json ==
+ERROR: RelatedPerson.name: The property name must be a JSON Array, not an Object (at RelatedPerson)
+ERROR: RelatedPerson/RelatedPersonTCCS1: RelatedPerson: RelatedPerson.patient: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/RelatedPerson|4.0.1)
+ERROR: RelatedPerson/RelatedPersonTCCS1: RelatedPerson.extension[0]: The extension https://ehr.testing.p5.pt/api/fhir/StructureDefinition/PatientIdentifier could not be found so is not allowed here
+WARNING: RelatedPerson/RelatedPersonTCCS1: RelatedPerson.meta.profile[0]: Profile reference 'https://ehr.testing.p5.pt/api/fhir/StructureDefinition/RelatedPersonTCCS' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
+== input/examples/relatedPerson3.json ==
+ERROR: RelatedPerson.name: The property name must be a JSON Array, not an Object (at RelatedPerson)
+ERROR: RelatedPerson/RelatedPersonTCCS2: RelatedPerson: RelatedPerson.patient: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/RelatedPerson|4.0.1)
+ERROR: RelatedPerson/RelatedPersonTCCS2: RelatedPerson.extension[0]: The extension https://ehr.testing.p5.pt/api/fhir/StructureDefinition/PatientIdentifier could not be found so is not allowed here
+WARNING: RelatedPerson/RelatedPersonTCCS2: RelatedPerson.meta.profile[0]: Profile reference 'https://ehr.testing.p5.pt/api/fhir/StructureDefinition/RelatedPersonTCCS' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
+== input/examples/relatedPerson4.json ==
+ERROR: RelatedPerson.name: The property name must be a JSON Array, not an Object (at RelatedPerson)
+ERROR: RelatedPerson/RelatedPersonTCCS3: RelatedPerson: RelatedPerson.patient: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/RelatedPerson|4.0.1)
+ERROR: RelatedPerson/RelatedPersonTCCS3: RelatedPerson.extension[0]: The extension https://ehr.testing.p5.pt/api/fhir/StructureDefinition/PatientIdentifier could not be found so is not allowed here
+WARNING: RelatedPerson/RelatedPersonTCCS3: RelatedPerson.meta.profile[0]: Profile reference 'https://ehr.testing.p5.pt/api/fhir/StructureDefinition/RelatedPersonTCCS' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
+== input/examples/serviceRequest.json ==
+ERROR: ServiceRequest.basedOn: The property basedOn must be a JSON Array, not an Object (at ServiceRequest)
+ERROR: ServiceRequest/reevaluationServiceRequest: ServiceRequest.code.coding[0].display: Wrong Display Name 'Reevaluation' for http://snomed.info/sct#710830005. Valid display is one of 2 choices: 'Assessment of passive range of motion (procedure)' or 'Assessment of passive range of motion' (for the language(s) 'en')
+ERROR: ServiceRequest/reevaluationServiceRequest: ServiceRequest.reasonCode[0].coding[0].display: Wrong Display Name 'Patient reevaluation' for http://snomed.info/sct#431855005. Valid display is one of 3 choices: 'Chronic kidney disease stage 1 (disorder)', 'Chronic kidney disease stage 1' or 'CKD stage 1' (for the language(s) 'en')

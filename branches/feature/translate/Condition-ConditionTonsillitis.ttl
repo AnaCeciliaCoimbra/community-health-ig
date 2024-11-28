@@ -1,0 +1,53 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.com/fhir/example/Condition/ConditionTonsillitis> a fhir:Condition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ConditionTonsillitis"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://triage-counseling-clinical-system.org/fhir/StructureDefinition/Diagnosis"^^xsd:anyURI ;
+       fhir:link <http://triage-counseling-clinical-system.org/fhir/StructureDefinition/Diagnosis>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Condition ConditionTonsillitis</b></p><a name=\"ConditionTonsillitis\"> </a><a name=\"hcConditionTonsillitis\"> </a><a name=\"ConditionTonsillitis-en-US\"> </a><p><b>identifier</b>: <code>http://example.org/identifiers</code>/173</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 90176007}, {http://hl7.org/fhir/sid/icd-10 J03}, {http://www.kith.no/snomed/icpc2 R76}\">Tonsillitis or angina tonsillari</span></p><p><b>subject</b>: <a href=\"Patient-PatientTCCS.html\">John Doe  Male, DoB: 2009-02-09 ( https://ehr.testing.p5.pt/api/fhir#12345678)</a></p><p><b>encounter</b>: <a href=\"Encounter-EncounterFirst.html\">Encounter: status = finished; class = Emergency (ActCode#EMER); type = </a></p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://example.org/identifiers"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "173" ]
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:90176007 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "90176007" ] ;
+       fhir:display [ fhir:v "Tonsillitis (disorder)" ]
+     ] [
+       fhir:system [ fhir:v "http://hl7.org/fhir/sid/icd-10"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "J03" ] ;
+       fhir:display [ fhir:v "Acute tonsillitis" ]
+     ] [
+       fhir:system [ fhir:v "http://www.kith.no/snomed/icpc2"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "R76" ] ;
+       fhir:display [ fhir:v "Tonsillitis acute" ]
+     ] ) ;
+     fhir:text [ fhir:v "Tonsillitis or angina tonsillari" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://example.com/fhir/example/Patient/PatientTCCS> ;
+     fhir:reference [ fhir:v "Patient/PatientTCCS" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <http://example.com/fhir/example/Encounter/EncounterFirst> ;
+     fhir:reference [ fhir:v "Encounter/EncounterFirst" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,38 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.com/fhir/example/Observation/observationSymptoms2> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "observationSymptoms2"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/ObservationSymptoms"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/StructureDefinition/ObservationSymptoms>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation observationSymptoms2</b></p><a name=\"observationSymptoms2\"> </a><a name=\"hcobservationSymptoms2\"> </a><a name=\"observationSymptoms2-en-US\"> </a><p><b>identifier</b>: <code>http://example.org/identifiers</code>/198</p><p><b>status</b>: Final</p><p><b>subject</b>: <a href=\"Patient-PatientTCCS.html\">John Doe  Male, DoB: 2009-02-09 ( https://ehr.testing.p5.pt/api/fhir#12345678)</a></p><p><b>encounter</b>: <a href=\"Encounter-EncounterFirst.html\">Encounter: status = finished; class = Emergency (ActCode#EMER); type = </a></p><p><b>effective</b>: 2024-02-11 12:30:00+0000</p><p><b>value</b>: Cold</p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://example.org/identifiers"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "198" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:subject [
+     fhir:link <http://example.com/fhir/example/Patient/PatientTCCS> ;
+     fhir:reference [ fhir:v "Patient/PatientTCCS" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <http://example.com/fhir/example/Encounter/EncounterFirst> ;
+     fhir:reference [ fhir:v "Encounter/EncounterFirst" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2024-02-11T12:30:00Z"^^xsd:dateTime] ; # 
+  fhir:value [ fhir:v "Cold"] . # 
+
+# -------------------------------------------------------------------------------------
+

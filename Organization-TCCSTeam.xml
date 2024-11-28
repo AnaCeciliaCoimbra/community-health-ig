@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="TCCSTeam"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Organization TCCSTeam</b></p><a name="TCCSTeam"> </a><a name="hcTCCSTeam"> </a><a name="TCCSTeam-en-US"> </a><p><b>name</b>: TCCS Team</p></div>
+  </text>
+  <name value="TCCS Team"/>
+</Organization>

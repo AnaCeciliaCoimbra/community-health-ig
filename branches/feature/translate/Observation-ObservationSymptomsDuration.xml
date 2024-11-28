@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="ObservationSymptomsDuration"/>
+  <meta>
+    <profile value="https://ehr.testing.p5.pt/api/fhir/StructureDefinition/ObservationSymptomDuration"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation ObservationSymptomsDuration</b></p><a name="ObservationSymptomsDuration"> </a><a name="hcObservationSymptomsDuration"> </a><a name="ObservationSymptomsDuration-en-US"> </a><p><b>code</b>: <span title="Codes:{http://loinc.org 64748-7}">Symptoms duration</span></p><p><b>encounter</b>: <a href="Encounter-EncounterFirst.html">Encounter: status = finished; class = Emergency (ActCode#EMER); type = </a></p><p><b>value</b>: 2 days<span style="background: LightGoldenRodYellow"> (Details: UCUM  coded = 'd')</span></p><p><b>bodySite</b>: <span title="Codes:{https://ehr.testing.p5.pt/api/fhir/ValueSet/bodySiteVS 6}">Head</span></p></div>
+  </text>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="64748-7"/>
+      <display value="Symptoms duration"/>
+    </coding>
+    <text value="Symptoms duration"/>
+  </code>
+  <encounter>
+    <reference value="Encounter/EncounterFirst"/>
+  </encounter>
+  <valueQuantity>
+    <value value="2"/>
+    <unit value="days"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="d"/>
+  </valueQuantity>
+  <bodySite>
+    <coding>
+      <system value="https://ehr.testing.p5.pt/api/fhir/ValueSet/bodySiteVS"/>
+      <code value="6"/>
+      <display value="Head"/>
+    </coding>
+    <text value="Head"/>
+  </bodySite>
+</Observation>

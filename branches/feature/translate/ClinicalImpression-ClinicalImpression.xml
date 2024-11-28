@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClinicalImpression xmlns="http://hl7.org/fhir">
+  <id value="ClinicalImpression"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ClinicalImpression ClinicalImpression</b></p><a name="ClinicalImpression"> </a><a name="hcClinicalImpression"> </a><a name="ClinicalImpression-en-US"> </a><p><b>status</b>: Completed</p><p><b>subject</b>: <a href="Patient-PatientTCCS.html">John Doe  Male, DoB: 2009-02-09 ( https://ehr.testing.p5.pt/api/fhir#12345678)</a></p><p><b>encounter</b>: <a href="Encounter-HumanEncounter.html">Encounter: status = finished; class = Emergency (ActCode#EMER)</a></p><h3>Findings</h3><table class="grid"><tr><td style="display: none">-</td><td><b>ItemCodeableConcept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://loinc.org 12345-6}">Symptoms</span></td></tr></table></div>
+  </text>
+  <status value="completed"/>
+  <subject>
+    <reference value="Patient/PatientTCCS"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/HumanEncounter"/>
+  </encounter>
+  <finding>
+    <itemCodeableConcept>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="12345-6"/>
+        <display value="Symptoms"/>
+      </coding>
+    </itemCodeableConcept>
+  </finding>
+</ClinicalImpression>

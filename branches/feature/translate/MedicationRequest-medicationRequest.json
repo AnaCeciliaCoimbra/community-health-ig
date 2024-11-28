@@ -1,0 +1,34 @@
+{
+  "resourceType" : "MedicationRequest",
+  "id" : "medicationRequest",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest medicationRequest</b></p><a name=\"medicationRequest\"> </a><a name=\"hcmedicationRequest\"> </a><a name=\"medicationRequest-en-US\"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><p><b>medication</b>: <a href=\"Medication-paracetamol1000mg.html\">Medication Paracetamol 1000 mg</a></p><p><b>subject</b>: <a href=\"Patient-PatientTCCS.html\">John Doe  Male, DoB: 2009-02-09 ( https://ehr.testing.p5.pt/api/fhir#12345678)</a></p><p><b>authoredOn</b>: 2024-02-11 12:00:00+0000</p><h3>DosageInstructions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>Timing</b></td></tr><tr><td style=\"display: none\">*</td><td>Take one tablet every 8 hours</td><td>3 per8 hours</td></tr></table><h3>DispenseRequests</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ValidityPeriod</b></td><td><b>NumberOfRepeatsAllowed</b></td></tr><tr><td style=\"display: none\">*</td><td>2024-02-11 12:00:00+0000 --&gt; 2024-02-14 12:00:00+0000</td><td>3</td></tr></table><blockquote><p><b>substitution</b></p></blockquote></div>"
+  },
+  "status" : "active",
+  "intent" : "order",
+  "medicationReference" : {
+    "reference" : "Medication/paracetamol1000mg"
+  },
+  "subject" : {
+    "reference" : "Patient/PatientTCCS"
+  },
+  "authoredOn" : "2024-02-11T12:00:00Z",
+  "dosageInstruction" : [{
+    "text" : "Take one tablet every 8 hours",
+    "timing" : {
+      "repeat" : {
+        "frequency" : 3,
+        "period" : 8,
+        "periodUnit" : "h"
+      }
+    }
+  }],
+  "dispenseRequest" : {
+    "validityPeriod" : {
+      "start" : "2024-02-11T12:00:00Z",
+      "end" : "2024-02-14T12:00:00Z"
+    },
+    "numberOfRepeatsAllowed" : 3
+  }
+}

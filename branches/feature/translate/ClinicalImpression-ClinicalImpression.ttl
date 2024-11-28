@@ -1,0 +1,37 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.com/fhir/example/ClinicalImpression/ClinicalImpression> a fhir:ClinicalImpression ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ClinicalImpression"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ClinicalImpression ClinicalImpression</b></p><a name=\"ClinicalImpression\"> </a><a name=\"hcClinicalImpression\"> </a><a name=\"ClinicalImpression-en-US\"> </a><p><b>status</b>: Completed</p><p><b>subject</b>: <a href=\"Patient-PatientTCCS.html\">John Doe  Male, DoB: 2009-02-09 ( https://ehr.testing.p5.pt/api/fhir#12345678)</a></p><p><b>encounter</b>: <a href=\"Encounter-HumanEncounter.html\">Encounter: status = finished; class = Emergency (ActCode#EMER)</a></p><h3>Findings</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ItemCodeableConcept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://loinc.org 12345-6}\">Symptoms</span></td></tr></table></div>"
+  ] ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:subject [
+     fhir:link <http://example.com/fhir/example/Patient/PatientTCCS> ;
+     fhir:reference [ fhir:v "Patient/PatientTCCS" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <http://example.com/fhir/example/Encounter/HumanEncounter> ;
+     fhir:reference [ fhir:v "Encounter/HumanEncounter" ]
+  ] ; # 
+  fhir:finding ( [
+     fhir:itemCodeableConcept [
+       fhir:coding ( [
+         a loinc:12345-6 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "12345-6" ] ;
+         fhir:display [ fhir:v "Symptoms" ]
+       ] )
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

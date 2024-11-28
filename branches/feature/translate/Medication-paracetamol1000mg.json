@@ -1,0 +1,34 @@
+{
+  "resourceType" : "Medication",
+  "id" : "paracetamol1000mg",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Medication paracetamol1000mg</b></p><a name=\"paracetamol1000mg\"> </a><a name=\"hcparacetamol1000mg\"> </a><a name=\"paracetamol1000mg-en-US\"> </a><p><b>code</b>: <span title=\"Codes:{http://www.nlm.nih.gov/research/umls/rxnorm 1015942}\">Paracetamol 1000 mg</span></p><p><b>form</b>: <span title=\"Codes:{http://snomed.info/sct 385055001}\">Tablet</span></p><p><b style=\"color: maroon\">Exception Generating Narrative: Cannot invoke &quot;org.hl7.fhir.r5.renderers.utils.ResourceWrapper.has(String)&quot; because &quot;q&quot; is null </b></p></div>"
+  },
+  "code" : {
+    "coding" : [{
+      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "code" : "1015942",
+      "display" : "Paracetamol 1000 mg"
+    }],
+    "text" : "Paracetamol 1000 mg"
+  },
+  "form" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "385055001",
+      "display" : "Tablet dose form"
+    }],
+    "text" : "Tablet"
+  },
+  "ingredient" : [{
+    "itemCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "code" : "198142",
+        "display" : "Paracetamol"
+      }],
+      "text" : "Paracetamol"
+    }
+  }]
+}

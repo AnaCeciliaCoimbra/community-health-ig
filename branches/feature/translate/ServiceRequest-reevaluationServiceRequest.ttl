@@ -1,0 +1,59 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.com/fhir/example/ServiceRequest/reevaluationServiceRequest> a fhir:ServiceRequest ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "reevaluationServiceRequest"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest reevaluationServiceRequest</b></p><a name=\"reevaluationServiceRequest\"> </a><a name=\"hcreevaluationServiceRequest\"> </a><a name=\"reevaluationServiceRequest-en-US\"> </a><p><b>basedOn</b>: <a href=\"CarePlan-carePlan.html\">CarePlan: status = active; intent = plan; period = 2024-02-11 12:00:00+0000 --&gt; 2024-02-15 12:00:00+0000</a></p><p><b>status</b>: Active</p><p><b>intent</b>: Plan</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 710830005}\">Reevaluation</span></p><p><b>subject</b>: <a href=\"Patient-PatientTCCS.html\">John Doe  Male, DoB: 2009-02-09 ( https://ehr.testing.p5.pt/api/fhir#12345678)</a></p><p><b>occurrence</b>: Once per1 days</p><p><b>authoredOn</b>: 2024-02-12 12:00:00+0000</p><p><b>requester</b>: <a href=\"Practitioner-Practitioner1.html\">Practitioner John Smith </a></p><p><b>reasonCode</b>: <span title=\"Codes:{http://snomed.info/sct 431855005}\">Patient reevaluation</span></p></div>"
+  ] ; # 
+  fhir:basedOn ( [
+     fhir:link <http://example.com/fhir/example/CarePlan/carePlan> ;
+     fhir:reference [ fhir:v "CarePlan/carePlan" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "plan"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:710830005 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "710830005" ] ;
+       fhir:display [ fhir:v "Reevaluation" ]
+     ] ) ;
+     fhir:text [ fhir:v "Reevaluation" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://example.com/fhir/example/Patient/PatientTCCS> ;
+     fhir:reference [ fhir:v "Patient/PatientTCCS" ]
+  ] ; # 
+  fhir:occurrence [
+     a fhir:Timing ;
+     fhir:repeat [
+       fhir:frequency [ fhir:v "1"^^xsd:positiveInteger ] ;
+       fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+       fhir:periodUnit [ fhir:v "d" ]
+     ]
+  ] ; # 
+  fhir:authoredOn [ fhir:v "2024-02-12T12:00:00Z"^^xsd:dateTime] ; # 
+  fhir:requester [
+     fhir:link <http://example.com/fhir/example/Practitioner/Practitioner1> ;
+     fhir:reference [ fhir:v "Practitioner/Practitioner1" ]
+  ] ; # 
+  fhir:reasonCode ( [
+     fhir:coding ( [
+       a sct:431855005 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "431855005" ] ;
+       fhir:display [ fhir:v "Patient reevaluation" ]
+     ] ) ;
+     fhir:text [ fhir:v "Patient reevaluation" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

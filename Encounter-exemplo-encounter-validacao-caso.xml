@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Encounter xmlns="http://hl7.org/fhir">
+  <id value="exemplo-encounter-validacao-caso"/>
+  <meta>
+    <profile value="https://hl7.pt/fhir/community-health/StructureDefinition/encounter-validation"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Encounter exemplo-encounter-validacao-caso</b></p><a name="exemplo-encounter-validacao-caso"> </a><a name="hcexemplo-encounter-validacao-caso"> </a><a name="exemplo-encounter-validacao-caso-en-US"> </a><p><b>status</b>: Finished</p><p><b>class</b>: <a href="http://terminology.hl7.org/6.1.0/CodeSystem-v3-ActCode.html#v3-ActCode-EMER">ActCode EMER</a>: emergency</p><p><b>type</b>: <span title="Codes:{https://ehr.p5.pt/terminology/CodeSystem/service avaliador-de-sintomas}">Avaliador de Sintomas</span></p><p><b>serviceType</b>: <span title="Codes:{https://ehr.p5.pt/terminology/CodeSystem/service-type validation}">Validação de caso</span></p><p><b>subject</b>: <a href="Patient-exemplo-patient-1.html">John Doe  Male, DoB: 2009-02-09 ( https://ehr.testing.p5.pt/api/fhir#12345678)</a></p><p><b>episodeOfCare</b>: <a href="EpisodeOfCare-exemplo-episodeofcare-episodio-activo.html">EpisodeOfCare: status = active; type = Urgent; period = 2024-06-10 21:47:44+0000 --&gt; (ongoing)</a></p><p><b>period</b>: 2024-10-06 13:59:52+0000 --&gt; (ongoing)</p></div>
+  </text>
+  <status value="finished"/>
+  <class>
+    <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+    <code value="EMER"/>
+    <display value="emergency"/>
+  </class>
+  <type>
+    <coding>
+      <system value="https://ehr.p5.pt/terminology/CodeSystem/service"/>
+      <code value="avaliador-de-sintomas"/>
+      <display value="Avaliador de Sintomas"/>
+    </coding>
+  </type>
+  <serviceType>
+    <coding>
+      <system value="https://ehr.p5.pt/terminology/CodeSystem/service-type"/>
+      <code value="validation"/>
+      <display value="Validação de caso"/>
+    </coding>
+  </serviceType>
+  <subject>
+    <reference value="Patient/exemplo-patient-1"/>
+  </subject>
+  <episodeOfCare>
+    <reference value="EpisodeOfCare/exemplo-episodeofcare-episodio-activo"/>
+  </episodeOfCare>
+  <period>
+    <start value="2024-10-06T13:59:52+00:00"/>
+  </period>
+</Encounter>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationRequest xmlns="http://hl7.org/fhir">
+  <id value="exemplo-medicationRequest-medicacao-prescrita"/>
+  <meta>
+    <profile value="https://hl7.pt/fhir/community-health/StructureDefinition/medication-request-standard"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: MedicationRequest exemplo-medicationRequest-medicacao-prescrita</b></p><a name="exemplo-medicationRequest-medicacao-prescrita"> </a><a name="hcexemplo-medicationRequest-medicacao-prescrita"> </a><a name="exemplo-medicationRequest-medicacao-prescrita-en-US"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><p><b>medication</b>: <a href="Medication-exemplo-medication-paracetamol.html">Medication ben-u-ron Paracetamol 500 mg</a></p><p><b>subject</b>: <a href="Patient-exemplo-patient-1.html">John Doe  Male, DoB: 2009-02-09 ( https://ehr.testing.p5.pt/api/fhir#12345678)</a></p><p><b>encounter</b>: <a href="Encounter-exemplo-encounter-seguimento.html">Encounter: status = finished; class = emergency (ActCode#EMER); type = Avaliador de Sintomas; serviceType = Seguimento de caso; period = 2024-10-10 14:00:06+0000 --&gt; (ongoing)</a></p><blockquote><p><b>dosageInstruction</b></p><p><b>timing</b>: Code , Duration 3?ngen-7? , Once</p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>1 Comprimido<span style="background: LightGoldenRodYellow"> (Details: Orderable Drug Form  codePILL = 'Pill')</span></td></tr></table></blockquote></div>
+  </text>
+  <status value="active"/>
+  <intent value="order"/>
+  <medicationReference>
+    <reference value="Medication/exemplo-medication-paracetamol"/>
+  </medicationReference>
+  <subject>
+    <reference value="Patient/exemplo-patient-1"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/exemplo-encounter-seguimento"/>
+  </encounter>
+  <dosageInstruction>
+    <timing>
+      <repeat>
+        <duration value="3"/>
+        <durationUnit value="d"/>
+      </repeat>
+      <code>
+        <coding>
+          <system value="https://ehr.testing.p5.pt/api/fhir/CodeSystem/medication-frequency"/>
+          <code value="8-8-h"/>
+          <display value="8/8 h"/>
+        </coding>
+      </code>
+    </timing>
+    <doseAndRate>
+      <doseQuantity>
+        <value value="1"/>
+        <unit value="Comprimido"/>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm"/>
+        <code value="PILL"/>
+      </doseQuantity>
+    </doseAndRate>
+  </dosageInstruction>
+</MedicationRequest>
