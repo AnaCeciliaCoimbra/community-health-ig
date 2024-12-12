@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Condition xmlns="http://hl7.org/fhir">
+  <id value="ConditionCold"/>
+  <meta>
+    <profile value="http://triage-counseling-clinical-system.org/fhir/StructureDefinition/Diagnosis"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Condition ConditionCold</b></p><a name="ConditionCold"> </a><a name="hcConditionCold"> </a><a name="ConditionCold-en-US"> </a><p><b>identifier</b>: <code>http://example.org/identifiers</code>/163</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 82272006}, {http://hl7.org/fhir/sid/icd-10 J00}, {http://www.kith.no/snomed/icpc2 R74}">Common cold</span></p><p><b>subject</b>: <a href="Patient-PatientTCCS.html">John Doe  Male, DoB: 2009-02-09 ( https://ehr.testing.p5.pt/api/fhir#12345678)</a></p><p><b>encounter</b>: <a href="Encounter-EncounterFirst.html">Encounter: status = finished; class = Emergency (ActCode#EMER); type = </a></p></div>
+  </text>
+  <identifier>
+    <system value="http://example.org/identifiers"/>
+    <value value="163"/>
+  </identifier>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="82272006"/>
+      <display value="Common cold"/>
+    </coding>
+    <coding>
+      <system value="http://hl7.org/fhir/sid/icd-10"/>
+      <code value="J00"/>
+      <display value="Acute nasopharyngitis [common cold]"/>
+    </coding>
+    <coding>
+      <system value="http://www.kith.no/snomed/icpc2"/>
+      <code value="R74"/>
+      <display value="Upper respiratory infection acute"/>
+    </coding>
+    <text value="Common cold"/>
+  </code>
+  <subject>
+    <reference value="Patient/PatientTCCS"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/EncounterFirst"/>
+  </encounter>
+</Condition>

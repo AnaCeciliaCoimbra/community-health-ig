@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Condition xmlns="http://hl7.org/fhir">
+  <id value="exemplo-condition-disturbio-visual"/>
+  <meta>
+    <profile value="https://hl7.pt/fhir/community-health/StructureDefinition/condition-diagnosis"/>
+    <profile value="http://triage-counseling-clinical-system.org/fhir/StructureDefinition/Diagnosis"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Condition exemplo-condition-disturbio-visual</b></p><a name="exemplo-condition-disturbio-visual"> </a><a name="hcexemplo-condition-disturbio-visual"> </a><a name="exemplo-condition-disturbio-visual-en-US"> </a><p><b>com/fhir/example/StructureDefinition/probability</b>: 75.57</p><p><b>category</b>: <span title="Codes:{http://hl7.org/fhir/ValueSet/condition-category encounter-diagnosis}">encounter-diagnosis</span></p><p><b>code</b>: <span title="Codes:{https://ehr.p5.pt/terminology/CodeSystem/conditions 83}, {http://snomed.info/sct 63102001}, {http://hl7.org/fhir/sid/icd-10 H53}, {http://ehr.p5.pt/terminology/icpc2 F05}">Visual disturbance</span></p><p><b>subject</b>: <a href="Patient-exemplo-patient-1.html">John Doe  Male, DoB: 2009-02-09 ( https://ehr.testing.p5.pt/api/fhir#12345678)</a></p><p><b>encounter</b>: <a href="Encounter-exemplo-encounter-ia-registo.html">Encounter: status = finished; class = emergency (ActCode#EMER); type = Avaliador de Sintomas; serviceType = Algoritmo de Inteligência Artificial; period = 2024-11-18 19:20:00+0000 --&gt; 2024-11-18 19:20:00+0000</a></p></div>
+  </text>
+  <extension url="http://example.com/fhir/example/StructureDefinition/probability">
+    <valueDecimal value="75.57"/>
+  </extension>
+  <category>
+    <coding>
+      <system value="http://hl7.org/fhir/ValueSet/condition-category"/>
+      <code value="encounter-diagnosis"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="https://ehr.p5.pt/terminology/CodeSystem/conditions"/>
+      <code value="83"/>
+      <display value="Visual disturbance"/>
+    </coding>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="63102001"/>
+      <display value="Visual disturbance (disorder)"/>
+    </coding>
+    <coding>
+      <system value="http://hl7.org/fhir/sid/icd-10"/>
+      <code value="H53"/>
+      <display value="Visual disturbances"/>
+    </coding>
+    <coding>
+      <system value="http://ehr.p5.pt/terminology/icpc2"/>
+      <code value="F05"/>
+      <display value="Visual disturbance other"/>
+    </coding>
+    <text value="Visual disturbance"/>
+  </code>
+  <subject>
+    <reference value="Patient/exemplo-patient-1"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/exemplo-encounter-ia-registo"/>
+  </encounter>
+</Condition>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="episode-of-care-status-subset"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet episode-of-care-status-subset</b></p><a name="episode-of-care-status-subset"> </a><a name="hcepisode-of-care-status-subset"> </a><a name="episode-of-care-status-subset-en-US"> </a><ul><li>Include these codes as defined in <a href="http://hl7.org/fhir/R4/codesystem-episode-of-care-status.html"><code>http://hl7.org/fhir/episode-of-care-status</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="http://hl7.org/fhir/R4/codesystem-episode-of-care-status.html#episode-of-care-status-active">active</a></td><td>active</td><td>This episode of care is current.</td></tr><tr><td><a href="http://hl7.org/fhir/R4/codesystem-episode-of-care-status.html#episode-of-care-status-waitlist">waitlist</a></td><td>waitlist</td><td>This episode has been placed on a waitlist, pending the episode being made active (or cancelled).</td></tr><tr><td><a href="http://hl7.org/fhir/R4/codesystem-episode-of-care-status.html#episode-of-care-status-finished">finished</a></td><td>finished</td><td>This episode of care is finished and the organization is not expecting to be providing further care to the patient. Can also be known as &quot;closed&quot;, &quot;completed&quot; or other similar terms.</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://hl7.pt/fhir/community-health/ValueSet/episode-of-care-status-subset"/>
+  <version value="1.0.1"/>
+  <name value="EpisodeOfCareStatusSubset"/>
+  <title value="Subset of Episode Of Care Status"/>
+  <status value="active"/>
+  <date value="2024-12-12T12:37:03+00:00"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="A subset of allowed statuses for EpisodeOfCare."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/episode-of-care-status"/>
+      <concept>
+        <code value="active"/>
+        <display value="active"/>
+      </concept>
+      <concept>
+        <code value="waitlist"/>
+        <display value="waitlist"/>
+      </concept>
+      <concept>
+        <code value="finished"/>
+        <display value="finished"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

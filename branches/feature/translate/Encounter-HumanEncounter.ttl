@@ -1,0 +1,49 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.com/fhir/example/Encounter/HumanEncounter> a fhir:Encounter ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "HumanEncounter"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://ehr.testing.p5.pt/api/fhir/StructureDefinition/HumanEncounter"^^xsd:anyURI ;
+       fhir:link <https://ehr.testing.p5.pt/api/fhir/StructureDefinition/HumanEncounter>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Encounter HumanEncounter</b></p><a name=\"HumanEncounter\"> </a><a name=\"hcHumanEncounter\"> </a><a name=\"HumanEncounter-en-US\"> </a><p><b>status</b>: Finished</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-v3-ActCode.html#v3-ActCode-EMER\">ActCode</a> EMER: Emergency</p><p><b>subject</b>: <a href=\"Patient-PatientTCCS.html\">John Doe  Male, DoB: 2009-02-09 ( https://ehr.testing.p5.pt/api/fhir#12345678)</a></p><p><b>episodeOfCare</b>: <a href=\"EpisodeOfCare-EpisodeOfCareTCCS.html\">EpisodeOfCare: status = active; period = 2024-01-28 08:00:00+0000 --&gt; (ongoing)</a></p><blockquote><p><b>participant</b></p></blockquote><blockquote><p><b>diagnosis</b></p><p><b>condition</b>: <a href=\"Condition-ConditionCold.html\">Condition Common cold</a></p></blockquote><blockquote><p><b>diagnosis</b></p><p><b>condition</b>: <a href=\"Condition-ConditionTonsillitis.html\">Condition Tonsillitis (disorder)</a></p></blockquote></div>"
+  ] ; # 
+  fhir:status [ fhir:v "finished"] ; # 
+  fhir:class [
+     fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "EMER" ] ;
+     fhir:display [ fhir:v "Emergency" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://example.com/fhir/example/Patient/PatientTCCS> ;
+     fhir:reference [ fhir:v "Patient/PatientTCCS" ]
+  ] ; # 
+  fhir:episodeOfCare ( [
+     fhir:link <http://example.com/fhir/example/EpisodeOfCare/EpisodeOfCareTCCS> ;
+     fhir:reference [ fhir:v "EpisodeOfCare/EpisodeOfCareTCCS" ]
+  ] ) ; # 
+  fhir:participant ( [] ) ; # 
+  fhir:diagnosis ( [
+     fhir:condition [
+       fhir:link <http://example.com/fhir/example/Condition/ConditionCold> ;
+       fhir:reference [ fhir:v "Condition/ConditionCold" ]
+     ]
+  ] [
+     fhir:condition [
+       fhir:link <http://example.com/fhir/example/Condition/ConditionTonsillitis> ;
+       fhir:reference [ fhir:v "Condition/ConditionTonsillitis" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

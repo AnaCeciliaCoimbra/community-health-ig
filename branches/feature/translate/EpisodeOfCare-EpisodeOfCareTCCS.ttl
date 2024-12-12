@@ -1,0 +1,39 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.com/fhir/example/EpisodeOfCare/EpisodeOfCareTCCS> a fhir:EpisodeOfCare ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "EpisodeOfCareTCCS"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://ehr.testing.p5.pt/api/fhir/StructureDefinition/EpisodeOfCareTCCS"^^xsd:anyURI ;
+       fhir:link <https://ehr.testing.p5.pt/api/fhir/StructureDefinition/EpisodeOfCareTCCS>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: EpisodeOfCare EpisodeOfCareTCCS</b></p><a name=\"EpisodeOfCareTCCS\"> </a><a name=\"hcEpisodeOfCareTCCS\"> </a><a name=\"EpisodeOfCareTCCS-en-US\"> </a><p><b>status</b>: Active</p><p><b>patient</b>: <a href=\"Patient-PatientTCCS.html\">John Doe  Male, DoB: 2009-02-09 ( https://ehr.testing.p5.pt/api/fhir#12345678)</a></p><p><b>managingOrganization</b>: <a href=\"Organization-P5Organization.html\">Organization P5</a></p><p><b>period</b>: 2024-01-28 08:00:00+0000 --&gt; (ongoing)</p><p><b>careManager</b>: <a href=\"Practitioner-Practitioner1.html\">Practitioner John Smith </a></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:patient [
+     fhir:link <http://example.com/fhir/example/Patient/PatientTCCS> ;
+     fhir:reference [ fhir:v "Patient/PatientTCCS" ]
+  ] ; # 
+  fhir:managingOrganization [
+     fhir:link <http://example.com/fhir/example/Organization/P5Organization> ;
+     fhir:reference [ fhir:v "Organization/P5Organization" ]
+  ] ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2024-01-28T08:00:00.000Z"^^xsd:dateTime ]
+  ] ; # 
+  fhir:careManager [
+     fhir:link <http://example.com/fhir/example/Practitioner/Practitioner1> ;
+     fhir:reference [ fhir:v "Practitioner/Practitioner1" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

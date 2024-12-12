@@ -1,0 +1,30 @@
+{
+  "resourceType" : "Patient",
+  "id" : "exemplo-patient-2",
+  "meta" : {
+    "profile" : ["https://hl7.pt/fhir/community-health/StructureDefinition/patient-tccs",
+    "https://ehr.testing.p5.pt/api/fhir/StructureDefinition/PatientTCCS"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient exemplo-patient-2</b></p><a name=\"exemplo-patient-2\"> </a><a name=\"hcexemplo-patient-2\"> </a><a name=\"exemplo-patient-2-en-US\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Jane Smith  Female, DoB: 2010-05-15 ( https://ehr.testing.p5.pt/api/fhir#87654321)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\"><ul><li><a href=\"tel:+351888888888\">+351888888888</a></li><li><a href=\"mailto:jane.smith@email.com\">jane.smith@email.com</a></li></ul></td></tr></table></div>"
+  },
+  "identifier" : [{
+    "system" : "https://ehr.testing.p5.pt/api/fhir",
+    "value" : "87654321"
+  }],
+  "name" : [{
+    "family" : "Smith",
+    "given" : ["Jane"]
+  }],
+  "telecom" : [{
+    "system" : "phone",
+    "value" : "+351888888888"
+  },
+  {
+    "system" : "email",
+    "value" : "jane.smith@email.com"
+  }],
+  "gender" : "female",
+  "birthDate" : "2010-05-15"
+}

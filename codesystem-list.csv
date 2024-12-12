@@ -1,0 +1,2 @@
+URL,Version,Status,OIDs,Name,Title,Description,Used
+https://hl7.pt/fhir/community-health/CodeSystem/symptom-properties,1.0.1,active,,SymptomPropertiesCodeSystem,Symptom Properties CodeSystem,"CodeSystem defining properties related to symptoms.",

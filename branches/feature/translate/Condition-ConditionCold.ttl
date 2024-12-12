@@ -1,0 +1,53 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.com/fhir/example/Condition/ConditionCold> a fhir:Condition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ConditionCold"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://triage-counseling-clinical-system.org/fhir/StructureDefinition/Diagnosis"^^xsd:anyURI ;
+       fhir:link <http://triage-counseling-clinical-system.org/fhir/StructureDefinition/Diagnosis>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Condition ConditionCold</b></p><a name=\"ConditionCold\"> </a><a name=\"hcConditionCold\"> </a><a name=\"ConditionCold-en-US\"> </a><p><b>identifier</b>: <code>http://example.org/identifiers</code>/163</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 82272006}, {http://hl7.org/fhir/sid/icd-10 J00}, {http://www.kith.no/snomed/icpc2 R74}\">Common cold</span></p><p><b>subject</b>: <a href=\"Patient-PatientTCCS.html\">John Doe  Male, DoB: 2009-02-09 ( https://ehr.testing.p5.pt/api/fhir#12345678)</a></p><p><b>encounter</b>: <a href=\"Encounter-EncounterFirst.html\">Encounter: status = finished; class = Emergency (ActCode#EMER); type = </a></p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://example.org/identifiers"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "163" ]
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:82272006 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "82272006" ] ;
+       fhir:display [ fhir:v "Common cold" ]
+     ] [
+       fhir:system [ fhir:v "http://hl7.org/fhir/sid/icd-10"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "J00" ] ;
+       fhir:display [ fhir:v "Acute nasopharyngitis [common cold]" ]
+     ] [
+       fhir:system [ fhir:v "http://www.kith.no/snomed/icpc2"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "R74" ] ;
+       fhir:display [ fhir:v "Upper respiratory infection acute" ]
+     ] ) ;
+     fhir:text [ fhir:v "Common cold" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://example.com/fhir/example/Patient/PatientTCCS> ;
+     fhir:reference [ fhir:v "Patient/PatientTCCS" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <http://example.com/fhir/example/Encounter/EncounterFirst> ;
+     fhir:reference [ fhir:v "Encounter/EncounterFirst" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

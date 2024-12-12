@@ -1,0 +1,254 @@
+[
+  {
+    "id" : "my-ig",
+    "type" : "ImplementationGuide",
+    "url" : "http://hl7.pt/fhir/ImplementationGuide/hl7.fhir.pt.community-health",
+    "version" : "1.0.1",
+    "name" : "CommunityHealthIG"
+  },
+  {
+    "id" : "symptom-properties",
+    "type" : "CodeSystem",
+    "url" : "https://hl7.pt/fhir/community-health/CodeSystem/symptom-properties",
+    "version" : "1.0.1",
+    "name" : "SymptomPropertiesCodeSystem"
+  },
+  {
+    "id" : "Extension-GrantedOrganization",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/community-health/StructureDefinition/Extension-GrantedOrganization",
+    "version" : "1.0.1",
+    "name" : "ExtensionOrganization"
+  },
+  {
+    "id" : "HumanMessages",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/community-health/StructureDefinition/HumanMessages",
+    "version" : "1.0.1",
+    "name" : "HumanMessages"
+  },
+  {
+    "id" : "PatientIdentifier",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/community-health/StructureDefinition/PatientIdentifier",
+    "version" : "1.0.1",
+    "name" : "PatientIdentifier"
+  },
+  {
+    "id" : "RelatedPersonTCCS",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/community-health/StructureDefinition/RelatedPersonTCCS",
+    "version" : "1.0.1",
+    "name" : "RelatedPersonTCCS"
+  },
+  {
+    "id" : "allergy-intolerance-patient-allergy",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/community-health/StructureDefinition/allergy-intolerance-patient-allergy",
+    "version" : "1.0.1",
+    "name" : "AllergyIntolerancePatientAllergy"
+  },
+  {
+    "id" : "care-plan-treatmentPlan",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/community-health/StructureDefinition/care-plan-treatmentPlan",
+    "version" : "1.0.1",
+    "name" : "CarePlanTreatmentPlan"
+  },
+  {
+    "id" : "condition-chronic-disease",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/community-health/StructureDefinition/condition-chronic-disease",
+    "version" : "1.0.1",
+    "name" : "ConditionChronicDisease"
+  },
+  {
+    "id" : "condition-chronic-disease-asthma",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/community-health/StructureDefinition/condition-chronic-disease-asthma",
+    "version" : "1.0.1",
+    "name" : "ConditionChronicDiseaseAsthma"
+  },
+  {
+    "id" : "condition-chronic-disease-chronic-obstructive-pulmonary-disease",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/community-health/StructureDefinition/condition-chronic-disease-chronic-obstructive-pulmonary-disease",
+    "version" : "1.0.1",
+    "name" : "ConditionChronicChronicObstructivePulmonaryDisease"
+  },
+  {
+    "id" : "condition-chronic-disease-diabetes",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/community-health/StructureDefinition/condition-chronic-disease-diabetes",
+    "version" : "1.0.1",
+    "name" : "ConditionChronicDiseaseDiabetes"
+  },
+  {
+    "id" : "condition-chronic-disease-dyslipidemia",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/community-health/StructureDefinition/condition-chronic-disease-dyslipidemia",
+    "version" : "1.0.1",
+    "name" : "ConditionChronicDiseaseDyslipidemia"
+  },
+  {
+    "id" : "condition-chronic-disease-hypertension",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/community-health/StructureDefinition/condition-chronic-disease-hypertension",
+    "version" : "1.0.1",
+    "name" : "ConditionChronicDiseaseHypertension"
+  },
+  {
+    "id" : "condition-critical-disease",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/community-health/StructureDefinition/condition-critical-disease",
+    "version" : "1.0.1",
+    "name" : "ConditionCriticalDisease"
+  },
+  {
+    "id" : "condition-diagnosis",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/community-health/StructureDefinition/condition-diagnosis",
+    "version" : "1.0.1",
+    "name" : "ConditionDiagnosis"
+  },
+  {
+    "id" : "encounter-ai-algorithm",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/community-health/StructureDefinition/encounter-ai-algorithm",
+    "version" : "1.0.1",
+    "name" : "EncounterAIAlgorithm"
+  },
+  {
+    "id" : "encounter-finish",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/community-health/StructureDefinition/encounter-finish",
+    "version" : "1.0.1",
+    "name" : "EncounterFinish"
+  },
+  {
+    "id" : "encounter-follow-up",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/community-health/StructureDefinition/encounter-follow-up",
+    "version" : "1.0.1",
+    "name" : "EncounterFollowUp"
+  },
+  {
+    "id" : "encounter-validation",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/community-health/StructureDefinition/encounter-validation",
+    "version" : "1.0.1",
+    "name" : "EncounterValidation"
+  },
+  {
+    "id" : "episodeOfCare-standard",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/community-health/StructureDefinition/episodeOfCare-standard",
+    "version" : "1.0.1",
+    "name" : "EpisodeOfCareStandard"
+  },
+  {
+    "id" : "flag-critical-disease",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/community-health/StructureDefinition/flag-critical-disease",
+    "version" : "1.0.1",
+    "name" : "FlagCriticalDisease"
+  },
+  {
+    "id" : "flag-detail",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/community-health/StructureDefinition/flag-detail",
+    "version" : "1.0.1",
+    "name" : "ExtensionFlagDetail"
+  },
+  {
+    "id" : "immunization-vaccine",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/community-health/StructureDefinition/immunization-vaccine",
+    "version" : "1.0.1",
+    "name" : "ImmunizationVaccine"
+  },
+  {
+    "id" : "medication-request-standard",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/community-health/StructureDefinition/medication-request-standard",
+    "version" : "1.0.1",
+    "name" : "MedicationRequestStandard"
+  },
+  {
+    "id" : "medication-standard",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/community-health/StructureDefinition/medication-standard",
+    "version" : "1.0.1",
+    "name" : "MedicationStandard"
+  },
+  {
+    "id" : "medication-statement-standard",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/community-health/StructureDefinition/medication-statement-standard",
+    "version" : "1.0.1",
+    "name" : "MedicationStatementStandard"
+  },
+  {
+    "id" : "observation-number-healthcare-visits-last-12-months",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/community-health/StructureDefinition/observation-number-healthcare-visits-last-12-months",
+    "version" : "1.0.1",
+    "name" : "ObservationNumberHealthcareVisitsLast12Months"
+  },
+  {
+    "id" : "observation-pregnancy",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/community-health/StructureDefinition/observation-pregnancy",
+    "version" : "1.0.1",
+    "name" : "ObservationPregnancy"
+  },
+  {
+    "id" : "observation-symptom",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/community-health/StructureDefinition/observation-symptom",
+    "version" : "1.0.1",
+    "name" : "ObservationSymptom"
+  },
+  {
+    "id" : "observation-symptom-duration-body-site",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/community-health/StructureDefinition/observation-symptom-duration-body-site",
+    "version" : "1.0.1",
+    "name" : "ObservationSymptomDurationBodySite"
+  },
+  {
+    "id" : "observation-symptom-severity",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/community-health/StructureDefinition/observation-symptom-severity",
+    "version" : "1.0.1",
+    "name" : "ObservationSymptomSeverity"
+  },
+  {
+    "id" : "patient-tccs",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/community-health/StructureDefinition/patient-tccs",
+    "version" : "1.0.1",
+    "name" : "PatientTCCS"
+  },
+  {
+    "id" : "probability",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/community-health/StructureDefinition/probability",
+    "version" : "1.0.1",
+    "name" : "Probability"
+  },
+  {
+    "id" : "questionnaire-response-app",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/community-health/StructureDefinition/questionnaire-response-app",
+    "version" : "1.0.1",
+    "name" : "QuestionnaireResponseApp"
+  },
+  {
+    "id" : "episode-of-care-status-subset",
+    "type" : "ValueSet",
+    "url" : "https://hl7.pt/fhir/community-health/ValueSet/episode-of-care-status-subset",
+    "version" : "1.0.1",
+    "name" : "EpisodeOfCareStatusSubset"
+  }
+]

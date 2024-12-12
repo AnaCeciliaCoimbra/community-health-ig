@@ -1,0 +1,43 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.pt/fhir/Patient/exemplo-patient-2> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "exemplo-patient-2"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://hl7.pt/fhir/community-health/StructureDefinition/patient-tccs"^^xsd:anyURI ;
+       fhir:link <https://hl7.pt/fhir/community-health/StructureDefinition/patient-tccs>
+     ] [
+       fhir:v "https://ehr.testing.p5.pt/api/fhir/StructureDefinition/PatientTCCS"^^xsd:anyURI ;
+       fhir:link <https://ehr.testing.p5.pt/api/fhir/StructureDefinition/PatientTCCS>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient exemplo-patient-2</b></p><a name=\"exemplo-patient-2\"> </a><a name=\"hcexemplo-patient-2\"> </a><a name=\"exemplo-patient-2-en-US\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Jane Smith  Female, DoB: 2010-05-15 ( https://ehr.testing.p5.pt/api/fhir#87654321)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\"><ul><li><a href=\"tel:+351888888888\">+351888888888</a></li><li><a href=\"mailto:jane.smith@email.com\">jane.smith@email.com</a></li></ul></td></tr></table></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://ehr.testing.p5.pt/api/fhir"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "87654321" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Smith" ] ;
+     fhir:given ( [ fhir:v "Jane" ] )
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "+351888888888" ]
+  ] [
+     fhir:system [ fhir:v "email" ] ;
+     fhir:value [ fhir:v "jane.smith@email.com" ]
+  ] ) ; # 
+  fhir:gender [ fhir:v "female"] ; # 
+  fhir:birthDate [ fhir:v "2010-05-15"^^xsd:date] . # 
+
+# -------------------------------------------------------------------------------------
+

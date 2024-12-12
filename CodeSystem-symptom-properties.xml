@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="symptom-properties"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem symptom-properties</b></p><a name="symptom-properties"> </a><a name="hcsymptom-properties"> </a><a name="symptom-properties-en-US"> </a><p>This  code system <code>https://hl7.pt/fhir/community-health/CodeSystem/symptom-properties</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">isSpecific<a name="symptom-properties-isSpecific"> </a></td><td>Specific symptom</td></tr><tr><td style="white-space:nowrap">isNonSpecific<a name="symptom-properties-isNonSpecific"> </a></td><td>Non-specific symptom</td></tr><tr><td style="white-space:nowrap">isGeneral<a name="symptom-properties-isGeneral"> </a></td><td>General symptom</td></tr><tr><td style="white-space:nowrap">parentId<a name="symptom-properties-parentId"> </a></td><td>Parent ID</td></tr></table></div>
+  </text>
+  <url value="https://hl7.pt/fhir/community-health/CodeSystem/symptom-properties"/>
+  <version value="1.0.1"/>
+  <name value="SymptomPropertiesCodeSystem"/>
+  <title value="Symptom Properties CodeSystem"/>
+  <status value="active"/>
+  <date value="2024-12-12T12:37:03+00:00"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="CodeSystem defining properties related to symptoms."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="isSpecific"/>
+    <display value="Specific symptom"/>
+  </concept>
+  <concept>
+    <code value="isNonSpecific"/>
+    <display value="Non-specific symptom"/>
+  </concept>
+  <concept>
+    <code value="isGeneral"/>
+    <display value="General symptom"/>
+  </concept>
+  <concept>
+    <code value="parentId"/>
+    <display value="Parent ID"/>
+  </concept>
+</CodeSystem>

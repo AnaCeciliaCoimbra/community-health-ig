@@ -1,0 +1,295 @@
+{
+  "package": "my-ig",
+  "version": "1.0.1",
+  "fhirVersion": "4.0.1",
+  "jurisdiction": "001",
+  "extensions": [
+    {
+      "url": "https://hl7.pt/fhir/community-health/StructureDefinition/Extension-GrantedOrganization",
+      "title": "Extension -  Granted Organization",
+      "types": [
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta",
+        "Reference"
+      ]
+    },
+    {
+      "url": "https://hl7.pt/fhir/community-health/StructureDefinition/PatientIdentifier",
+      "title": "Extension Patient Identifier",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "https://hl7.pt/fhir/community-health/StructureDefinition/flag-detail",
+      "title": "Extension - Flag Detail",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "https://hl7.pt/fhir/community-health/StructureDefinition/probability",
+      "title": "Extension Probability",
+      "types": [
+        "decimal"
+      ]
+    }
+  ],
+  "profiles": {
+    "Communication": [
+      {
+        "url": "https://hl7.pt/fhir/community-health/StructureDefinition/HumanMessages",
+        "title": "Messages"
+      }
+    ],
+    "RelatedPerson": [
+      {
+        "url": "https://hl7.pt/fhir/community-health/StructureDefinition/RelatedPersonTCCS",
+        "title": "Related Person"
+      }
+    ],
+    "AllergyIntolerance": [
+      {
+        "url": "https://hl7.pt/fhir/community-health/StructureDefinition/allergy-intolerance-patient-allergy",
+        "title": "AllergyIntolerance - Alergia do paciente registada"
+      }
+    ],
+    "CarePlan": [
+      {
+        "url": "https://hl7.pt/fhir/community-health/StructureDefinition/care-plan-treatmentPlan",
+        "title": "CarePlan - Plano de tratamento"
+      }
+    ],
+    "Condition": [
+      {
+        "url": "https://hl7.pt/fhir/community-health/StructureDefinition/condition-chronic-disease",
+        "title": "Condition - Doenças Crônicas"
+      },
+      {
+        "url": "https://hl7.pt/fhir/community-health/StructureDefinition/condition-chronic-disease-asthma",
+        "title": "Condition - Doenças Crônicas - Asma"
+      },
+      {
+        "url": "https://hl7.pt/fhir/community-health/StructureDefinition/condition-chronic-disease-chronic-obstructive-pulmonary-disease",
+        "title": "Condition - Doenças Crônicas - DPOC"
+      },
+      {
+        "url": "https://hl7.pt/fhir/community-health/StructureDefinition/condition-chronic-disease-diabetes",
+        "title": "Condition - Doenças Crônicas - Diabetes"
+      },
+      {
+        "url": "https://hl7.pt/fhir/community-health/StructureDefinition/condition-chronic-disease-dyslipidemia",
+        "title": "Condition - Doenças Crônicas - Dislipidemia"
+      },
+      {
+        "url": "https://hl7.pt/fhir/community-health/StructureDefinition/condition-chronic-disease-hypertension",
+        "title": "Condition - Doenças Crônicas - Hipertensão"
+      },
+      {
+        "url": "https://hl7.pt/fhir/community-health/StructureDefinition/condition-critical-disease",
+        "title": "Condition - Doença de Risco"
+      },
+      {
+        "url": "https://hl7.pt/fhir/community-health/StructureDefinition/condition-diagnosis",
+        "title": "Condition - Diagnosis"
+      }
+    ],
+    "Encounter": [
+      {
+        "url": "https://hl7.pt/fhir/community-health/StructureDefinition/encounter-ai-algorithm",
+        "title": "Encounter - Iteraction with the artificial intelligence algorithm"
+      },
+      {
+        "url": "https://hl7.pt/fhir/community-health/StructureDefinition/encounter-finish",
+        "title": "Encounter - Finish Interaction"
+      },
+      {
+        "url": "https://hl7.pt/fhir/community-health/StructureDefinition/encounter-follow-up",
+        "title": "Encounter - Follow-Up Interaction"
+      },
+      {
+        "url": "https://hl7.pt/fhir/community-health/StructureDefinition/encounter-validation",
+        "title": "Encounter - Validation Iteraction"
+      }
+    ],
+    "EpisodeOfCare": [
+      {
+        "url": "https://hl7.pt/fhir/community-health/StructureDefinition/episodeOfCare-standard",
+        "title": "Episode Of Care"
+      }
+    ],
+    "Flag": [
+      {
+        "url": "https://hl7.pt/fhir/community-health/StructureDefinition/flag-critical-disease",
+        "title": "Flag - Doença critica"
+      }
+    ],
+    "Immunization": [
+      {
+        "url": "https://hl7.pt/fhir/community-health/StructureDefinition/immunization-vaccine",
+        "title": "Immunization - Vacinação"
+      }
+    ],
+    "MedicationRequest": [
+      {
+        "url": "https://hl7.pt/fhir/community-health/StructureDefinition/medication-request-standard",
+        "title": "MedicationRequest"
+      }
+    ],
+    "Medication": [
+      {
+        "url": "https://hl7.pt/fhir/community-health/StructureDefinition/medication-standard",
+        "title": "Medication - Medicação"
+      }
+    ],
+    "MedicationStatement": [
+      {
+        "url": "https://hl7.pt/fhir/community-health/StructureDefinition/medication-statement-standard",
+        "title": "MedicationStatement"
+      }
+    ],
+    "Observation": [
+      {
+        "url": "https://hl7.pt/fhir/community-health/StructureDefinition/observation-number-healthcare-visits-last-12-months",
+        "title": "Observation - Número de visitas a unidades de saúde nos últimos 12 Meses"
+      },
+      {
+        "url": "https://hl7.pt/fhir/community-health/StructureDefinition/observation-pregnancy",
+        "title": "Observation - Gravidez"
+      },
+      {
+        "url": "https://hl7.pt/fhir/community-health/StructureDefinition/observation-symptom",
+        "title": "Observation - Symptom"
+      },
+      {
+        "url": "https://hl7.pt/fhir/community-health/StructureDefinition/observation-symptom-duration-body-site",
+        "title": "Observation - Symptoms Duration And Body Site"
+      },
+      {
+        "url": "https://hl7.pt/fhir/community-health/StructureDefinition/observation-symptom-severity",
+        "title": "Observation - Severity Symptom"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "https://hl7.pt/fhir/community-health/StructureDefinition/patient-tccs",
+        "title": "Patient - TCCS Patient"
+      }
+    ],
+    "QuestionnaireResponse": [
+      {
+        "url": "https://hl7.pt/fhir/community-health/StructureDefinition/questionnaire-response-app",
+        "title": "Questionnaire Response - Questionário responsido na app"
+      }
+    ]
+  },
+  "usage": {
+    "http://example.com/fhir/example/StructureDefinition/probability": [
+      "Condition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/additional-binding": [
+      "StructureDefinition.differential.element.binding",
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "https://ehr.testing.p5.pt/api/fhir/StructureDefinition/PatientIdentifier": [
+      "RelatedPerson"
+    ],
+    "https://hl7.pt/fhir/community-health/StructureDefinition/PatientIdentifier": [
+      "RelatedPerson"
+    ],
+    "https://hl7.pt/fhir/community-health/StructureDefinition/flag-detail": [
+      "Flag"
+    ],
+    "https://hl7.pt/fhir/community-health/StructureDefinition/probability": [
+      "Condition"
+    ]
+  }
+}

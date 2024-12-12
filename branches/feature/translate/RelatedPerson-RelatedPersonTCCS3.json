@@ -1,0 +1,25 @@
+{
+  "resourceType" : "RelatedPerson",
+  "id" : "RelatedPersonTCCS3",
+  "meta" : {
+    "profile" : ["https://ehr.testing.p5.pt/api/fhir/StructureDefinition/RelatedPersonTCCS"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: RelatedPerson RelatedPersonTCCS3</b></p><a name=\"RelatedPersonTCCS3\"> </a><a name=\"hcRelatedPersonTCCS3\"> </a><a name=\"RelatedPersonTCCS3-en-US\"> </a><p><b>pt/api/fhir/StructureDefinition/PatientIdentifier</b>: <a href=\"Patient-PatientTCCS3.html\">Emily Williams  Female, DoB: 2011-07-03 ( https://ehr.testing.p5.pt/api/fhir#13579246)</a></p><p><b>name</b>: Olivia Williams </p><p><b>telecom</b>: <a href=\"tel:+351666666666\">+351666666666</a></p></div>"
+  },
+  "extension" : [{
+    "url" : "https://ehr.testing.p5.pt/api/fhir/StructureDefinition/PatientIdentifier",
+    "valueReference" : {
+      "reference" : "Patient/PatientTCCS3"
+    }
+  }],
+  "name" : [{
+    "family" : "Williams",
+    "given" : ["Olivia"]
+  }],
+  "telecom" : [{
+    "system" : "phone",
+    "value" : "+351666666666"
+  }]
+}

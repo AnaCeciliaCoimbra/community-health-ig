@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="a271cce4-5c19-40c1-8da2-efd34d8b36ae"/>
+  <meta>
+    <lastUpdated value="2024-12-12T12:37:03.228+00:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="https://hl7.pt/fhir/community-health/ValueSet/episode-of-care-status-subset"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="http://hl7.org/fhir/R4/codesystem-episode-of-care-status.html">codesystem EpisodeOfCareStatus v4.0.1 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 3 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7.org/fhir/episode-of-care-status-active"> </a>  
+                  <a href="http://hl7.org/fhir/R4/codesystem-episode-of-care-status.html#episode-of-care-status-active">active</a>
+                </td>
+                <td>http://hl7.org/fhir/episode-of-care-status</td>
+                <td>active</td>
+                <td>
+                  <div>
+                    <p>This episode of care is current.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7.org/fhir/episode-of-care-status-waitlist"> </a>  
+                  <a href="http://hl7.org/fhir/R4/codesystem-episode-of-care-status.html#episode-of-care-status-waitlist">waitlist</a>
+                </td>
+                <td>http://hl7.org/fhir/episode-of-care-status</td>
+                <td>waitlist</td>
+                <td>
+                  <div>
+                    <p>This episode has been placed on a waitlist, pending the episode being made active (or cancelled).</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7.org/fhir/episode-of-care-status-finished"> </a>  
+                  <a href="http://hl7.org/fhir/R4/codesystem-episode-of-care-status.html#episode-of-care-status-finished">finished</a>
+                </td>
+                <td>http://hl7.org/fhir/episode-of-care-status</td>
+                <td>finished</td>
+                <td>
+                  <div>
+                    <p>This episode of care is finished and the organization is not expecting to be providing further care to the patient. Can also be known as &quot;closed&quot;, &quot;completed&quot; or other similar terms.</p>
+
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://hl7.pt/fhir/community-health/ValueSet/episode-of-care-status-subset"/>
+        <version value="1.0.1"/>
+        <name value="EpisodeOfCareStatusSubset"/>
+        <title value="Subset of Episode Of Care Status"/>
+        <status value="active"/>
+        <date value="2024-12-12T12:37:03+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+            <display value="World"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:686a66dc-adef-472a-bb46-8e4e946ef904"/>
+          <timestamp value="2024-12-12T12:37:59+00:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="warning-draft"/>
+            <valueUri value="http://hl7.org/fhir/episode-of-care-status|4.0.1"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7.org/fhir/episode-of-care-status|4.0.1"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.org/fhir/episode-of-care-status"/>
+            <code value="active"/>
+            <display value="active"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/episode-of-care-status"/>
+            <code value="waitlist"/>
+            <display value="waitlist"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/episode-of-care-status"/>
+            <code value="finished"/>
+            <display value="finished"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>

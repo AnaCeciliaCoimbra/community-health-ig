@@ -1,0 +1,47 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.com/fhir/example/EpisodeOfCare/EpisodeOfCareTCCS2> a fhir:_EpisodeOfCare ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "EpisodeOfCareTCCS2"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://ehr.testing.p5.pt/api/fhir/StructureDefinition/EpisodeOfCareTCCS"^^xsd:anyURI ;
+       fhir:link <https://ehr.testing.p5.pt/api/fhir/StructureDefinition/EpisodeOfCareTCCS>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: EpisodeOfCare EpisodeOfCareTCCS2</b></p><a name=\"EpisodeOfCareTCCS2\"> </a><a name=\"hcEpisodeOfCareTCCS2\"> </a><a name=\"EpisodeOfCareTCCS2-en-US\"> </a><p><b style=\"color: maroon\">Exception Generating Narrative: Unknown modifier extension https://ehr.p5.pt/api/fhir/StructureDefinition/granted-organization </b></p></div>"
+  ] ; # 
+  fhir:modifierExtension ( [
+     fhir:url [ fhir:v "https://ehr.p5.pt/api/fhir/StructureDefinition/granted-organization"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <http://example.com/fhir/example/Organization/def67890> ;
+       fhir:reference [ fhir:v "Organization/def67890" ]
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:patient [
+     fhir:link <http://example.com/fhir/example/Patient/PatientTCCS2> ;
+     fhir:reference [ fhir:v "Patient/PatientTCCS2" ]
+  ] ; # 
+  fhir:managingOrganization [
+     fhir:link <http://example.com/fhir/example/Organization/P5Organization> ;
+     fhir:reference [ fhir:v "Organization/P5Organization" ]
+  ] ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2023-05-20T15:45:00.000Z"^^xsd:dateTime ]
+  ] ; # 
+  fhir:careManager [
+     fhir:link <http://example.com/fhir/example/Practitioner/Practitioner1> ;
+     fhir:reference [ fhir:v "Practitioner/Practitioner1" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

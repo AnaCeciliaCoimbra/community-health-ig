@@ -1,0 +1,30 @@
+{
+  "resourceType" : "Patient",
+  "id" : "exemplo-patient-1",
+  "meta" : {
+    "profile" : ["https://hl7.pt/fhir/community-health/StructureDefinition/patient-tccs",
+    "https://ehr.testing.p5.pt/api/fhir/StructureDefinition/PatientTCCS"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient exemplo-patient-1</b></p><a name=\"exemplo-patient-1\"> </a><a name=\"hcexemplo-patient-1\"> </a><a name=\"exemplo-patient-1-en-US\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">John Doe  Male, DoB: 2009-02-09 ( https://ehr.testing.p5.pt/api/fhir#12345678)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\"><ul><li><a href=\"tel:+351999999999\">+351999999999</a></li><li><a href=\"mailto:testing@email.com\">testing@email.com</a></li></ul></td></tr></table></div>"
+  },
+  "identifier" : [{
+    "system" : "https://ehr.testing.p5.pt/api/fhir",
+    "value" : "12345678"
+  }],
+  "name" : [{
+    "family" : "Doe",
+    "given" : ["John"]
+  }],
+  "telecom" : [{
+    "system" : "phone",
+    "value" : "+351999999999"
+  },
+  {
+    "system" : "email",
+    "value" : "testing@email.com"
+  }],
+  "gender" : "male",
+  "birthDate" : "2009-02-09"
+}

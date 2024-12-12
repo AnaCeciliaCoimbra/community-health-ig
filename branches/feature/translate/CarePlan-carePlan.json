@@ -1,0 +1,42 @@
+{
+  "resourceType" : "CarePlan",
+  "id" : "carePlan",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CarePlan carePlan</b></p><a name=\"carePlan\"> </a><a name=\"hccarePlan\"> </a><a name=\"carePlan-en-US\"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Plan</p><p><b>subject</b>: <a href=\"Patient/PatientTCSS\">Patient/PatientTCSS</a></p><p><b>encounter</b>: <a href=\"Encounter-HumanEncounter.html\">Encounter: status = finished; class = Emergency (ActCode#EMER)</a></p><p><b>period</b>: 2024-02-11 12:00:00+0000 --&gt; 2024-02-15 12:00:00+0000</p><blockquote><p><b>activity</b></p><p><b>reference</b>: <a href=\"MedicationRequest-medicationRequest.html\">MedicationRequest: status = active; intent = order; medication[x] = -&gt;Medication Paracetamol 1000 mg; authoredOn = 2024-02-11 12:00:00+0000</a></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Status</b></td><td><b>DoNotPerform</b></td><td><b>Scheduled[x]</b></td><td><b>Description</b></td></tr><tr><td style=\"display: none\">*</td><td>In Progress</td><td>false</td><td>3 per8 hours</td><td>Take Paracetamol every 8 hours</td></tr></table></blockquote><blockquote><p><b>activity</b></p><p><b>reference</b>: <a href=\"ServiceRequest-reevaluationServiceRequest.html\">ServiceRequest Reevaluation</a></p></blockquote></div>"
+  },
+  "status" : "active",
+  "intent" : "plan",
+  "subject" : {
+    "reference" : "Patient/PatientTCSS"
+  },
+  "encounter" : {
+    "reference" : "Encounter/HumanEncounter"
+  },
+  "period" : {
+    "start" : "2024-02-11T12:00:00Z",
+    "end" : "2024-02-15T12:00:00Z"
+  },
+  "activity" : [{
+    "reference" : {
+      "reference" : "MedicationRequest/medicationRequest"
+    },
+    "detail" : {
+      "status" : "in-progress",
+      "doNotPerform" : false,
+      "scheduledTiming" : {
+        "repeat" : {
+          "frequency" : 3,
+          "period" : 8,
+          "periodUnit" : "h"
+        }
+      },
+      "description" : "Take Paracetamol every 8 hours"
+    }
+  },
+  {
+    "reference" : {
+      "reference" : "ServiceRequest/reevaluationServiceRequest"
+    }
+  }]
+}

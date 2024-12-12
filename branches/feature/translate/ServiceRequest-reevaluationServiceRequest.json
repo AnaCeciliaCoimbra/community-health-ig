@@ -1,0 +1,43 @@
+{
+  "resourceType" : "ServiceRequest",
+  "id" : "reevaluationServiceRequest",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest reevaluationServiceRequest</b></p><a name=\"reevaluationServiceRequest\"> </a><a name=\"hcreevaluationServiceRequest\"> </a><a name=\"reevaluationServiceRequest-en-US\"> </a><p><b>basedOn</b>: <a href=\"CarePlan-carePlan.html\">CarePlan: status = active; intent = plan; period = 2024-02-11 12:00:00+0000 --&gt; 2024-02-15 12:00:00+0000</a></p><p><b>status</b>: Active</p><p><b>intent</b>: Plan</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 710830005}\">Reevaluation</span></p><p><b>subject</b>: <a href=\"Patient-PatientTCCS.html\">John Doe  Male, DoB: 2009-02-09 ( https://ehr.testing.p5.pt/api/fhir#12345678)</a></p><p><b>occurrence</b>: Once per1 days</p><p><b>authoredOn</b>: 2024-02-12 12:00:00+0000</p><p><b>requester</b>: <a href=\"Practitioner-Practitioner1.html\">Practitioner John Smith </a></p><p><b>reasonCode</b>: <span title=\"Codes:{http://snomed.info/sct 431855005}\">Patient reevaluation</span></p></div>"
+  },
+  "basedOn" : [{
+    "reference" : "CarePlan/carePlan"
+  }],
+  "status" : "active",
+  "intent" : "plan",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "710830005",
+      "display" : "Reevaluation"
+    }],
+    "text" : "Reevaluation"
+  },
+  "subject" : {
+    "reference" : "Patient/PatientTCCS"
+  },
+  "occurrenceTiming" : {
+    "repeat" : {
+      "frequency" : 1,
+      "period" : 1,
+      "periodUnit" : "d"
+    }
+  },
+  "authoredOn" : "2024-02-12T12:00:00Z",
+  "requester" : {
+    "reference" : "Practitioner/Practitioner1"
+  },
+  "reasonCode" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "431855005",
+      "display" : "Patient reevaluation"
+    }],
+    "text" : "Patient reevaluation"
+  }]
+}

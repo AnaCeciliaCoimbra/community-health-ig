@@ -1,0 +1,35 @@
+{
+  "resourceType" : "Condition",
+  "id" : "exemplo-condition-chronic-hypertension",
+  "meta" : {
+    "profile" : ["https://hl7.pt/fhir/community-health/StructureDefinition/condition-chronic-disease-hypertension"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Condition exemplo-condition-chronic-hypertension</b></p><a name=\"exemplo-condition-chronic-hypertension\"> </a><a name=\"hcexemplo-condition-chronic-hypertension\"> </a><a name=\"exemplo-condition-chronic-hypertension-en-US\"> </a><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category chronic}\">Chronic disease</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 38341003}\">Hypertension</span></p><p><b>subject</b>: <a href=\"Patient-exemplo-patient-1.html\">John Doe  Male, DoB: 2009-02-09 ( https://ehr.testing.p5.pt/api/fhir#12345678)</a></p></div>"
+  },
+  "clinicalStatus" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+      "code" : "active",
+      "display" : "Active"
+    }]
+  },
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-category",
+      "code" : "chronic",
+      "display" : "Chronic disease"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "38341003",
+      "display" : "Hypertension"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/exemplo-patient-1"
+  }
+}

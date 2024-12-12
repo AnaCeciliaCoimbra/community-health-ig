@@ -1,0 +1,39 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.com/fhir/example/RelatedPerson/RelatedPersonTCCS1> a fhir:RelatedPerson ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "RelatedPersonTCCS1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://ehr.testing.p5.pt/api/fhir/StructureDefinition/RelatedPersonTCCS"^^xsd:anyURI ;
+       fhir:link <https://ehr.testing.p5.pt/api/fhir/StructureDefinition/RelatedPersonTCCS>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: RelatedPerson RelatedPersonTCCS1</b></p><a name=\"RelatedPersonTCCS1\"> </a><a name=\"hcRelatedPersonTCCS1\"> </a><a name=\"RelatedPersonTCCS1-en-US\"> </a><p><b>pt/api/fhir/StructureDefinition/PatientIdentifier</b>: <a href=\"Patient-PatientTCCS1.html\">Jane Smith  Female, DoB: 2010-05-15 ( https://ehr.testing.p5.pt/api/fhir#87654321)</a></p><p><b>name</b>: Emily Smith </p><p><b>telecom</b>: <a href=\"tel:+351888888888\">+351888888888</a></p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "https://ehr.testing.p5.pt/api/fhir/StructureDefinition/PatientIdentifier"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <http://example.com/fhir/example/Patient/PatientTCCS1> ;
+       fhir:reference [ fhir:v "Patient/PatientTCCS1" ]
+     ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Smith" ] ;
+     fhir:given ( [ fhir:v "Emily" ] )
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "+351888888888" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

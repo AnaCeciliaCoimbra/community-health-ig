@@ -1,0 +1,56 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.pt/fhir/MedicationStatement/c5d03567-a9e6-4a3b-b593-45f7a65a5cd8> a fhir:MedicationStatement ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "c5d03567-a9e6-4a3b-b593-45f7a65a5cd8"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://hl7.pt/fhir/community-health/StructureDefinition/medication-statement-standard"^^xsd:anyURI ;
+       fhir:link <https://hl7.pt/fhir/community-health/StructureDefinition/medication-statement-standard>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationStatement c5d03567-a9e6-4a3b-b593-45f7a65a5cd8</b></p><a name=\"c5d03567-a9e6-4a3b-b593-45f7a65a5cd8\"> </a><a name=\"hcc5d03567-a9e6-4a3b-b593-45f7a65a5cd8\"> </a><a name=\"c5d03567-a9e6-4a3b-b593-45f7a65a5cd8-en-US\"> </a><p><b>status</b>: Active</p><p><b>medication</b>: <span title=\"Codes:\">Fenofibrato Generis, Fenofibrato, 145mg</span></p><p><b>subject</b>: <a href=\"Patient-exemplo-patient-1.html\">John Doe  Male, DoB: 2009-02-09 ( https://ehr.testing.p5.pt/api/fhir#12345678)</a></p><p><b>effective</b>: 2020-11-01 00:00:00+0000 --&gt; (ongoing)</p><blockquote><p><b>dosage</b></p><p><b>timing</b>: Code </p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>1 Comprimido<span style=\"background: LightGoldenRodYellow\"> (Details: Orderable Drug Form  codePILL = 'Pill')</span></td></tr></table></blockquote></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:medication [
+     a fhir:CodeableConcept ;
+     fhir:text [ fhir:v "Fenofibrato Generis, Fenofibrato, 145mg" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.pt/fhir/Patient/exemplo-patient-1> ;
+     fhir:reference [ fhir:v "Patient/exemplo-patient-1" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:Period ;
+     fhir:start [ fhir:v "2020-11-01T00:00:00+00:00"^^xsd:dateTime ]
+  ] ; # 
+  fhir:dosage ( [
+     fhir:timing [
+       fhir:code [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://ehr.testing.p5.pt/api/fhir/CodeSystem/medication-frequency"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "1-d" ] ;
+           fhir:display [ fhir:v "1/dia" ]
+         ] )
+       ]
+     ] ;
+     fhir:doseAndRate ( [
+       fhir:dose [
+         a fhir:Quantity ;
+         fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "Comprimido" ] ;
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "PILL" ]
+       ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

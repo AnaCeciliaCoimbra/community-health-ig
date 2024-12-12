@@ -1,0 +1,64 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.pt/fhir/ValueSet/episode-of-care-status-subset> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "episode-of-care-status-subset"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet episode-of-care-status-subset</b></p><a name=\"episode-of-care-status-subset\"> </a><a name=\"hcepisode-of-care-status-subset\"> </a><a name=\"episode-of-care-status-subset-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"http://hl7.org/fhir/R4/codesystem-episode-of-care-status.html\"><code>http://hl7.org/fhir/episode-of-care-status</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"http://hl7.org/fhir/R4/codesystem-episode-of-care-status.html#episode-of-care-status-active\">active</a></td><td>active</td><td>This episode of care is current.</td></tr><tr><td><a href=\"http://hl7.org/fhir/R4/codesystem-episode-of-care-status.html#episode-of-care-status-waitlist\">waitlist</a></td><td>waitlist</td><td>This episode has been placed on a waitlist, pending the episode being made active (or cancelled).</td></tr><tr><td><a href=\"http://hl7.org/fhir/R4/codesystem-episode-of-care-status.html#episode-of-care-status-finished\">finished</a></td><td>finished</td><td>This episode of care is finished and the organization is not expecting to be providing further care to the patient. Can also be known as &quot;closed&quot;, &quot;completed&quot; or other similar terms.</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://hl7.pt/fhir/community-health/ValueSet/episode-of-care-status-subset"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.1"] ; # 
+  fhir:name [ fhir:v "EpisodeOfCareStatusSubset"] ; # 
+  fhir:title [ fhir:v "Subset of Episode Of Care Status"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2024-12-12T12:37:03+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Portugal"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.pt" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.pt" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "geral@hl7.pt" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "A subset of allowed statuses for EpisodeOfCare."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ] ;
+       fhir:display [ fhir:v "World" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/episode-of-care-status"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "active" ] ;
+         fhir:display [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "waitlist" ] ;
+         fhir:display [ fhir:v "waitlist" ]
+       ] [
+         fhir:code [ fhir:v "finished" ] ;
+         fhir:display [ fhir:v "finished" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

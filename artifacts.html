@@ -1,0 +1,957 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Artifacts Summary - HL7 PT FHIR Implementation Guide: Community Health v1.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/affiliate.css" rel="stylesheet"/>
+<!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/colors.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"6"}
+    h3,h4,h5,h6{--heading-prefix:"6.0"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+<div id="project-nav">
+  <a id="affiliate-logo" no-external="true" href="http://hl7.eu">
+    <img height="71" alt="Visit the HL7 affiliate website" src="assets/images/affiliate.png"/>
+  </a>
+</div>
+<div id="family-nav">
+  <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="30" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+</div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">HL7 PT FHIR Implementation Guide: Community Health</span>
+            <br/>
+            <span style="display:inline-block;">1.0.1 - STU1
+
+
+
+  <img alt="International flag" src="assets/images/001.svg" height="16" title="International"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Indice</a>
+  </li>
+  <li>
+    <a href="background.html">Introdução</a>
+  </li>
+  <li>
+    <a href="spec.html">Especificações</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifactos</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Artifacts Summary</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">HL7 PT FHIR Implementation Guide: Community Health, published by HL7 Portugal. This guide is not an authorized publication; it is the continuous build for version 1.0.1 built by the FHIR (HL7® FHIR® Standard) CI Build. This version is based on the current content of <a href="https://github.com/AnaCeciliaCoimbra/community-health-ig/tree/master">https://github.com/AnaCeciliaCoimbra/community-health-ig/tree/master</a> and changes regularly. See the <a href="http://hl7.pt/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Artifacts Summary</h2>
+  
+  
+  
+  <!--DO NOT EDIT THIS FILE - It is generated by https://github.com/HL7/ig-template-base/blob/master/scripts/createArtifactSummary.xslt and any changes made will be overwritten--><div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     xmlns:html="http://www.w3.org/1999/xhtml"
+     class="markdown-toc">
+   <p>Contents:</p>
+   <ul>
+      <li>
+         <a href="#1">Structures: Resource Profiles</a>
+      </li>
+      <li>
+         <a href="#2">Structures: Extension Definitions</a>
+      </li>
+      <li>
+         <a href="#3">Terminology: Value Sets</a>
+      </li>
+      <li>
+         <a href="#4">Terminology: Code Systems</a>
+      </li>
+      <li>
+         <a href="#5">Example: Example Instances</a>
+      </li>
+   </ul>
+</div>
+<div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     xmlns:html="http://www.w3.org/1999/xhtml">
+   <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
+   <a name="1"> </a>
+   <h3>Structures: Resource Profiles </h3>
+    <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-allergy-intolerance-patient-allergy.html"
+                  title="StructureDefinition/allergy-intolerance-patient-allergy">AllergyIntolerance - Alergia do paciente registada</a>
+            </td>
+            <td>
+<p>Este perfil representa as restrições aplicadas ao recurso AllergyIntolerance pelo Guia de Implementação FHIR do Sistema Clínico de Triagem e Aconselhamento (TCCS). Descreve as expectativas mínimas para o recurso AllergyIntolerance quando utilizado na composição do sistema ou em um dos recursos referidos.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-care-plan-treatmentPlan.html"
+                  title="StructureDefinition/care-plan-treatmentPlan">CarePlan - Plano de tratamento</a>
+            </td>
+            <td>
+<p>Este perfil define as restrições para o recurso <code class="language-plaintext highlighter-rouge">CarePlan</code>, padronizando a documentação de planos de cuidado.
+O plano de cuidados pode incluir diferentes tipos de tarefas, cada uma direcionada para abordar aspetos específicos da condição do paciente:
+Tarefas não farmacológicas: Focam-se em intervenções que não envolvem o uso de medicação, como alterações no estilo de vida ou outras abordagens terapêuticas.
+Tarefas de ServiceRequest: Estas tarefas definem uma data de reavaliação, especificando quando o episódio de cuidados deve ser reavaliado para determinar o progresso do paciente e os próximos passos no tratamento.
+O plano de cuidados inclui também uma secção de notas, onde o profissional de saúde pode registar observações, ideias ou instruções importantes. Esta secção permite documentar qualquer detalhe relevante para a gestão do cuidado.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-condition-diagnosis.html"
+                  title="StructureDefinition/condition-diagnosis">Condition - Diagnosis</a>
+            </td>
+            <td>
+<p>Este perfil especifica as restrições para o recurso <code class="language-plaintext highlighter-rouge">Condition</code> no contexto do Sistema Clínico de Triagem e Aconselhamento (TCCS).
+Este perfil representa o registro de diagnósticos e problemas de saúde, com suporte a sistemas de codificação preferenciais, como SNOMED CT, ICD-10 e ICPC-2, permitindo maior interoperabilidade e precisão na documentação clínica.
+Além disso, o perfil inclui uma extensão para representar a probabilidade associada ao diagnóstico, aprimorando a análise e a tomada de decisão em cenários clínicos.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-condition-critical-disease.html"
+                  title="StructureDefinition/condition-critical-disease">Condition - Doença de Risco</a>
+            </td>
+            <td>
+<p>Um perfil de Condition para representar doenças de risco.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-condition-chronic-disease.html"
+                  title="StructureDefinition/condition-chronic-disease">Condition - Doenças Crônicas</a>
+            </td>
+            <td>
+<p>Um perfil de Condition para representar doenças crônicas.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-condition-chronic-disease-asthma.html"
+                  title="StructureDefinition/condition-chronic-disease-asthma">Condition - Doenças Crônicas - Asma</a>
+            </td>
+            <td>
+<p>Um perfil de Condition para representar asma como doença crônica.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-condition-chronic-disease-chronic-obstructive-pulmonary-disease.html"
+                  title="StructureDefinition/condition-chronic-disease-chronic-obstructive-pulmonary-disease">Condition - Doenças Crônicas - DPOC</a>
+            </td>
+            <td>
+<p>Um perfil de Condition para representar DPOC como doença crônica.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-condition-chronic-disease-diabetes.html"
+                  title="StructureDefinition/condition-chronic-disease-diabetes">Condition - Doenças Crônicas - Diabetes</a>
+            </td>
+            <td>
+<p>Um perfil de Condition para representar diabetes como doença crônica.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-condition-chronic-disease-dyslipidemia.html"
+                  title="StructureDefinition/condition-chronic-disease-dyslipidemia">Condition - Doenças Crônicas - Dislipidemia</a>
+            </td>
+            <td>
+<p>Um perfil de Condition para representar dislipidemia como doença crônica.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-condition-chronic-disease-hypertension.html"
+                  title="StructureDefinition/condition-chronic-disease-hypertension">Condition - Doenças Crônicas - Hipertensão</a>
+            </td>
+            <td>
+<p>Um perfil de Condition para representar hipertensão como doença crônica.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-encounter-finish.html"
+                  title="StructureDefinition/encounter-finish">Encounter - Finish Interaction</a>
+            </td>
+            <td>
+<p>Este perfil representa as restrições aplicadas ao recurso Encounter pelo Guia de Implementação FHIR do Sistema Clínico de Triagem e Aconselhamento (TCCS).
+Descreve as expectativas mínimas para o recurso EpisodeOfCare quando utilizado na composição do sistema ou em um dos recursos referidos.
+É utilizado para representar o resultado proveniente da interação fecho de caso entre profissional de saude e paciente</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-encounter-follow-up.html"
+                  title="StructureDefinition/encounter-follow-up">Encounter - Follow-Up Interaction</a>
+            </td>
+            <td>
+<p>Este perfil representa as restrições aplicadas ao recurso Encounter pelo Guia de Implementação FHIR do Sistema Clínico de Triagem e Aconselhamento (TCCS).
+Descreve as expectativas mínimas para o recurso EpisodeOfCare quando utilizado na composição do sistema ou em um dos recursos referidos.
+É utilizado para representar a interações entre profissional de saúde e paciente.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-encounter-ai-algorithm.html"
+                  title="StructureDefinition/encounter-ai-algorithm">Encounter - Iteraction with the artificial intelligence algorithm</a>
+            </td>
+            <td>
+<p>Este perfil representa as restrições aplicadas ao recurso Encounter pelo Guia de Implementação FHIR do Sistema Clínico de Triagem e Aconselhamento (TCCS).
+Descreve as expectativas mínimas para o recurso EpisodeOfCare quando utilizado na composição do sistema ou em um dos recursos referidos.
+É utilizado para representar o resultado proveniente da interação com o algoritmo de inteligência artificial.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-encounter-validation.html"
+                  title="StructureDefinition/encounter-validation">Encounter - Validation Iteraction</a>
+            </td>
+            <td>
+<p>Este perfil representa as restrições aplicadas ao recurso Encounter pelo Guia de Implementação FHIR do Sistema Clínico de Triagem e Aconselhamento (TCCS).
+Descreve as expectativas mínimas para o recurso EpisodeOfCare quando utilizado na composição do sistema ou em um dos recursos referidos.
+É utilizado para representar a validação de dados por parte de um profissional de saude.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-episodeOfCare-standard.html"
+                  title="StructureDefinition/episodeOfCare-standard">Episode Of Care</a>
+            </td>
+            <td>
+
+<p>Este perfil representa um período estruturado durante o qual um paciente recebe atendimento para um problema de saúde específico ou um conjunto de condições. Ele serve como base para organizar e vincular atividades de saúde relacionadas, como sintomas, problemas, observações e planos de cuidado.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-flag-critical-disease.html"
+                  title="StructureDefinition/flag-critical-disease">Flag - Doença critica</a>
+            </td>
+            <td>
+<p>Este perfil representa a utilização do recurso Flag para referenciar uma doença critica.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-immunization-vaccine.html"
+                  title="StructureDefinition/immunization-vaccine">Immunization - Vacinação</a>
+            </td>
+            <td>
+<p>Um perfil para representar informações de imunização ou vacinação de um paciente.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-medication-standard.html"
+                  title="StructureDefinition/medication-standard">Medication - Medicação</a>
+            </td>
+            <td>
+<p>Este perfil define as restrições para o recurso <code class="language-plaintext highlighter-rouge">Medication</code>, padronizando a documentação de medicamentos, incluindo informações sobre código, ingredientes, forma farmacêutica e quantidade.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-medication-request-standard.html"
+                  title="StructureDefinition/medication-request-standard">MedicationRequest</a>
+            </td>
+            <td>
+<p>O recurso MedicationRequest no FHIR representa um pedido de medicação prescrita a um paciente. É utilizado para registar os detalhes da intenção do clínico relativamente à medicação do paciente, incluindo a dosagem, a frequência e a duração do uso.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-medication-statement-standard.html"
+                  title="StructureDefinition/medication-statement-standard">MedicationStatement</a>
+            </td>
+            <td>
+<p>Este perfil é utilizado para registar informações sobre medicamentos que um paciente está atualmente a tomar, tomou no passado ou que está previsto tomar no futuro.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-HumanMessages.html"
+                  title="StructureDefinition/HumanMessages">Messages</a>
+            </td>
+            <td>
+<p>Este perfil representa as restrições aplicadas ao recurso Communication pelo Guia de Implementação FHIR do Sistema Clínico de Triagem e Aconselhamento (TCCS). Descreve as expectativas mínimas para o recurso Communication quando utilizado na composição do sistema ou em um dos recursos referidos.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-observation-pregnancy.html"
+                  title="StructureDefinition/observation-pregnancy">Observation - Gravidez</a>
+            </td>
+            <td>
+<p>Um perfil para representar informações sobre gravidez de uma paciente, incluindo idade gestacional, número de gestações e número de filhos.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-observation-number-healthcare-visits-last-12-months.html"
+                  title="StructureDefinition/observation-number-healthcare-visits-last-12-months">Observation - Número de visitas a unidades de saúde nos últimos 12 Meses</a>
+            </td>
+            <td>
+<p>Um perfil para representar o número de visitas a unidades de saúde nos últimos 12 meses.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-observation-symptom-severity.html"
+                  title="StructureDefinition/observation-symptom-severity">Observation - Severity Symptom</a>
+            </td>
+            <td>
+<p>Este perfil representa as restrições aplicadas ao recurso Observation pelo Guia de Implementação FHIR do Sistema Clínico de Triagem e Aconselhamento (TCCS).
+Descreve as expectativas mínimas para o recurso Observation quando utilizado na composição do sistema ou em um dos recursos referidos.
+É utilizado para representar os sintomas severos.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-observation-symptom.html"
+                  title="StructureDefinition/observation-symptom">Observation - Symptom</a>
+            </td>
+            <td>
+<p>Este perfil representa as restrições aplicadas ao recurso Observation pelo Guia de Implementação FHIR do Sistema Clínico de Triagem e Aconselhamento (TCCS).
+Descreve as expectativas mínimas para o recurso Observation quando utilizado na composição do sistema ou em um dos recursos referidos.
+É utilizado para representar os sintomas.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-observation-symptom-duration-body-site.html"
+                  title="StructureDefinition/observation-symptom-duration-body-site">Observation - Symptoms Duration And Body Site</a>
+            </td>
+            <td>
+<p>Este perfil representa as restrições aplicadas ao recurso Observation pelo Guia de Implementação FHIR do Sistema Clínico de Triagem e Aconselhamento (TCCS).
+Descreve as expectativas mínimas para o recurso Observation quando utilizado na composição do sistema ou em um dos recursos referidos.
+É utilizado para representar a duração dos sintomas e o local no corpo onde estão localizados.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-patient-tccs.html"
+                  title="StructureDefinition/patient-tccs">Patient - TCCS Patient</a>
+            </td>
+            <td>
+<p>Este perfil representa as restrições aplicadas ao recurso Patient pelo Guia de Implementação FHIR do Sistema Clínico de Triagem e Aconselhamento (TCCS). Descreve as expectativas mínimas para o recurso Patient quando utilizado na composição do sistema ou em um dos recursos referidos.
+Na área da saúde, Patient refere-se a um indivíduo, e informações demográficas específicas devem ser registradas e mantidas atualizadas.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-questionnaire-response-app.html"
+                  title="StructureDefinition/questionnaire-response-app">Questionnaire Response - Questionário responsido na app</a>
+            </td>
+            <td>
+<p>Este perfil especifica as restrições para o recurso <code class="language-plaintext highlighter-rouge">QuestionnaireResponse</code> para capturar respostas completas de questionários, associadas a um paciente e, opcionalmente, a um encontro clínico.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-RelatedPersonTCCS.html"
+                  title="StructureDefinition/RelatedPersonTCCS">Related Person</a>
+            </td>
+            <td>
+<p>Este perfil representa as restrições aplicadas ao recurso RelatedPerson pelo Guia de Implementação FHIR do Sistema Clínico de Triagem e Aconselhamento (TCCS). Descreve as expectativas mínimas para o recurso RelatedPerson quando utilizado na composição do sistema ou em um dos recursos referidos.
+O recurso RelatedPerson é utilizado para informar sobre uma pessoa que está envolvida no cuidado de um paciente, mas que não é o alvo dos cuidados de saúde, nem tem uma responsabilidade formal no processo de cuidado.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="2"> </a>
+   <h3>Structures: Extension Definitions </h3>
+    <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Extension-GrantedOrganization.html"
+                  title="StructureDefinition/Extension-GrantedOrganization">Extension -  Granted Organization</a>
+            </td>
+            <td>
+<p>A extensão descrita é uma extensão personalizada do FHIR criada para associar recursos a uma organização específica.
+Essa extensão é útil para definir um controle de acesso baseado em organizações em um sistema de saúde interoperável.
+Além disso, o uso dessa extensão também pode ser aplicado para validação durante operações de criação ou atualização de recursos.
+O servidor pode, por exemplo, exigir que a extensão esteja presente e validar se o cliente tem permissão para associar o recurso àquela organização.
+Isso assegura que cada dado seja corretamente atribuído e acessado apenas por quem tem autorização.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-flag-detail.html"
+                  title="StructureDefinition/flag-detail">Extension - Flag Detail</a>
+            </td>
+            <td>
+<p>Detalhes sobre a condição crítica sinalizada para um paciente.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-PatientIdentifier.html"
+                  title="StructureDefinition/PatientIdentifier">Extension Patient Identifier</a>
+            </td>
+            <td>
+<p>Extension used to connect a resource to a patient</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-probability.html"
+                  title="StructureDefinition/probability">Extension Probability</a>
+            </td>
+            <td>
+<p>Esta extensão representa a probabilidade de algo acontecer utilizando um valor decimal (ex, 0.85 para 85%).</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="3"> </a>
+   <h3>Terminology: Value Sets </h3>
+    <p>These define sets of codes used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-episode-of-care-status-subset.html"
+                  title="ValueSet/episode-of-care-status-subset">Subset of Episode Of Care Status</a>
+            </td>
+            <td>
+<p>A subset of allowed statuses for EpisodeOfCare.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="4"> </a>
+   <h3>Terminology: Code Systems </h3>
+    <p>These define new code systems used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-symptom-properties.html"
+                  title="CodeSystem/symptom-properties">Symptom Properties CodeSystem</a>
+            </td>
+            <td>
+<p>CodeSystem defining properties related to symptoms.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="5"> </a>
+   <h3>Example: Example Instances </h3>
+    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="AllergyIntolerance-example-allergyIntolerance.html"
+                  title="AllergyIntolerance/example-allergyIntolerance">Exemplo AllergyIntolerance</a>
+            </td>
+            <td>
+<p>An example AllergyIntolerance resource for a patient with a food allergy.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CarePlan-exemplo-carePlan-plano-de-tratamento-seguimento-com-medicacao.html"
+                  title="CarePlan/exemplo-carePlan-plano-de-tratamento-seguimento-com-medicacao">Exemplo CarePlan - Plano de tratamento com medicação</a>
+            </td>
+            <td>
+<p>Um exemplo de recurso CarePlan detalhando um plano de cuidados para seguimento do tratamento com atividades programadas, medicação e observações relevantes.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CarePlan-exemplo-carePlan-plano-de-tratamento-fecho-caso.html"
+                  title="CarePlan/exemplo-carePlan-plano-de-tratamento-fecho-caso">Exemplo CarePlan - Plano de tratamento para fecho de caso</a>
+            </td>
+            <td>
+<p>Um exemplo de recurso CarePlan detalhando um plano de cuidados para fecho de caso.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CarePlan-exemplo-carePlan-plano-de-tratamento-seguimento.html"
+                  title="CarePlan/exemplo-carePlan-plano-de-tratamento-seguimento">Exemplo CarePlan - Plano de tratamento seguimento de caso</a>
+            </td>
+            <td>
+<p>Um exemplo de recurso CarePlan detalhando um plano de cuidados para seguimento do tratamento com atividades programadas e observações relevantes.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-exemplo-condition-disturbio-visual.html"
+                  title="Condition/exemplo-condition-disturbio-visual">Exemplo Condition - Disturbio visual</a>
+            </td>
+            <td>
+<p>An example Condition resource representing a visual disturbance for a specific patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-exemplo-condition-asthma.html"
+                  title="Condition/exemplo-condition-asthma">Exemplo Condition - Doença Crónica - Asma</a>
+            </td>
+            <td>
+<p>Condição crônica de Asma.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-exemplo-condition-chronic-disease-diabetes.html"
+                  title="Condition/exemplo-condition-chronic-disease-diabetes">Exemplo Condition - Doença Crónica - Diabetes Mellitus</a>
+            </td>
+            <td>
+<p>Condição crônica de Diabetes Mellitus.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-exemplo-condition-chronic-dyslipidemia.html"
+                  title="Condition/exemplo-condition-chronic-dyslipidemia">Exemplo Condition - Doença Crónica - Dislipidemia</a>
+            </td>
+            <td>
+<p>Condição crônica de Dislipidemia.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-exemplo-condition-chronic-obstructive-pulmonary-disease.html"
+                  title="Condition/exemplo-condition-chronic-obstructive-pulmonary-disease">Exemplo Condition - Doença Crónica - Doença Pulmonar Obstrutiva Crônica</a>
+            </td>
+            <td>
+<p>Condição crônica de Doença Pulmonar Obstrutiva Crônica.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-exemplo-condition-chronic-hypertension.html"
+                  title="Condition/exemplo-condition-chronic-hypertension">Exemplo Condition - Doença Crónica - Hipertensão</a>
+            </td>
+            <td>
+<p>Condição crônica de Hipertensão.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-exemplo-condition-dor-ocular.html"
+                  title="Condition/exemplo-condition-dor-ocular">Exemplo Condition - Dor Ocular</a>
+            </td>
+            <td>
+<p>An example Condition resource representing eye pain for a specific patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-exemplo-condition-gravidez-risco.html"
+                  title="Condition/exemplo-condition-gravidez-risco">Exemplo Condition - Gravidez de rsico</a>
+            </td>
+            <td>
+<p>Exemplo representando uma gravidez de risco.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Encounter-exemplo-encounter-fecho-caso.html"
+                  title="Encounter/exemplo-encounter-fecho-caso">Exemplo Encounter - Fecho de caso</a>
+            </td>
+            <td>
+<p>An example Encounter resource representing the closure of a case.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Encounter-exemplo-encounter-ia-registo.html"
+                  title="Encounter/exemplo-encounter-ia-registo">Exemplo Encounter - Resultado algorithmo AI</a>
+            </td>
+            <td>
+<p>An example Encounter resource representing an AI algorithm evaluation.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Encounter-exemplo-encounter-seguimento.html"
+                  title="Encounter/exemplo-encounter-seguimento">Exemplo Encounter - Seguimento de caso</a>
+            </td>
+            <td>
+<p>An example Encounter resource representing the follow-up of a case.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Encounter-exemplo-encounter-validacao-caso.html"
+                  title="Encounter/exemplo-encounter-validacao-caso">Exemplo Encounter - Validação de caso</a>
+            </td>
+            <td>
+<p>An example Encounter resource representing the validation of a case.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="EpisodeOfCare-exemplo-episodeofcare-episodio-activo.html"
+                  title="EpisodeOfCare/exemplo-episodeofcare-episodio-activo">Exemplo EpisodeOfCare - Episodio Activo</a>
+            </td>
+            <td>
+<p>An example EpisodeOfCare resource representing an active episode with urgency level and care manager.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="EpisodeOfCare-exemplo-episodeofcare-episodio-em-espera.html"
+                  title="EpisodeOfCare/exemplo-episodeofcare-episodio-em-espera">Exemplo EpisodeOfCare - Episodio em espera</a>
+            </td>
+            <td>
+<p>An example EpisodeOfCare resource representing an episode on the waitlist with urgency level.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="EpisodeOfCare-exemplo-episodeofcare-episodio-finalizado.html"
+                  title="EpisodeOfCare/exemplo-episodeofcare-episodio-finalizado">Exemplo EpisodeOfCare - Episodio encerrado</a>
+            </td>
+            <td>
+<p>An example EpisodeOfCare resource representing a finished episode with urgency level and defined period.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Flag-ExampleFlagHighRiskPregnancy.html"
+                  title="Flag/ExampleFlagHighRiskPregnancy">Exemplo Flag - Doença Critica - Gravidez de risco</a>
+            </td>
+            <td>
+<p>Exemplo de resource Flag para representar uma doença critica, neste caso uma gravidez de risco.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Immunization-ExampleImmunizationCovid19.html"
+                  title="Immunization/ExampleImmunizationCovid19">Exemplo Immunization - Vacinação contra COVID-19</a>
+            </td>
+            <td>
+<p>Exemplo de um registro de imunização representando a vacinação contra COVID-19.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Medication-exemplo-medication-paracetamol.html"
+                  title="Medication/exemplo-medication-paracetamol">Exemplo Medication - Ben-u-ron</a>
+            </td>
+            <td>
+<p>An example Medication resource for ben-u-ron Paracetamol 500 mg.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="MedicationRequest-exemplo-medicationRequest-medicacao-prescrita.html"
+                  title="MedicationRequest/exemplo-medicationRequest-medicacao-prescrita">Exemplo MedicationRequest - Medicação Prescrita</a>
+            </td>
+            <td>
+<p>An example MedicationRequest resource for a prescribed medication.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="MedicationStatement-c5d03567-a9e6-4a3b-b593-45f7a65a5cd8.html"
+                  title="MedicationStatement/c5d03567-a9e6-4a3b-b593-45f7a65a5cd8">Exemplo MedicationStatement - Fenofibrato</a>
+            </td>
+            <td>
+<p>An example MedicationStatement resource for Fenofibrato Generis, 145mg.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-exemplo-observation-number-healthcare-visits-last-12-months.html"
+                  title="Observation/exemplo-observation-number-healthcare-visits-last-12-months">Exemplo Observation -  Número de visitas a unidades de saúde nos últimos 12 Meses</a>
+            </td>
+            <td>
+<p>Exemplo representando o número de visitas a unidades de saúde nos últimos 12 meses.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-exemplo-observation-desordem-sono.html"
+                  title="Observation/exemplo-observation-desordem-sono">Exemplo Observation - Desordem do sono</a>
+            </td>
+            <td>
+<p>An example Observation resource representing a sleep disorder symptom.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-exemplo-observation-dor.html"
+                  title="Observation/exemplo-observation-dor">Exemplo Observation - Dor</a>
+            </td>
+            <td>
+<p>An example Observation resource representing a symptom of pain.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-exemplo-observation-duracao-sintomas-localizacao.html"
+                  title="Observation/exemplo-observation-duracao-sintomas-localizacao">Exemplo Observation - Duração de sintomas e localização</a>
+            </td>
+            <td>
+<p>An example Observation resource representing the duration and location of symptoms.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-exemplo-observation-pregnancy.html"
+                  title="Observation/exemplo-observation-pregnancy">Exemplo Observation - Gravidez</a>
+            </td>
+            <td>
+<p>Instância de uma observação representando o estado de gravidez de uma paciente.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-exemplo-patient-2.html" title="Patient/exemplo-patient-2">Exemplo Patient - Jane Smith</a>
+            </td>
+            <td>
+<p>Um exemplo de resource Patient para Jane Smith.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-exemplo-patient-1.html" title="Patient/exemplo-patient-1">Exemplo Patient - John Doe</a>
+            </td>
+            <td>
+<p>Um exemplo de resource Patient para John Doe.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-exemplo-patient-3.html" title="Patient/exemplo-patient-3">Exemplo Patient - Michael Johnson</a>
+            </td>
+            <td>
+<p>Um exemplo de resource Patient para Michael Johnson.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Practitioner-exemplo-practitioner-1.html"
+                  title="Practitioner/exemplo-practitioner-1">Exemplo Practitioner - John Smith</a>
+            </td>
+            <td>
+<p>Um exemplo de resource Practitioner para John Smith.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-exemplo-questionnaireResponse.html"
+                  title="QuestionnaireResponse/exemplo-questionnaireResponse">Exemplo QuestionnaireResponse</a>
+            </td>
+            <td>
+<p>Um exemplo de resource QuestionnaireResponse.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="RelatedPerson-exemplo-relatedPerson-1.html"
+                  title="RelatedPerson/exemplo-relatedPerson-1">Exemplo RelatedPerson - Emily Smith</a>
+            </td>
+            <td>
+<p>Um exemplo de resource RelatedPerson para Emily Smith.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="RelatedPerson-exemplo-relatedPerson-2.html"
+                  title="RelatedPerson/exemplo-relatedPerson-2">Exemplo RelatedPerson - Michael Johnson</a>
+            </td>
+            <td>
+<p>Um exemplo de resource RelatedPerson para Michael Johnson.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-exemplo-condition-chronic-disease.html"
+                  title="Condition/exemplo-condition-chronic-disease">ExemploConditionChronicDisease</a>
+            </td>
+            <td>
+<p>Instância representando outras doenças crônicas não especificadas.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-P5Organization.html"
+                  title="Organization/P5Organization">P5 Organization</a>
+            </td>
+            <td>
+<p>Organization</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-TCCSTeam.html" title="Organization/TCCSTeam">TCCS Team</a>
+            </td>
+            <td>
+<p>Triage and Counseling Clinical System Team</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+</div>
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7.pt">HL7 Portugal</a>.  Package my-ig#1.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Dec 12, 2024 12:37+0000">2024-12-12</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

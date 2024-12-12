@@ -1,0 +1,64 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.pt/fhir/Medication/exemplo-medication-paracetamol> a fhir:Medication ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "exemplo-medication-paracetamol"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://hl7.pt/fhir/community-health/StructureDefinition/medication-standard"^^xsd:anyURI ;
+       fhir:link <https://hl7.pt/fhir/community-health/StructureDefinition/medication-standard>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Medication exemplo-medication-paracetamol</b></p><a name=\"exemplo-medication-paracetamol\"> </a><a name=\"hcexemplo-medication-paracetamol\"> </a><a name=\"exemplo-medication-paracetamol-en-US\"> </a><p><b>code</b>: <span title=\"Codes:{http://example.org/medications BENURON500}\">ben-u-ron Paracetamol 500 mg</span></p><p><b>form</b>: <span title=\"Codes:{http://example.org/pharmacological-forms tablet}\">Tablet</span></p><p><b>amount</b>: 20 tablets/</p><p><b style=\"color: maroon\">Exception Generating Narrative: Cannot invoke &quot;org.hl7.fhir.r5.renderers.utils.ResourceWrapper.has(String)&quot; because &quot;q&quot; is null </b></p></div>"
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://example.org/medications"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "BENURON500" ] ;
+       fhir:display [ fhir:v "ben-u-ron Paracetamol 500 mg" ]
+     ] ) ;
+     fhir:text [ fhir:v "ben-u-ron Paracetamol 500 mg" ]
+  ] ; # 
+  fhir:form [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://example.org/pharmacological-forms"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "tablet" ] ;
+       fhir:display [ fhir:v "Tablet" ]
+     ] ) ;
+     fhir:text [ fhir:v "Tablet" ]
+  ] ; # 
+  fhir:amount [
+     fhir:numerator [
+       fhir:value [ fhir:v "20"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "tablets" ]
+     ]
+  ] ; # 
+  fhir:ingredient ( [
+     fhir:item [
+       a fhir:Reference ;
+       fhir:link <http://hl7.pt/fhir/Substance/Paracetamol> ;
+       fhir:reference [ fhir:v "Substance/Paracetamol" ] ;
+       fhir:display [ fhir:v "Paracetamol" ]
+     ] ;
+     fhir:isActive [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:strength [
+       fhir:numerator [
+         fhir:value [ fhir:v "500"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "mg" ]
+       ] ;
+       fhir:denominator [
+         fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "tablet" ]
+       ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

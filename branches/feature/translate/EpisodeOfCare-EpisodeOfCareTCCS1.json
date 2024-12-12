@@ -1,0 +1,30 @@
+{
+  "resourceType" : "EpisodeOfCare",
+  "id" : "EpisodeOfCareTCCS1",
+  "meta" : {
+    "profile" : ["https://ehr.testing.p5.pt/api/fhir/StructureDefinition/EpisodeOfCareTCCS"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: EpisodeOfCare EpisodeOfCareTCCS1</b></p><a name=\"EpisodeOfCareTCCS1\"> </a><a name=\"hcEpisodeOfCareTCCS1\"> </a><a name=\"EpisodeOfCareTCCS1-en-US\"> </a><p><b style=\"color: maroon\">Exception Generating Narrative: Unknown modifier extension https://ehr.p5.pt/api/fhir/StructureDefinition/granted-organization </b></p></div>"
+  },
+  "modifierExtension" : [{
+    "url" : "https://ehr.p5.pt/api/fhir/StructureDefinition/granted-organization",
+    "valueReference" : {
+      "reference" : "Organization/abc12345"
+    }
+  }],
+  "status" : "active",
+  "patient" : {
+    "reference" : "Patient/PatientTCCS1"
+  },
+  "managingOrganization" : {
+    "reference" : "Organization/P5Organization"
+  },
+  "period" : {
+    "start" : "2022-01-15T10:30:00.000Z"
+  },
+  "careManager" : {
+    "reference" : "Practitioner/Practitioner1"
+  }
+}

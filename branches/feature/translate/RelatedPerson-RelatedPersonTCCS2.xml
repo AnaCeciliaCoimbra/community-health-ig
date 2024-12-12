@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelatedPerson xmlns="http://hl7.org/fhir">
+  <id value="RelatedPersonTCCS2"/>
+  <meta>
+    <profile value="https://ehr.testing.p5.pt/api/fhir/StructureDefinition/RelatedPersonTCCS"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: RelatedPerson RelatedPersonTCCS2</b></p><a name="RelatedPersonTCCS2"> </a><a name="hcRelatedPersonTCCS2"> </a><a name="RelatedPersonTCCS2-en-US"> </a><p><b>pt/api/fhir/StructureDefinition/PatientIdentifier</b>: <a href="Patient-PatientTCCS2.html">Michael Johnson  Male, DoB: 2008-10-22 ( https://ehr.testing.p5.pt/api/fhir#98765432)</a></p><p><b>name</b>: Michael Johnson </p><p><b>telecom</b>: <a href="tel:+351777777777">+351777777777</a></p></div>
+  </text>
+  <extension url="https://ehr.testing.p5.pt/api/fhir/StructureDefinition/PatientIdentifier">
+    <valueReference>
+      <reference value="Patient/PatientTCCS2"/>
+    </valueReference>
+  </extension>
+  <name>
+    <family value="Johnson"/>
+    <given value="Michael"/>
+  </name>
+  <telecom>
+    <system value="phone"/>
+    <value value="+351777777777"/>
+  </telecom>
+</RelatedPerson>

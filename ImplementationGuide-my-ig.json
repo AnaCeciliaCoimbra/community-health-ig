@@ -1,0 +1,1645 @@
+{
+  "resourceType" : "ImplementationGuide",
+  "id" : "my-ig",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide my-ig</b></p><a name=\"my-ig\"> </a><a name=\"hcmy-ig\"> </a><a name=\"my-ig-en-US\"> </a><h2>CommunityHealthIG</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.pt/fhir/ImplementationGuide/hl7.fhir.pt.community-health</pre><div><p>Example IG exercises many of the fields in a SUSHI configuration.</p>\n</div></div>"
+  },
+  "url" : "http://hl7.pt/fhir/ImplementationGuide/hl7.fhir.pt.community-health",
+  "version" : "1.0.1",
+  "name" : "CommunityHealthIG",
+  "title" : "HL7 PT FHIR Implementation Guide: Community Health",
+  "status" : "active",
+  "date" : "2024-11-26",
+  "publisher" : "HL7 Portugal",
+  "contact" : [{
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.pt"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.pt"
+    }]
+  },
+  {
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "geral@hl7.pt",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Example IG exercises many of the fields in a SUSHI configuration.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "packageId" : "my-ig",
+  "license" : "CC0-1.0",
+  "fhirVersion" : ["4.0.1"],
+  "dependsOn" : [{
+    "id" : "hl7tx",
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
+      "valueMarkdown" : "Automatically added as a dependency - all IGs depend on HL7 Terminology"
+    }],
+    "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
+    "packageId" : "hl7.terminology.r4",
+    "version" : "6.1.0"
+  },
+  {
+    "id" : "hl7ext",
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
+      "valueMarkdown" : "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"
+    }],
+    "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
+    "packageId" : "hl7.fhir.uv.extensions.r4",
+    "version" : "5.1.0"
+  }],
+  "definition" : {
+    "extension" : [{
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "copyrightyear"
+      },
+      {
+        "url" : "value",
+        "valueString" : "2024+"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "releaselabel"
+      },
+      {
+        "url" : "value",
+        "valueString" : "STU1"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "produce-jekyll-data"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "autoload-resources"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-liquid"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template/liquid"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-liquid"
+      },
+      {
+        "url" : "value",
+        "valueString" : "input/liquid"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-qa"
+      },
+      {
+        "url" : "value",
+        "valueString" : "temp/qa"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-temp"
+      },
+      {
+        "url" : "value",
+        "valueString" : "temp/pages"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-output"
+      },
+      {
+        "url" : "value",
+        "valueString" : "output"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-suppressed-warnings"
+      },
+      {
+        "url" : "value",
+        "valueString" : "input/ignoreWarnings.txt"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-history"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://hl7.pt/fhir/history.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "template-html"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template-page.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "template-md"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template-page-md.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-contact"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-context"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-copyright"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-jurisdiction"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-license"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-publisher"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-version"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-wg"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "active-tables"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "fmm-definition"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://hl7.org/fhir/versions.html#maturity"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "propagate-status"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "excludelogbinaryformat"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "tabbed-snapshots"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
+      "valueCode" : "hl7.fhir.uv.tools.r4#0.3.0"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "copyrightyear"
+      },
+      {
+        "url" : "value",
+        "valueString" : "2024+"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "releaselabel"
+      },
+      {
+        "url" : "value",
+        "valueString" : "STU1"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "produce-jekyll-data"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "autoload-resources"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-liquid"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template/liquid"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-liquid"
+      },
+      {
+        "url" : "value",
+        "valueString" : "input/liquid"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-qa"
+      },
+      {
+        "url" : "value",
+        "valueString" : "temp/qa"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-temp"
+      },
+      {
+        "url" : "value",
+        "valueString" : "temp/pages"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-output"
+      },
+      {
+        "url" : "value",
+        "valueString" : "output"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-suppressed-warnings"
+      },
+      {
+        "url" : "value",
+        "valueString" : "input/ignoreWarnings.txt"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-history"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://hl7.pt/fhir/history.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "template-html"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template-page.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "template-md"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template-page-md.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-contact"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-context"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-copyright"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-jurisdiction"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-license"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-publisher"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-version"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-wg"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "active-tables"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "fmm-definition"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://hl7.org/fhir/versions.html#maturity"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "propagate-status"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "excludelogbinaryformat"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "tabbed-snapshots"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    }],
+    "resource" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/allergy-intolerance-patient-allergy"
+      },
+      "name" : "AllergyIntolerance - Alergia do paciente registada",
+      "description" : "Este perfil representa as restrições aplicadas ao recurso AllergyIntolerance pelo Guia de Implementação FHIR do Sistema Clínico de Triagem e Aconselhamento (TCCS). Descreve as expectativas mínimas para o recurso AllergyIntolerance quando utilizado na composição do sistema ou em um dos recursos referidos.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/care-plan-treatmentPlan"
+      },
+      "name" : "CarePlan - Plano de tratamento",
+      "description" : "Este perfil define as restrições para o recurso `CarePlan`, padronizando a documentação de planos de cuidado.\nO plano de cuidados pode incluir diferentes tipos de tarefas, cada uma direcionada para abordar aspetos específicos da condição do paciente:\nTarefas não farmacológicas: Focam-se em intervenções que não envolvem o uso de medicação, como alterações no estilo de vida ou outras abordagens terapêuticas.\nTarefas de ServiceRequest: Estas tarefas definem uma data de reavaliação, especificando quando o episódio de cuidados deve ser reavaliado para determinar o progresso do paciente e os próximos passos no tratamento.\nO plano de cuidados inclui também uma secção de notas, onde o profissional de saúde pode registar observações, ideias ou instruções importantes. Esta secção permite documentar qualquer detalhe relevante para a gestão do cuidado.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/condition-diagnosis"
+      },
+      "name" : "Condition - Diagnosis",
+      "description" : "Este perfil especifica as restrições para o recurso `Condition` no contexto do Sistema Clínico de Triagem e Aconselhamento (TCCS).\nEste perfil representa o registro de diagnósticos e problemas de saúde, com suporte a sistemas de codificação preferenciais, como SNOMED CT, ICD-10 e ICPC-2, permitindo maior interoperabilidade e precisão na documentação clínica.\nAlém disso, o perfil inclui uma extensão para representar a probabilidade associada ao diagnóstico, aprimorando a análise e a tomada de decisão em cenários clínicos.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/condition-critical-disease"
+      },
+      "name" : "Condition - Doença de Risco",
+      "description" : "Um perfil de Condition para representar doenças de risco.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/condition-chronic-disease"
+      },
+      "name" : "Condition - Doenças Crônicas",
+      "description" : "Um perfil de Condition para representar doenças crônicas.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/condition-chronic-disease-asthma"
+      },
+      "name" : "Condition - Doenças Crônicas - Asma",
+      "description" : "Um perfil de Condition para representar asma como doença crônica.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/condition-chronic-disease-diabetes"
+      },
+      "name" : "Condition - Doenças Crônicas - Diabetes",
+      "description" : "Um perfil de Condition para representar diabetes como doença crônica.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/condition-chronic-disease-dyslipidemia"
+      },
+      "name" : "Condition - Doenças Crônicas - Dislipidemia",
+      "description" : "Um perfil de Condition para representar dislipidemia como doença crônica.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/condition-chronic-disease-chronic-obstructive-pulmonary-disease"
+      },
+      "name" : "Condition - Doenças Crônicas - DPOC",
+      "description" : "Um perfil de Condition para representar DPOC como doença crônica.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/condition-chronic-disease-hypertension"
+      },
+      "name" : "Condition - Doenças Crônicas - Hipertensão",
+      "description" : "Um perfil de Condition para representar hipertensão como doença crônica.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/encounter-finish"
+      },
+      "name" : "Encounter - Finish Interaction",
+      "description" : "Este perfil representa as restrições aplicadas ao recurso Encounter pelo Guia de Implementação FHIR do Sistema Clínico de Triagem e Aconselhamento (TCCS).\nDescreve as expectativas mínimas para o recurso EpisodeOfCare quando utilizado na composição do sistema ou em um dos recursos referidos.\nÉ utilizado para representar o resultado proveniente da interação fecho de caso entre profissional de saude e paciente",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/encounter-follow-up"
+      },
+      "name" : "Encounter - Follow-Up Interaction",
+      "description" : "Este perfil representa as restrições aplicadas ao recurso Encounter pelo Guia de Implementação FHIR do Sistema Clínico de Triagem e Aconselhamento (TCCS).\nDescreve as expectativas mínimas para o recurso EpisodeOfCare quando utilizado na composição do sistema ou em um dos recursos referidos.\nÉ utilizado para representar a interações entre profissional de saúde e paciente.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/encounter-ai-algorithm"
+      },
+      "name" : "Encounter - Iteraction with the artificial intelligence algorithm",
+      "description" : "Este perfil representa as restrições aplicadas ao recurso Encounter pelo Guia de Implementação FHIR do Sistema Clínico de Triagem e Aconselhamento (TCCS).\nDescreve as expectativas mínimas para o recurso EpisodeOfCare quando utilizado na composição do sistema ou em um dos recursos referidos.\nÉ utilizado para representar o resultado proveniente da interação com o algoritmo de inteligência artificial.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/encounter-validation"
+      },
+      "name" : "Encounter - Validation Iteraction",
+      "description" : "Este perfil representa as restrições aplicadas ao recurso Encounter pelo Guia de Implementação FHIR do Sistema Clínico de Triagem e Aconselhamento (TCCS).\nDescreve as expectativas mínimas para o recurso EpisodeOfCare quando utilizado na composição do sistema ou em um dos recursos referidos.\nÉ utilizado para representar a validação de dados por parte de um profissional de saude.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/episodeOfCare-standard"
+      },
+      "name" : "Episode Of Care",
+      "description" : "\nEste perfil representa um período estruturado durante o qual um paciente recebe atendimento para um problema de saúde específico ou um conjunto de condições. Ele serve como base para organizar e vincular atividades de saúde relacionadas, como sintomas, problemas, observações e planos de cuidado.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "AllergyIntolerance"
+      }],
+      "reference" : {
+        "reference" : "AllergyIntolerance/example-allergyIntolerance"
+      },
+      "name" : "Exemplo AllergyIntolerance",
+      "description" : "An example AllergyIntolerance resource for a patient with a food allergy.",
+      "exampleCanonical" : "https://hl7.pt/fhir/community-health/StructureDefinition/allergy-intolerance-patient-allergy"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CarePlan"
+      }],
+      "reference" : {
+        "reference" : "CarePlan/exemplo-carePlan-plano-de-tratamento-seguimento-com-medicacao"
+      },
+      "name" : "Exemplo CarePlan - Plano de tratamento com medicação",
+      "description" : "Um exemplo de recurso CarePlan detalhando um plano de cuidados para seguimento do tratamento com atividades programadas, medicação e observações relevantes.",
+      "exampleCanonical" : "https://hl7.pt/fhir/community-health/StructureDefinition/care-plan-treatmentPlan"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CarePlan"
+      }],
+      "reference" : {
+        "reference" : "CarePlan/exemplo-carePlan-plano-de-tratamento-fecho-caso"
+      },
+      "name" : "Exemplo CarePlan - Plano de tratamento para fecho de caso",
+      "description" : "Um exemplo de recurso CarePlan detalhando um plano de cuidados para fecho de caso.",
+      "exampleCanonical" : "https://hl7.pt/fhir/community-health/StructureDefinition/care-plan-treatmentPlan"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CarePlan"
+      }],
+      "reference" : {
+        "reference" : "CarePlan/exemplo-carePlan-plano-de-tratamento-seguimento"
+      },
+      "name" : "Exemplo CarePlan - Plano de tratamento seguimento de caso",
+      "description" : "Um exemplo de recurso CarePlan detalhando um plano de cuidados para seguimento do tratamento com atividades programadas e observações relevantes.",
+      "exampleCanonical" : "https://hl7.pt/fhir/community-health/StructureDefinition/care-plan-treatmentPlan"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Condition"
+      }],
+      "reference" : {
+        "reference" : "Condition/exemplo-condition-disturbio-visual"
+      },
+      "name" : "Exemplo Condition - Disturbio visual",
+      "description" : "An example Condition resource representing a visual disturbance for a specific patient.",
+      "exampleCanonical" : "https://hl7.pt/fhir/community-health/StructureDefinition/condition-diagnosis"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Condition"
+      }],
+      "reference" : {
+        "reference" : "Condition/exemplo-condition-asthma"
+      },
+      "name" : "Exemplo Condition - Doença Crónica - Asma",
+      "description" : "Condição crônica de Asma.",
+      "exampleCanonical" : "https://hl7.pt/fhir/community-health/StructureDefinition/condition-chronic-disease-asthma"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Condition"
+      }],
+      "reference" : {
+        "reference" : "Condition/exemplo-condition-chronic-disease-diabetes"
+      },
+      "name" : "Exemplo Condition - Doença Crónica - Diabetes Mellitus",
+      "description" : "Condição crônica de Diabetes Mellitus.",
+      "exampleCanonical" : "https://hl7.pt/fhir/community-health/StructureDefinition/condition-chronic-disease-diabetes"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Condition"
+      }],
+      "reference" : {
+        "reference" : "Condition/exemplo-condition-chronic-dyslipidemia"
+      },
+      "name" : "Exemplo Condition - Doença Crónica - Dislipidemia",
+      "description" : "Condição crônica de Dislipidemia.",
+      "exampleCanonical" : "https://hl7.pt/fhir/community-health/StructureDefinition/condition-chronic-disease-dyslipidemia"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Condition"
+      }],
+      "reference" : {
+        "reference" : "Condition/exemplo-condition-chronic-obstructive-pulmonary-disease"
+      },
+      "name" : "Exemplo Condition - Doença Crónica - Doença Pulmonar Obstrutiva Crônica",
+      "description" : "Condição crônica de Doença Pulmonar Obstrutiva Crônica.",
+      "exampleCanonical" : "https://hl7.pt/fhir/community-health/StructureDefinition/condition-chronic-disease-chronic-obstructive-pulmonary-disease"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Condition"
+      }],
+      "reference" : {
+        "reference" : "Condition/exemplo-condition-chronic-hypertension"
+      },
+      "name" : "Exemplo Condition - Doença Crónica - Hipertensão",
+      "description" : "Condição crônica de Hipertensão.",
+      "exampleCanonical" : "https://hl7.pt/fhir/community-health/StructureDefinition/condition-chronic-disease-hypertension"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Condition"
+      }],
+      "reference" : {
+        "reference" : "Condition/exemplo-condition-dor-ocular"
+      },
+      "name" : "Exemplo Condition - Dor Ocular",
+      "description" : "An example Condition resource representing eye pain for a specific patient.",
+      "exampleCanonical" : "https://hl7.pt/fhir/community-health/StructureDefinition/condition-diagnosis"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Condition"
+      }],
+      "reference" : {
+        "reference" : "Condition/exemplo-condition-gravidez-risco"
+      },
+      "name" : "Exemplo Condition - Gravidez de rsico",
+      "description" : "Exemplo representando uma gravidez de risco.",
+      "exampleCanonical" : "https://hl7.pt/fhir/community-health/StructureDefinition/condition-critical-disease"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Encounter"
+      }],
+      "reference" : {
+        "reference" : "Encounter/exemplo-encounter-fecho-caso"
+      },
+      "name" : "Exemplo Encounter - Fecho de caso",
+      "description" : "An example Encounter resource representing the closure of a case.",
+      "exampleCanonical" : "https://hl7.pt/fhir/community-health/StructureDefinition/encounter-finish"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Encounter"
+      }],
+      "reference" : {
+        "reference" : "Encounter/exemplo-encounter-ia-registo"
+      },
+      "name" : "Exemplo Encounter - Resultado algorithmo AI",
+      "description" : "An example Encounter resource representing an AI algorithm evaluation.",
+      "exampleCanonical" : "https://hl7.pt/fhir/community-health/StructureDefinition/encounter-ai-algorithm"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Encounter"
+      }],
+      "reference" : {
+        "reference" : "Encounter/exemplo-encounter-seguimento"
+      },
+      "name" : "Exemplo Encounter - Seguimento de caso",
+      "description" : "An example Encounter resource representing the follow-up of a case.",
+      "exampleCanonical" : "https://hl7.pt/fhir/community-health/StructureDefinition/encounter-follow-up"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Encounter"
+      }],
+      "reference" : {
+        "reference" : "Encounter/exemplo-encounter-validacao-caso"
+      },
+      "name" : "Exemplo Encounter - Validação de caso",
+      "description" : "An example Encounter resource representing the validation of a case.",
+      "exampleCanonical" : "https://hl7.pt/fhir/community-health/StructureDefinition/encounter-validation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "EpisodeOfCare"
+      }],
+      "reference" : {
+        "reference" : "EpisodeOfCare/exemplo-episodeofcare-episodio-activo"
+      },
+      "name" : "Exemplo EpisodeOfCare - Episodio Activo",
+      "description" : "An example EpisodeOfCare resource representing an active episode with urgency level and care manager.",
+      "exampleCanonical" : "https://hl7.pt/fhir/community-health/StructureDefinition/episodeOfCare-standard"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "EpisodeOfCare"
+      }],
+      "reference" : {
+        "reference" : "EpisodeOfCare/exemplo-episodeofcare-episodio-em-espera"
+      },
+      "name" : "Exemplo EpisodeOfCare - Episodio em espera",
+      "description" : "An example EpisodeOfCare resource representing an episode on the waitlist with urgency level.",
+      "exampleCanonical" : "https://hl7.pt/fhir/community-health/StructureDefinition/episodeOfCare-standard"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "EpisodeOfCare"
+      }],
+      "reference" : {
+        "reference" : "EpisodeOfCare/exemplo-episodeofcare-episodio-finalizado"
+      },
+      "name" : "Exemplo EpisodeOfCare - Episodio encerrado",
+      "description" : "An example EpisodeOfCare resource representing a finished episode with urgency level and defined period.",
+      "exampleCanonical" : "https://hl7.pt/fhir/community-health/StructureDefinition/episodeOfCare-standard"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Flag"
+      }],
+      "reference" : {
+        "reference" : "Flag/ExampleFlagHighRiskPregnancy"
+      },
+      "name" : "Exemplo Flag - Doença Critica - Gravidez de risco",
+      "description" : "Exemplo de resource Flag para representar uma doença critica, neste caso uma gravidez de risco.",
+      "exampleCanonical" : "https://hl7.pt/fhir/community-health/StructureDefinition/flag-critical-disease"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Immunization"
+      }],
+      "reference" : {
+        "reference" : "Immunization/ExampleImmunizationCovid19"
+      },
+      "name" : "Exemplo Immunization - Vacinação contra COVID-19",
+      "description" : "Exemplo de um registro de imunização representando a vacinação contra COVID-19.",
+      "exampleCanonical" : "https://hl7.pt/fhir/community-health/StructureDefinition/immunization-vaccine"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Medication"
+      }],
+      "reference" : {
+        "reference" : "Medication/exemplo-medication-paracetamol"
+      },
+      "name" : "Exemplo Medication - Ben-u-ron",
+      "description" : "An example Medication resource for ben-u-ron Paracetamol 500 mg.",
+      "exampleCanonical" : "https://hl7.pt/fhir/community-health/StructureDefinition/medication-standard"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationRequest"
+      }],
+      "reference" : {
+        "reference" : "MedicationRequest/exemplo-medicationRequest-medicacao-prescrita"
+      },
+      "name" : "Exemplo MedicationRequest - Medicação Prescrita",
+      "description" : "An example MedicationRequest resource for a prescribed medication.",
+      "exampleCanonical" : "https://hl7.pt/fhir/community-health/StructureDefinition/medication-request-standard"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationStatement"
+      }],
+      "reference" : {
+        "reference" : "MedicationStatement/c5d03567-a9e6-4a3b-b593-45f7a65a5cd8"
+      },
+      "name" : "Exemplo MedicationStatement - Fenofibrato",
+      "description" : "An example MedicationStatement resource for Fenofibrato Generis, 145mg.",
+      "exampleCanonical" : "https://hl7.pt/fhir/community-health/StructureDefinition/medication-statement-standard"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/exemplo-observation-number-healthcare-visits-last-12-months"
+      },
+      "name" : "Exemplo Observation -  Número de visitas a unidades de saúde nos últimos 12 Meses",
+      "description" : "Exemplo representando o número de visitas a unidades de saúde nos últimos 12 meses.",
+      "exampleCanonical" : "https://hl7.pt/fhir/community-health/StructureDefinition/observation-number-healthcare-visits-last-12-months"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/exemplo-observation-desordem-sono"
+      },
+      "name" : "Exemplo Observation - Desordem do sono",
+      "description" : "An example Observation resource representing a sleep disorder symptom.",
+      "exampleCanonical" : "https://hl7.pt/fhir/community-health/StructureDefinition/observation-symptom"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/exemplo-observation-dor"
+      },
+      "name" : "Exemplo Observation - Dor",
+      "description" : "An example Observation resource representing a symptom of pain.",
+      "exampleCanonical" : "https://hl7.pt/fhir/community-health/StructureDefinition/observation-symptom"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/exemplo-observation-duracao-sintomas-localizacao"
+      },
+      "name" : "Exemplo Observation - Duração de sintomas e localização",
+      "description" : "An example Observation resource representing the duration and location of symptoms.",
+      "exampleCanonical" : "https://hl7.pt/fhir/community-health/StructureDefinition/observation-symptom-duration-body-site"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/exemplo-observation-pregnancy"
+      },
+      "name" : "Exemplo Observation - Gravidez",
+      "description" : "Instância de uma observação representando o estado de gravidez de uma paciente.",
+      "exampleCanonical" : "https://hl7.pt/fhir/community-health/StructureDefinition/observation-pregnancy"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/exemplo-patient-2"
+      },
+      "name" : "Exemplo Patient - Jane Smith",
+      "description" : "Um exemplo de resource Patient para Jane Smith.",
+      "exampleCanonical" : "https://hl7.pt/fhir/community-health/StructureDefinition/patient-tccs"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/exemplo-patient-1"
+      },
+      "name" : "Exemplo Patient - John Doe",
+      "description" : "Um exemplo de resource Patient para John Doe.",
+      "exampleCanonical" : "https://hl7.pt/fhir/community-health/StructureDefinition/patient-tccs"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/exemplo-patient-3"
+      },
+      "name" : "Exemplo Patient - Michael Johnson",
+      "description" : "Um exemplo de resource Patient para Michael Johnson.",
+      "exampleCanonical" : "https://hl7.pt/fhir/community-health/StructureDefinition/patient-tccs"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Practitioner"
+      }],
+      "reference" : {
+        "reference" : "Practitioner/exemplo-practitioner-1"
+      },
+      "name" : "Exemplo Practitioner - John Smith",
+      "description" : "Um exemplo de resource Practitioner para John Smith.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/exemplo-questionnaireResponse"
+      },
+      "name" : "Exemplo QuestionnaireResponse",
+      "description" : "Um exemplo de resource QuestionnaireResponse.",
+      "exampleCanonical" : "https://hl7.pt/fhir/community-health/StructureDefinition/questionnaire-response-app"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/exemplo-relatedPerson-1"
+      },
+      "name" : "Exemplo RelatedPerson - Emily Smith",
+      "description" : "Um exemplo de resource RelatedPerson para Emily Smith.",
+      "exampleCanonical" : "https://hl7.pt/fhir/community-health/StructureDefinition/RelatedPersonTCCS"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/exemplo-relatedPerson-2"
+      },
+      "name" : "Exemplo RelatedPerson - Michael Johnson",
+      "description" : "Um exemplo de resource RelatedPerson para Michael Johnson.",
+      "exampleCanonical" : "https://hl7.pt/fhir/community-health/StructureDefinition/RelatedPersonTCCS"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Condition"
+      }],
+      "reference" : {
+        "reference" : "Condition/exemplo-condition-chronic-disease"
+      },
+      "name" : "ExemploConditionChronicDisease",
+      "description" : "Instância representando outras doenças crônicas não especificadas.",
+      "exampleCanonical" : "https://hl7.pt/fhir/community-health/StructureDefinition/condition-chronic-disease"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/Extension-GrantedOrganization"
+      },
+      "name" : "Extension -  Granted Organization",
+      "description" : "A extensão descrita é uma extensão personalizada do FHIR criada para associar recursos a uma organização específica.\nEssa extensão é útil para definir um controle de acesso baseado em organizações em um sistema de saúde interoperável.\nAlém disso, o uso dessa extensão também pode ser aplicado para validação durante operações de criação ou atualização de recursos.\nO servidor pode, por exemplo, exigir que a extensão esteja presente e validar se o cliente tem permissão para associar o recurso àquela organização.\nIsso assegura que cada dado seja corretamente atribuído e acessado apenas por quem tem autorização.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/flag-detail"
+      },
+      "name" : "Extension - Flag Detail",
+      "description" : "Detalhes sobre a condição crítica sinalizada para um paciente.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/PatientIdentifier"
+      },
+      "name" : "Extension Patient Identifier",
+      "description" : "Extension used to connect a resource to a patient",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/probability"
+      },
+      "name" : "Extension Probability",
+      "description" : "Esta extensão representa a probabilidade de algo acontecer utilizando um valor decimal (ex, 0.85 para 85%).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/flag-critical-disease"
+      },
+      "name" : "Flag - Doença critica",
+      "description" : "Este perfil representa a utilização do recurso Flag para referenciar uma doença critica.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/immunization-vaccine"
+      },
+      "name" : "Immunization - Vacinação",
+      "description" : "Um perfil para representar informações de imunização ou vacinação de um paciente.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/medication-standard"
+      },
+      "name" : "Medication - Medicação",
+      "description" : "Este perfil define as restrições para o recurso `Medication`, padronizando a documentação de medicamentos, incluindo informações sobre código, ingredientes, forma farmacêutica e quantidade.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/medication-request-standard"
+      },
+      "name" : "MedicationRequest",
+      "description" : "O recurso MedicationRequest no FHIR representa um pedido de medicação prescrita a um paciente. É utilizado para registar os detalhes da intenção do clínico relativamente à medicação do paciente, incluindo a dosagem, a frequência e a duração do uso.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/medication-statement-standard"
+      },
+      "name" : "MedicationStatement",
+      "description" : "Este perfil é utilizado para registar informações sobre medicamentos que um paciente está atualmente a tomar, tomou no passado ou que está previsto tomar no futuro.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/HumanMessages"
+      },
+      "name" : "Messages",
+      "description" : "Este perfil representa as restrições aplicadas ao recurso Communication pelo Guia de Implementação FHIR do Sistema Clínico de Triagem e Aconselhamento (TCCS). Descreve as expectativas mínimas para o recurso Communication quando utilizado na composição do sistema ou em um dos recursos referidos.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/observation-pregnancy"
+      },
+      "name" : "Observation - Gravidez",
+      "description" : "Um perfil para representar informações sobre gravidez de uma paciente, incluindo idade gestacional, número de gestações e número de filhos.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/observation-number-healthcare-visits-last-12-months"
+      },
+      "name" : "Observation - Número de visitas a unidades de saúde nos últimos 12 Meses",
+      "description" : "Um perfil para representar o número de visitas a unidades de saúde nos últimos 12 meses.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/observation-symptom-severity"
+      },
+      "name" : "Observation - Severity Symptom",
+      "description" : "Este perfil representa as restrições aplicadas ao recurso Observation pelo Guia de Implementação FHIR do Sistema Clínico de Triagem e Aconselhamento (TCCS).\nDescreve as expectativas mínimas para o recurso Observation quando utilizado na composição do sistema ou em um dos recursos referidos.\nÉ utilizado para representar os sintomas severos.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/observation-symptom"
+      },
+      "name" : "Observation - Symptom",
+      "description" : "Este perfil representa as restrições aplicadas ao recurso Observation pelo Guia de Implementação FHIR do Sistema Clínico de Triagem e Aconselhamento (TCCS).\nDescreve as expectativas mínimas para o recurso Observation quando utilizado na composição do sistema ou em um dos recursos referidos.\nÉ utilizado para representar os sintomas.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/observation-symptom-duration-body-site"
+      },
+      "name" : "Observation - Symptoms Duration And Body Site",
+      "description" : "Este perfil representa as restrições aplicadas ao recurso Observation pelo Guia de Implementação FHIR do Sistema Clínico de Triagem e Aconselhamento (TCCS).\nDescreve as expectativas mínimas para o recurso Observation quando utilizado na composição do sistema ou em um dos recursos referidos.\nÉ utilizado para representar a duração dos sintomas e o local no corpo onde estão localizados.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/P5Organization"
+      },
+      "name" : "P5 Organization",
+      "description" : "Organization",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/patient-tccs"
+      },
+      "name" : "Patient - TCCS Patient",
+      "description" : "Este perfil representa as restrições aplicadas ao recurso Patient pelo Guia de Implementação FHIR do Sistema Clínico de Triagem e Aconselhamento (TCCS). Descreve as expectativas mínimas para o recurso Patient quando utilizado na composição do sistema ou em um dos recursos referidos.\nNa área da saúde, Patient refere-se a um indivíduo, e informações demográficas específicas devem ser registradas e mantidas atualizadas.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/questionnaire-response-app"
+      },
+      "name" : "Questionnaire Response - Questionário responsido na app",
+      "description" : "Este perfil especifica as restrições para o recurso `QuestionnaireResponse` para capturar respostas completas de questionários, associadas a um paciente e, opcionalmente, a um encontro clínico.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/RelatedPersonTCCS"
+      },
+      "name" : "Related Person",
+      "description" : "Este perfil representa as restrições aplicadas ao recurso RelatedPerson pelo Guia de Implementação FHIR do Sistema Clínico de Triagem e Aconselhamento (TCCS). Descreve as expectativas mínimas para o recurso RelatedPerson quando utilizado na composição do sistema ou em um dos recursos referidos.\nO recurso RelatedPerson é utilizado para informar sobre uma pessoa que está envolvida no cuidado de um paciente, mas que não é o alvo dos cuidados de saúde, nem tem uma responsabilidade formal no processo de cuidado.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/episode-of-care-status-subset"
+      },
+      "name" : "Subset of Episode Of Care Status",
+      "description" : "A subset of allowed statuses for EpisodeOfCare.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/symptom-properties"
+      },
+      "name" : "Symptom Properties CodeSystem",
+      "description" : "CodeSystem defining properties related to symptoms.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/TCCSTeam"
+      },
+      "name" : "TCCS Team",
+      "description" : "Triage and Counseling Clinical System Team",
+      "exampleBoolean" : true
+    }],
+    "page" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+        "valueUrl" : "toc.html"
+      }],
+      "nameUrl" : "toc.html",
+      "title" : "Table of Contents",
+      "generation" : "html",
+      "page" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "index.html"
+        }],
+        "nameUrl" : "index.html",
+        "title" : "Home Page",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "background.html"
+        }],
+        "nameUrl" : "background.html",
+        "title" : "Introdução",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "spec.html"
+        }],
+        "nameUrl" : "spec.html",
+        "title" : "Especificações",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "downloads.html"
+        }],
+        "nameUrl" : "downloads.html",
+        "title" : "Downloads",
+        "generation" : "html"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "changes.html"
+        }],
+        "nameUrl" : "changes.html",
+        "title" : "IG Change History",
+        "generation" : "html"
+      }]
+    },
+    "parameter" : [{
+      "code" : "path-resource",
+      "value" : "input/capabilities"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/examples"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/extensions"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/models"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/operations"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/profiles"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/resources"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/vocabulary"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/maps"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/testing"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/history"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "fsh-generated/resources"
+    },
+    {
+      "code" : "path-pages",
+      "value" : "template/config"
+    },
+    {
+      "code" : "path-pages",
+      "value" : "input/images"
+    },
+    {
+      "code" : "path-tx-cache",
+      "value" : "input-cache/txcache"
+    }]
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "a271cce4-5c19-40c1-8da2-efd34d8b36ae",
+  "meta" : {
+    "lastUpdated" : "2024-12-12T12:37:03.228+00:00"
+  },
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "https://hl7.pt/fhir/community-health/ValueSet/episode-of-care-status-subset",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"http://hl7.org/fhir/R4/codesystem-episode-of-care-status.html\">codesystem EpisodeOfCareStatus v4.0.1 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/episode-of-care-status-active\"> </a>\u00a0\u00a0<a href=\"http://hl7.org/fhir/R4/codesystem-episode-of-care-status.html#episode-of-care-status-active\">active</a></td><td>http://hl7.org/fhir/episode-of-care-status</td><td>active</td><td><div><p>This episode of care is current.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/episode-of-care-status-waitlist\"> </a>\u00a0\u00a0<a href=\"http://hl7.org/fhir/R4/codesystem-episode-of-care-status.html#episode-of-care-status-waitlist\">waitlist</a></td><td>http://hl7.org/fhir/episode-of-care-status</td><td>waitlist</td><td><div><p>This episode has been placed on a waitlist, pending the episode being made active (or cancelled).</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/episode-of-care-status-finished\"> </a>\u00a0\u00a0<a href=\"http://hl7.org/fhir/R4/codesystem-episode-of-care-status.html#episode-of-care-status-finished\">finished</a></td><td>http://hl7.org/fhir/episode-of-care-status</td><td>finished</td><td><div><p>This episode of care is finished and the organization is not expecting to be providing further care to the patient. Can also be known as &quot;closed&quot;, &quot;completed&quot; or other similar terms.</p>\n</div></td></tr></table></div>"
+      },
+      "url" : "https://hl7.pt/fhir/community-health/ValueSet/episode-of-care-status-subset",
+      "version" : "1.0.1",
+      "name" : "EpisodeOfCareStatusSubset",
+      "title" : "Subset of Episode Of Care Status",
+      "status" : "active",
+      "date" : "2024-12-12T12:37:03+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001",
+          "display" : "World"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:686a66dc-adef-472a-bb46-8e4e946ef904",
+        "timestamp" : "2024-12-12T12:37:59+00:00",
+        "total" : 3,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "warning-draft",
+          "valueUri" : "http://hl7.org/fhir/episode-of-care-status|4.0.1"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://hl7.org/fhir/episode-of-care-status|4.0.1"
+        }],
+        "contains" : [{
+          "system" : "http://hl7.org/fhir/episode-of-care-status",
+          "code" : "active",
+          "display" : "active"
+        },
+        {
+          "system" : "http://hl7.org/fhir/episode-of-care-status",
+          "code" : "waitlist",
+          "display" : "waitlist"
+        },
+        {
+          "system" : "http://hl7.org/fhir/episode-of-care-status",
+          "code" : "finished",
+          "display" : "finished"
+        }]
+      }
+    }
+  }]
+}

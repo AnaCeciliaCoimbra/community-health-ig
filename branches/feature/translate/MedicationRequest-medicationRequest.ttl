@@ -1,0 +1,47 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.com/fhir/example/MedicationRequest/medicationRequest> a fhir:MedicationRequest ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "medicationRequest"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest medicationRequest</b></p><a name=\"medicationRequest\"> </a><a name=\"hcmedicationRequest\"> </a><a name=\"medicationRequest-en-US\"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><p><b>medication</b>: <a href=\"Medication-paracetamol1000mg.html\">Medication Paracetamol 1000 mg</a></p><p><b>subject</b>: <a href=\"Patient-PatientTCCS.html\">John Doe  Male, DoB: 2009-02-09 ( https://ehr.testing.p5.pt/api/fhir#12345678)</a></p><p><b>authoredOn</b>: 2024-02-11 12:00:00+0000</p><h3>DosageInstructions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>Timing</b></td></tr><tr><td style=\"display: none\">*</td><td>Take one tablet every 8 hours</td><td>3 per8 hours</td></tr></table><h3>DispenseRequests</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ValidityPeriod</b></td><td><b>NumberOfRepeatsAllowed</b></td></tr><tr><td style=\"display: none\">*</td><td>2024-02-11 12:00:00+0000 --&gt; 2024-02-14 12:00:00+0000</td><td>3</td></tr></table><blockquote><p><b>substitution</b></p></blockquote></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "order"] ; # 
+  fhir:medication [
+     a fhir:Reference ;
+     fhir:link <http://example.com/fhir/example/Medication/paracetamol1000mg> ;
+     fhir:reference [ fhir:v "Medication/paracetamol1000mg" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://example.com/fhir/example/Patient/PatientTCCS> ;
+     fhir:reference [ fhir:v "Patient/PatientTCCS" ]
+  ] ; # 
+  fhir:authoredOn [ fhir:v "2024-02-11T12:00:00Z"^^xsd:dateTime] ; # 
+  fhir:dosageInstruction ( [
+     fhir:text [ fhir:v "Take one tablet every 8 hours" ] ;
+     fhir:timing [
+       fhir:repeat [
+         fhir:frequency [ fhir:v "3"^^xsd:positiveInteger ] ;
+         fhir:period [ fhir:v "8"^^xsd:decimal ] ;
+         fhir:periodUnit [ fhir:v "h" ]
+       ]
+     ]
+  ] ) ; # 
+  fhir:dispenseRequest [
+     fhir:validityPeriod [
+       fhir:start [ fhir:v "2024-02-11T12:00:00Z"^^xsd:dateTime ] ;
+       fhir:end [ fhir:v "2024-02-14T12:00:00Z"^^xsd:dateTime ]
+     ] ;
+     fhir:numberOfRepeatsAllowed [ fhir:v "3"^^xsd:nonNegativeInteger ]
+  ] ; # 
+  fhir:substitution [] . # 
+
+# -------------------------------------------------------------------------------------
+

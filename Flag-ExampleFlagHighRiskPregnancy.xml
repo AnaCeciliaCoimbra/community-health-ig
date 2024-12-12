@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Flag xmlns="http://hl7.org/fhir">
+  <id value="ExampleFlagHighRiskPregnancy"/>
+  <meta>
+    <profile value="https://hl7.pt/fhir/community-health/StructureDefinition/flag-critical-disease"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Flag ExampleFlagHighRiskPregnancy</b></p><a name="ExampleFlagHighRiskPregnancy"> </a><a name="hcExampleFlagHighRiskPregnancy"> </a><a name="ExampleFlagHighRiskPregnancy-en-US"> </a><p><b>Extension - Flag Detail</b>: <a href="Condition-exemplo-condition-gravidez-risco.html">Condition </a></p><p><b>status</b>: Active</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/flag-category clinical}">Clinical</span></p><p><b>code</b>: <span title="Codes:">Gravidez de risco</span></p><p><b>subject</b>: <a href="Patient-exemplo-patient-1.html">John Doe  Male, DoB: 2009-02-09 ( https://ehr.testing.p5.pt/api/fhir#12345678)</a></p><p><b>period</b>: 2024-12-01 00:00:00+0000 --&gt; (ongoing)</p><p><b>author</b>: <a href="Practitioner-exemplo-practitioner-1.html">Practitioner John Smith </a></p></div>
+  </text>
+  <extension url="https://hl7.pt/fhir/community-health/StructureDefinition/flag-detail">
+    <valueReference>
+      <reference value="Condition/exemplo-condition-gravidez-risco"/>
+    </valueReference>
+  </extension>
+  <status value="active"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/flag-category"/>
+      <code value="clinical"/>
+      <display value="Clinical"/>
+    </coding>
+  </category>
+  <code>
+    <text value="Gravidez de risco"/>
+  </code>
+  <subject>
+    <reference value="Patient/exemplo-patient-1"/>
+  </subject>
+  <period>
+    <start value="2024-12-01T00:00:00Z"/>
+  </period>
+  <author>
+    <reference value="Practitioner/exemplo-practitioner-1"/>
+  </author>
+</Flag>

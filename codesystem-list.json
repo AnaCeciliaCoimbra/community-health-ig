@@ -1,0 +1,12 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "https://hl7.pt/fhir/community-health/CodeSystem/symptom-properties",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "SymptomPropertiesCodeSystem",
+      "title" : "Symptom Properties CodeSystem",
+      "description" : "CodeSystem defining properties related to symptoms."
+    }
+  ]
+}

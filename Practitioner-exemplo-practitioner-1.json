@@ -1,0 +1,27 @@
+{
+  "resourceType" : "Practitioner",
+  "id" : "exemplo-practitioner-1",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Practitioner exemplo-practitioner-1</b></p><a name=\"exemplo-practitioner-1\"> </a><a name=\"hcexemplo-practitioner-1\"> </a><a name=\"exemplo-practitioner-1-en-US\"> </a><p><b>identifier</b>: <code>http://example.org/practitioner-ids</code>/12345</p><p><b>name</b>: John Smith </p><p><b>telecom</b>: ph: 555-1234(Work), <a href=\"mailto:john.smith@example.com\">john.smith@example.com</a></p><p><b>gender</b>: Male</p></div>"
+  },
+  "identifier" : [{
+    "system" : "http://example.org/practitioner-ids",
+    "value" : "12345"
+  }],
+  "name" : [{
+    "family" : "Smith",
+    "given" : ["John"]
+  }],
+  "telecom" : [{
+    "system" : "phone",
+    "value" : "555-1234",
+    "use" : "work"
+  },
+  {
+    "system" : "email",
+    "value" : "john.smith@example.com",
+    "use" : "work"
+  }],
+  "gender" : "male"
+}

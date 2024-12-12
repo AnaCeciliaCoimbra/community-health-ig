@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ServiceRequest xmlns="http://hl7.org/fhir">
+  <id value="reevaluationServiceRequest"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ServiceRequest reevaluationServiceRequest</b></p><a name="reevaluationServiceRequest"> </a><a name="hcreevaluationServiceRequest"> </a><a name="reevaluationServiceRequest-en-US"> </a><p><b>basedOn</b>: <a href="CarePlan-carePlan.html">CarePlan: status = active; intent = plan; period = 2024-02-11 12:00:00+0000 --&gt; 2024-02-15 12:00:00+0000</a></p><p><b>status</b>: Active</p><p><b>intent</b>: Plan</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 710830005}">Reevaluation</span></p><p><b>subject</b>: <a href="Patient-PatientTCCS.html">John Doe  Male, DoB: 2009-02-09 ( https://ehr.testing.p5.pt/api/fhir#12345678)</a></p><p><b>occurrence</b>: Once per1 days</p><p><b>authoredOn</b>: 2024-02-12 12:00:00+0000</p><p><b>requester</b>: <a href="Practitioner-Practitioner1.html">Practitioner John Smith </a></p><p><b>reasonCode</b>: <span title="Codes:{http://snomed.info/sct 431855005}">Patient reevaluation</span></p></div>
+  </text>
+  <basedOn>
+    <reference value="CarePlan/carePlan"/>
+  </basedOn>
+  <status value="active"/>
+  <intent value="plan"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="710830005"/>
+      <display value="Reevaluation"/>
+    </coding>
+    <text value="Reevaluation"/>
+  </code>
+  <subject>
+    <reference value="Patient/PatientTCCS"/>
+  </subject>
+  <occurrenceTiming>
+    <repeat>
+      <frequency value="1"/>
+      <period value="1"/>
+      <periodUnit value="d"/>
+    </repeat>
+  </occurrenceTiming>
+  <authoredOn value="2024-02-12T12:00:00Z"/>
+  <requester>
+    <reference value="Practitioner/Practitioner1"/>
+  </requester>
+  <reasonCode>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="431855005"/>
+      <display value="Patient reevaluation"/>
+    </coding>
+    <text value="Patient reevaluation"/>
+  </reasonCode>
+</ServiceRequest>

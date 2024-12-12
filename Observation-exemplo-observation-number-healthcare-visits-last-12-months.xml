@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="exemplo-observation-number-healthcare-visits-last-12-months"/>
+  <meta>
+    <profile value="https://hl7.pt/fhir/community-health/StructureDefinition/observation-number-healthcare-visits-last-12-months"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation exemplo-observation-number-healthcare-visits-last-12-months</b></p><a name="exemplo-observation-number-healthcare-visits-last-12-months"> </a><a name="hcexemplo-observation-number-healthcare-visits-last-12-months"> </a><a name="exemplo-observation-number-healthcare-visits-last-12-months-en-US"> </a><p><b>status</b>: Registered</p><p><b>code</b>: <span title="Codes:{http://ehr.p5.pt/ValueSet/observation-values healthcare-visits-12-months}">Numero de visitas a uma unidade de saude nos ultimos 12 meses</span></p><p><b>subject</b>: <a href="Patient/example">Patient/example</a></p><p><b>effective</b>: 2024-12-11</p><p><b>value</b>: 5</p></div>
+  </text>
+  <status value="registered"/>
+  <code>
+    <coding>
+      <system value="http://ehr.p5.pt/ValueSet/observation-values"/>
+      <code value="healthcare-visits-12-months"/>
+      <display value="Numero de visitas a uma unidade de saude nos ultimos 12 meses"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/example"/>
+  </subject>
+  <effectiveDateTime value="2024-12-11"/>
+  <valueInteger value="5"/>
+</Observation>

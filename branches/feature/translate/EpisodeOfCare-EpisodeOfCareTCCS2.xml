@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<EpisodeOfCare xmlns="http://hl7.org/fhir">
+  <id value="EpisodeOfCareTCCS2"/>
+  <meta>
+    <profile value="https://ehr.testing.p5.pt/api/fhir/StructureDefinition/EpisodeOfCareTCCS"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: EpisodeOfCare EpisodeOfCareTCCS2</b></p><a name="EpisodeOfCareTCCS2"> </a><a name="hcEpisodeOfCareTCCS2"> </a><a name="EpisodeOfCareTCCS2-en-US"> </a><p><b style="color: maroon">Exception Generating Narrative: Unknown modifier extension https://ehr.p5.pt/api/fhir/StructureDefinition/granted-organization </b></p></div>
+  </text>
+  <modifierExtension url="https://ehr.p5.pt/api/fhir/StructureDefinition/granted-organization">
+    <valueReference>
+      <reference value="Organization/def67890"/>
+    </valueReference>
+  </modifierExtension>
+  <status value="active"/>
+  <patient>
+    <reference value="Patient/PatientTCCS2"/>
+  </patient>
+  <managingOrganization>
+    <reference value="Organization/P5Organization"/>
+  </managingOrganization>
+  <period>
+    <start value="2023-05-20T15:45:00.000Z"/>
+  </period>
+  <careManager>
+    <reference value="Practitioner/Practitioner1"/>
+  </careManager>
+</EpisodeOfCare>

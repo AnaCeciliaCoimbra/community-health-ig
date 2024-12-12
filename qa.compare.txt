@@ -1,0 +1,372 @@
+CommunityHealthIG : Validation Results
+=========================================
+
+err = 117, warn = 84, info = 11
+$--
+Generated $--. FHIR version $-- for my-ig#$-- (canonical = http://hl7.pt/fhir)
+ Build Errors : 1 / 0 / 0
+ /github/workspace/fsh-generated/resources/AllergyIntolerance-example-allergyIntolerance : 4 / 3 / 1
+ /github/workspace/fsh-generated/resources/CarePlan-exemplo-carePlan-plano-de-tratamento-fecho-caso : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/CarePlan-exemplo-carePlan-plano-de-tratamento-seguimento : 0 / 4 / 1
+ /github/workspace/fsh-generated/resources/CarePlan-exemplo-carePlan-plano-de-tratamento-seguimento-com-medicacao : 1 / 4 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-symptom-properties : 4 / 0 / 2
+ /github/workspace/fsh-generated/resources/Condition-exemplo-condition-asthma : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/Condition-exemplo-condition-chronic-disease : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/Condition-exemplo-condition-chronic-disease-diabetes : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/Condition-exemplo-condition-chronic-dyslipidemia : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/Condition-exemplo-condition-chronic-hypertension : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/Condition-exemplo-condition-chronic-obstructive-pulmonary-disease : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/Condition-exemplo-condition-disturbio-visual : 2 / 4 / 2
+ /github/workspace/fsh-generated/resources/Condition-exemplo-condition-dor-ocular : 1 / 3 / 2
+ /github/workspace/fsh-generated/resources/Condition-exemplo-condition-gravidez-risco : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/Encounter-exemplo-encounter-fecho-caso : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/Encounter-exemplo-encounter-ia-registo : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/Encounter-exemplo-encounter-seguimento : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/Encounter-exemplo-encounter-validacao-caso : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/EpisodeOfCare-exemplo-episodeofcare-episodio-activo : 0 / 1 / 2
+ /github/workspace/fsh-generated/resources/EpisodeOfCare-exemplo-episodeofcare-episodio-em-espera : 0 / 1 / 2
+ /github/workspace/fsh-generated/resources/EpisodeOfCare-exemplo-episodeofcare-episodio-finalizado : 0 / 1 / 2
+ /github/workspace/fsh-generated/resources/Flag-ExampleFlagHighRiskPregnancy : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Immunization-ExampleImmunizationCovid19 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ImplementationGuide-my-ig : 3 / 1 / 1
+ /github/workspace/fsh-generated/resources/Medication-exemplo-medication-paracetamol : 2 / 2 / 1
+ /github/workspace/fsh-generated/resources/MedicationRequest-exemplo-medicationRequest-medicacao-prescrita : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/MedicationStatement-c5d03567-a9e6-4a3b-b593-45f7a65a5cd8 : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/Observation-exemplo-observation-desordem-sono : 0 / 10 / 1
+ /github/workspace/fsh-generated/resources/Observation-exemplo-observation-dor : 0 / 10 / 1
+ /github/workspace/fsh-generated/resources/Observation-exemplo-observation-duracao-sintomas-localizacao : 0 / 4 / 1
+ /github/workspace/fsh-generated/resources/Observation-exemplo-observation-number-healthcare-visits-last-12-months : 2 / 2 / 1
+ /github/workspace/fsh-generated/resources/Observation-exemplo-observation-pregnancy : 10 / 1 / 1
+ /github/workspace/fsh-generated/resources/Organization-P5Organization : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Organization-TCCSTeam : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Patient-exemplo-patient-1 : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/Patient-exemplo-patient-2 : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/Patient-exemplo-patient-3 : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/Practitioner-exemplo-practitioner-1 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/QuestionnaireResponse-exemplo-questionnaireResponse : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/RelatedPerson-exemplo-relatedPerson-1 : 2 / 1 / 2
+ /github/workspace/fsh-generated/resources/RelatedPerson-exemplo-relatedPerson-2 : 2 / 1 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-Extension-GrantedOrganization : 2 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-HumanMessages : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-PatientIdentifier : 2 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-RelatedPersonTCCS : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-allergy-intolerance-patient-allergy : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-care-plan-treatmentPlan : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-condition-chronic-disease : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-condition-chronic-disease-asthma : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-condition-chronic-disease-chronic-obstructive-pulmonary-disease : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-condition-chronic-disease-diabetes : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-condition-chronic-disease-dyslipidemia : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-condition-chronic-disease-hypertension : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-condition-critical-disease : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-condition-diagnosis : 6 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-encounter-ai-algorithm : 2 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-encounter-finish : 2 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-encounter-follow-up : 2 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-encounter-validation : 2 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-episodeOfCare-standard : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-flag-critical-disease : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-flag-detail : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-immunization-vaccine : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-medication-request-standard : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-medication-standard : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-medication-statement-standard : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-observation-number-healthcare-visits-last-12-months : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-observation-pregnancy : 2 / 0 / 3
+ /github/workspace/fsh-generated/resources/StructureDefinition-observation-symptom : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-observation-symptom-duration-body-site : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-observation-symptom-severity : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-patient-tccs : 3 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-probability : 2 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-questionnaire-response-app : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-episode-of-care-status-subset : 3 / 0 / 1
+</table>
+== n/a ==
+ERROR: /github/workspace/output/Observation-exemplo-observation-number-healthcare-visits-last-12-months.html#/html/body/div/div/div/div/div/div/p/a at Line 196, column 641: The link 'Patient/example' for "Patient/example" cannot be resolved
+== fsh-generated/resources/AllergyIntolerance-example-allergyIntolerance.json ==
+WARNING: AllergyIntolerance/example-allergyIntolerance: AllergyIntolerance.clinicalStatus.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+ERROR: AllergyIntolerance/example-allergyIntolerance: AllergyIntolerance.clinicalStatus: None of the codings provided are in the value set 'AllergyIntolerance Clinical Status Codes' (http://hl7.org/fhir/ValueSet/allergyintolerance-clinical|4.0.1), and a coding from this value set is required) (codes = null#active)
+WARNING: AllergyIntolerance/example-allergyIntolerance: AllergyIntolerance.verificationStatus.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+ERROR: AllergyIntolerance/example-allergyIntolerance: AllergyIntolerance.verificationStatus: None of the codings provided are in the value set 'AllergyIntolerance Verification Status Codes' (http://hl7.org/fhir/ValueSet/allergyintolerance-verification|4.0.1), and a coding from this value set is required) (codes = null#unconfirmed)
+WARNING: AllergyIntolerance/example-allergyIntolerance: AllergyIntolerance.code: ValueSet 'https://ehr.p5.pt/terminology/ValueSet/snomedct' not found
+ERROR: AllergyIntolerance/example-allergyIntolerance: AllergyIntolerance.code.coding[0].display: Wrong Display Name 'foodIntolerance' for http://snomed.info/sct#235719002. Valid display is one of 4 choices: 'Food intolerance', 'Intolerance to food (finding)', 'Intolerance to food' or 'An adverse effect of a food that is not due to an immunologic abnormality but rather to metabolic, toxic, pharmacologic or unknown processes. Joint AAAAI/ACAAI practice parameters-Food intolerance 2014.' (for the language(s) 'en')
+ERROR: AllergyIntolerance/example-allergyIntolerance: AllergyIntolerance.onset.ofType(Age): Constraint failed: age-1: 'There SHALL be a code if there is a value and it SHALL be an expression of time.  If system is present, it SHALL be UCUM.  If value is present, it SHALL be positive.'
+== fsh-generated/resources/CarePlan-exemplo-carePlan-plano-de-tratamento-fecho-caso.json ==
+WARNING: CarePlan/exemplo-carePlan-plano-de-tratamento-fecho-caso: CarePlan.activity[0].detail.code.coding[0]: A definition for CodeSystem 'http://localhost:8081/api/fhirValueSet/care-plan-activity-type' could not be found, so the code cannot be validated
+WARNING: CarePlan/exemplo-carePlan-plano-de-tratamento-fecho-caso: CarePlan.activity[0].detail.code.coding[0].system: ValueSet 'https://ehr.testing.p5.pt/api/fhir/ValueSet/care-plan-activity-type' not found
+== fsh-generated/resources/CarePlan-exemplo-carePlan-plano-de-tratamento-seguimento.json ==
+WARNING: CarePlan/exemplo-carePlan-plano-de-tratamento-seguimento: CarePlan.activity[0].detail.code.coding[0]: A definition for CodeSystem 'https://ehr.testing.p5.pt/api/fhir/ValueSet/care-plan-activity-type' could not be found, so the code cannot be validated
+WARNING: CarePlan/exemplo-carePlan-plano-de-tratamento-seguimento: CarePlan.activity[0].detail.code.coding[0].system: ValueSet 'https://ehr.testing.p5.pt/api/fhir/ValueSet/care-plan-activity-type' not found
+WARNING: CarePlan/exemplo-carePlan-plano-de-tratamento-seguimento: CarePlan.activity[1].detail.code.coding[0]: A definition for CodeSystem 'https://ehr.testing.p5.pt/api/fhir/ValueSet/care-plan-activity-type' could not be found, so the code cannot be validated
+WARNING: CarePlan/exemplo-carePlan-plano-de-tratamento-seguimento: CarePlan.activity[1].detail.code.coding[0].system: ValueSet 'https://ehr.testing.p5.pt/api/fhir/ValueSet/care-plan-activity-type' not found
+== fsh-generated/resources/CarePlan-exemplo-carePlan-plano-de-tratamento-seguimento-com-medicacao.json ==
+WARNING: CarePlan/exemplo-carePlan-plano-de-tratamento-seguimento-com-medicacao: CarePlan.activity[0].detail.code.coding[0]: A definition for CodeSystem 'https://ehr.testing.p5.pt/api/fhir/ValueSet/care-plan-activity-type' could not be found, so the code cannot be validated
+WARNING: CarePlan/exemplo-carePlan-plano-de-tratamento-seguimento-com-medicacao: CarePlan.activity[0].detail.code.coding[0].system: ValueSet 'https://ehr.testing.p5.pt/api/fhir/ValueSet/care-plan-activity-type' not found
+WARNING: CarePlan/exemplo-carePlan-plano-de-tratamento-seguimento-com-medicacao: CarePlan.activity[1].detail.code.coding[0]: A definition for CodeSystem 'https://ehr.testing.p5.pt/api/fhir/ValueSet/care-plan-activity-type' could not be found, so the code cannot be validated
+WARNING: CarePlan/exemplo-carePlan-plano-de-tratamento-seguimento-com-medicacao: CarePlan.activity[1].detail.code.coding[0].system: ValueSet 'https://ehr.testing.p5.pt/api/fhir/ValueSet/care-plan-activity-type' not found
+ERROR: CarePlan/exemplo-carePlan-plano-de-tratamento-seguimento-com-medicacao: CarePlan.activity[2]: Constraint failed: cpl-3: 'Provide a reference or detail, not both' (defined in http://hl7.org/fhir/StructureDefinition/CarePlan)
+== fsh-generated/resources/CodeSystem-symptom-properties.json ==
+ERROR: CodeSystem.where(url = 'https://hl7.pt/fhir/community-health/CodeSystem/symptom-properties'): Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-symptom-properties.json - the canonical URL (http://hl7.pt/fhir/CodeSystem/symptom-properties) does not match the URL (https://hl7.pt/fhir/community-health/CodeSystem/symptom-properties)
+INFORMATION: CodeSystem/symptom-properties: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+ERROR: CodeSystem/symptom-properties: CodeSystem: Code systems published by HL7 SHALL conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+ERROR: CodeSystem/symptom-properties: CodeSystem: Code systems published by HL7 SHALL conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+ERROR: /github/workspace/fsh-generated/resources/CodeSystem-symptom-properties: URL Mismatch http://hl7.pt/fhir/CodeSystem/symptom-properties vs https://hl7.pt/fhir/community-health/CodeSystem/symptom-properties
+== fsh-generated/resources/Condition-exemplo-condition-asthma.json ==
+ERROR: Condition/exemplo-condition-asthma: Condition.category[0].coding[0].code: Unknown code 'chronic' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/condition-category' version '1.0.1'
+== fsh-generated/resources/Condition-exemplo-condition-chronic-disease.json ==
+ERROR: Condition/exemplo-condition-chronic-disease: Condition.category[0].coding[0].code: Unknown code 'chronic' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/condition-category' version '1.0.1'
+== fsh-generated/resources/Condition-exemplo-condition-chronic-disease-diabetes.json ==
+ERROR: Condition/exemplo-condition-chronic-disease-diabetes: Condition.category[0].coding[0].code: Unknown code 'chronic' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/condition-category' version '1.0.1'
+== fsh-generated/resources/Condition-exemplo-condition-chronic-dyslipidemia.json ==
+ERROR: Condition/exemplo-condition-chronic-dyslipidemia: Condition.category[0].coding[0].code: Unknown code 'chronic' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/condition-category' version '1.0.1'
+== fsh-generated/resources/Condition-exemplo-condition-chronic-hypertension.json ==
+ERROR: Condition/exemplo-condition-chronic-hypertension: Condition.category[0].coding[0].code: Unknown code 'chronic' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/condition-category' version '1.0.1'
+== fsh-generated/resources/Condition-exemplo-condition-chronic-obstructive-pulmonary-disease.json ==
+ERROR: Condition/exemplo-condition-chronic-obstructive-pulmonary-disease: Condition.category[0].coding[0].code: Unknown code 'chronic' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/condition-category' version '1.0.1'
+== fsh-generated/resources/Condition-exemplo-condition-disturbio-visual.json ==
+INFORMATION: Condition/exemplo-condition-disturbio-visual: Condition.extension[0]: This element does not match any known slice defined in the profile https://hl7.pt/fhir/community-health/StructureDefinition/condition-diagnosis|1.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
+ERROR: Condition/exemplo-condition-disturbio-visual: Condition.extension[0]: The extension http://example.com/fhir/example/StructureDefinition/probability could not be found so is not allowed here
+ERROR: Condition/exemplo-condition-disturbio-visual: Condition.category[0].coding[0].system: The Coding references a value set, not a code system ('http://hl7.org/fhir/ValueSet/condition-category')
+WARNING: Condition/exemplo-condition-disturbio-visual: Condition.code: ValueSet 'https://ehr.p5.pt/terminology/CodeSystem/conditions' not found
+WARNING: Condition/exemplo-condition-disturbio-visual: Condition.code.coding[0].system: A definition for CodeSystem 'https://ehr.p5.pt/terminology/CodeSystem/conditions' could not be found, so the code cannot be validated
+WARNING: Condition/exemplo-condition-disturbio-visual: Condition.code.coding[3].system: A definition for CodeSystem 'http://ehr.p5.pt/terminology/icpc2' could not be found, so the code cannot be validated
+WARNING: Condition/exemplo-condition-disturbio-visual: Condition.meta.profile[1]: Profile reference 'http://triage-counseling-clinical-system.org/fhir/StructureDefinition/Diagnosis' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
+== fsh-generated/resources/Condition-exemplo-condition-dor-ocular.json ==
+INFORMATION: Condition/exemplo-condition-dor-ocular: Condition.extension[0]: This element does not match any known slice defined in the profile https://hl7.pt/fhir/community-health/StructureDefinition/condition-diagnosis|1.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
+ERROR: Condition/exemplo-condition-dor-ocular: Condition.extension[0]: The extension http://example.com/fhir/example/StructureDefinition/probability could not be found so is not allowed here
+WARNING: Condition/exemplo-condition-dor-ocular: Condition.code: ValueSet 'https://ehr.p5.pt/terminology/CodeSystem/conditions' not found
+WARNING: Condition/exemplo-condition-dor-ocular: Condition.code.coding[0]: A definition for CodeSystem 'https://ehr.p5.pt/terminology/CodeSystem/conditions' could not be found, so the code cannot be validated
+WARNING: Condition/exemplo-condition-dor-ocular: Condition.code.coding[3]: A definition for CodeSystem 'http://ehr.p5.pt/terminology/icpc2' could not be found, so the code cannot be validated
+== fsh-generated/resources/Condition-exemplo-condition-gravidez-risco.json ==
+ERROR: Condition/exemplo-condition-gravidez-risco: Condition.category[0].coding[0].code: Unknown code 'critical' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/condition-category' version '1.0.1'
+== fsh-generated/resources/Encounter-exemplo-encounter-fecho-caso.json ==
+WARNING: Encounter/exemplo-encounter-fecho-caso: Encounter.type[0].coding[0].system: A definition for CodeSystem 'https://ehr.p5.pt/terminology/CodeSystem/service' could not be found, so the code cannot be validated
+WARNING: Encounter/exemplo-encounter-fecho-caso: Encounter.serviceType.coding[0].system: A definition for CodeSystem 'https://ehr.p5.pt/terminology/CodeSystem/service-type' could not be found, so the code cannot be validated
+== fsh-generated/resources/Encounter-exemplo-encounter-ia-registo.json ==
+WARNING: Encounter/exemplo-encounter-ia-registo: Encounter.type[0].coding[0].system: A definition for CodeSystem 'https://ehr.p5.pt/terminology/CodeSystem/service' could not be found, so the code cannot be validated
+WARNING: Encounter/exemplo-encounter-ia-registo: Encounter.serviceType.coding[0]: A definition for CodeSystem 'https://ehr.p5.pt/terminology/CodeSystem/service-type' could not be found, so the code cannot be validated
+== fsh-generated/resources/Encounter-exemplo-encounter-seguimento.json ==
+WARNING: Encounter/exemplo-encounter-seguimento: Encounter.type[0].coding[0].system: A definition for CodeSystem 'https://ehr.p5.pt/terminology/CodeSystem/service' could not be found, so the code cannot be validated
+WARNING: Encounter/exemplo-encounter-seguimento: Encounter.serviceType.coding[0]: A definition for CodeSystem 'https://ehr.p5.pt/terminology/CodeSystem/service-type' could not be found, so the code cannot be validated
+== fsh-generated/resources/Encounter-exemplo-encounter-validacao-caso.json ==
+WARNING: Encounter/exemplo-encounter-validacao-caso: Encounter.type[0].coding[0].system: A definition for CodeSystem 'https://ehr.p5.pt/terminology/CodeSystem/service' could not be found, so the code cannot be validated
+WARNING: Encounter/exemplo-encounter-validacao-caso: Encounter.serviceType.coding[0]: A definition for CodeSystem 'https://ehr.p5.pt/terminology/CodeSystem/service-type' could not be found, so the code cannot be validated
+== fsh-generated/resources/EpisodeOfCare-exemplo-episodeofcare-episodio-activo.json ==
+INFORMATION: EpisodeOfCare/exemplo-episodeofcare-episodio-activo: EpisodeOfCare.status: Reference to draft CodeSystem http://hl7.org/fhir/episode-of-care-status|4.0.1
+WARNING: EpisodeOfCare/exemplo-episodeofcare-episodio-activo: EpisodeOfCare.type[0].coding[0].system: A definition for CodeSystem 'http://localhost:8081/api/fhirValueSet/Urgency' could not be found, so the code cannot be validated
+== fsh-generated/resources/EpisodeOfCare-exemplo-episodeofcare-episodio-em-espera.json ==
+INFORMATION: EpisodeOfCare/exemplo-episodeofcare-episodio-em-espera: EpisodeOfCare.status: Reference to draft CodeSystem http://hl7.org/fhir/episode-of-care-status|4.0.1
+WARNING: EpisodeOfCare/exemplo-episodeofcare-episodio-em-espera: EpisodeOfCare.type[0].coding[0].system: A definition for CodeSystem 'https://ehr.p5.pt/api/fhirValueSet/Urgency' could not be found, so the code cannot be validated
+== fsh-generated/resources/EpisodeOfCare-exemplo-episodeofcare-episodio-finalizado.json ==
+INFORMATION: EpisodeOfCare/exemplo-episodeofcare-episodio-finalizado: EpisodeOfCare.status: Reference to draft CodeSystem http://hl7.org/fhir/episode-of-care-status|4.0.1
+WARNING: EpisodeOfCare/exemplo-episodeofcare-episodio-finalizado: EpisodeOfCare.type[0].coding[0].system: A definition for CodeSystem 'http://localhost:8081/api/fhirValueSet/Urgency' could not be found, so the code cannot be validated
+== fsh-generated/resources/Flag-ExampleFlagHighRiskPregnancy.json ==
+== fsh-generated/resources/Immunization-ExampleImmunizationCovid19.json ==
+== fsh-generated/resources/ImplementationGuide-my-ig.json ==
+ERROR: ImplementationGuide.where(url = 'http://hl7.pt/fhir/ImplementationGuide/hl7.fhir.pt.community-health'): Conformance resource /github/workspace/fsh-generated/resources/ImplementationGuide-my-ig.json - the canonical URL (http://hl7.pt/fhir/ImplementationGuide/my-ig) does not match the URL (http://hl7.pt/fhir/ImplementationGuide/hl7.fhir.pt.community-health)
+ERROR: ImplementationGuide.url: Resource id/url mismatch: my-ig/http://hl7.pt/fhir/ImplementationGuide/hl7.fhir.pt.community-health
+WARNING: ImplementationGuide/my-ig: ImplementationGuide.definition.resource[14].description: value should not start or finish with whitespace '\nEste perfil representa um período estruturado durante o qual um paciente recebe atendimento para um problema de saúde específico ou um conjunto de condições. Ele serve como base para organizar e vincular atividades de saúde relacionadas, como sintomas, problemas, observações e planos de cuidado.'
+ERROR: /github/workspace/fsh-generated/resources/ImplementationGuide-my-ig: URL Mismatch http://hl7.pt/fhir/ImplementationGuide/my-ig vs http://hl7.pt/fhir/ImplementationGuide/hl7.fhir.pt.community-health
+== fsh-generated/resources/Medication-exemplo-medication-paracetamol.json ==
+WARNING: Medication/exemplo-medication-paracetamol: Medication.code.coding[0].system: A definition for CodeSystem 'http://example.org/medications' could not be found, so the code cannot be validated
+WARNING: Medication/exemplo-medication-paracetamol: Medication.form.coding[0].system: A definition for CodeSystem 'http://example.org/pharmacological-forms' could not be found, so the code cannot be validated
+ERROR: Medication/exemplo-medication-paracetamol: Medication.amount: Constraint failed: rat-1: 'Numerator and denominator SHALL both be present, or both are absent. If both are absent, there SHALL be some extension present'
+ERROR: Medication/exemplo-medication-paracetamol: Medication.ingredient[0].item.ofType(Reference): Unable to resolve resource with reference 'Substance/Paracetamol'
+== fsh-generated/resources/MedicationRequest-exemplo-medicationRequest-medicacao-prescrita.json ==
+WARNING: MedicationRequest/exemplo-medicationRequest-medicacao-prescrita: MedicationRequest.dosageInstruction[0].timing.code.coding[0].system: A definition for CodeSystem 'https://ehr.testing.p5.pt/api/fhir/CodeSystem/medication-frequency' could not be found, so the code cannot be validated
+== fsh-generated/resources/MedicationStatement-c5d03567-a9e6-4a3b-b593-45f7a65a5cd8.json ==
+WARNING: MedicationStatement/c5d03567-a9e6-4a3b-b593-45f7a65a5cd8: MedicationStatement.dosage[0].timing.code.coding[0]: A definition for CodeSystem 'https://ehr.testing.p5.pt/api/fhir/CodeSystem/medication-frequency' could not be found, so the code cannot be validated
+== fsh-generated/resources/Observation-exemplo-observation-desordem-sono.json ==
+WARNING: Observation/exemplo-observation-desordem-sono: Observation.value.ofType(CodeableConcept): ValueSet 'https://ehr.p5.pt/api/fhir/ValueSet/symptoms' not found
+WARNING: Observation/exemplo-observation-desordem-sono: Observation.value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'https://ehr.p5.pt/terminology/CodeSystem/symptoms' could not be found, so the code cannot be validated
+WARNING: Observation/exemplo-observation-desordem-sono: Observation.component[0].code.coding[0]: A definition for CodeSystem 'symptoms-properties' could not be found, so the code cannot be validated
+WARNING: Observation/exemplo-observation-desordem-sono: Observation.component[0].code.coding[0].code: ValueSet 'http://example.com/fhir/example/CodeSystem/symptom-properties' not found
+WARNING: Observation/exemplo-observation-desordem-sono: Observation.component[1].code.coding[0]: A definition for CodeSystem 'symptoms-properties' could not be found, so the code cannot be validated
+WARNING: Observation/exemplo-observation-desordem-sono: Observation.component[1].code.coding[0].code: ValueSet 'http://example.com/fhir/example/CodeSystem/symptom-properties' not found
+WARNING: Observation/exemplo-observation-desordem-sono: Observation.component[2].code.coding[0]: A definition for CodeSystem 'symptoms-properties' could not be found, so the code cannot be validated
+WARNING: Observation/exemplo-observation-desordem-sono: Observation.component[2].code.coding[0].code: ValueSet 'http://example.com/fhir/example/CodeSystem/symptom-properties' not found
+WARNING: Observation/exemplo-observation-desordem-sono: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/exemplo-observation-desordem-sono: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+== fsh-generated/resources/Observation-exemplo-observation-dor.json ==
+WARNING: Observation/exemplo-observation-dor: Observation.value.ofType(CodeableConcept): ValueSet 'https://ehr.p5.pt/api/fhir/ValueSet/symptoms' not found
+WARNING: Observation/exemplo-observation-dor: Observation.value.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'https://ehr.p5.pt/terminology/CodeSystem/symptoms' could not be found, so the code cannot be validated
+WARNING: Observation/exemplo-observation-dor: Observation.component[0].code.coding[0]: A definition for CodeSystem 'symptoms-properties' could not be found, so the code cannot be validated
+WARNING: Observation/exemplo-observation-dor: Observation.component[0].code.coding[0].code: ValueSet 'http://example.com/fhir/example/CodeSystem/symptom-properties' not found
+WARNING: Observation/exemplo-observation-dor: Observation.component[1].code.coding[0]: A definition for CodeSystem 'symptoms-properties' could not be found, so the code cannot be validated
+WARNING: Observation/exemplo-observation-dor: Observation.component[1].code.coding[0].code: ValueSet 'http://example.com/fhir/example/CodeSystem/symptom-properties' not found
+WARNING: Observation/exemplo-observation-dor: Observation.component[2].code.coding[0]: A definition for CodeSystem 'symptoms-properties' could not be found, so the code cannot be validated
+WARNING: Observation/exemplo-observation-dor: Observation.component[2].code.coding[0].code: ValueSet 'http://example.com/fhir/example/CodeSystem/symptom-properties' not found
+WARNING: Observation/exemplo-observation-dor: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/exemplo-observation-dor: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+== fsh-generated/resources/Observation-exemplo-observation-duracao-sintomas-localizacao.json ==
+WARNING: Observation/exemplo-observation-duracao-sintomas-localizacao: Observation.bodySite: ValueSet 'https://ehr.p5.pt/api/fhir/ValueSet/bodySite' not found
+WARNING: Observation/exemplo-observation-duracao-sintomas-localizacao: Observation.bodySite.coding[0].system: A definition for CodeSystem 'https://ehr.p5.pt/terminology/CodeSystem/body-silhouette' could not be found, so the code cannot be validated
+WARNING: Observation/exemplo-observation-duracao-sintomas-localizacao: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/exemplo-observation-duracao-sintomas-localizacao: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+== fsh-generated/resources/Observation-exemplo-observation-number-healthcare-visits-last-12-months.json ==
+WARNING: Observation/exemplo-observation-number-healthcare-visits-last-12-months: Observation.code.coding[0].system: A definition for CodeSystem 'http://ehr.p5.pt/ValueSet/observation-values' could not be found, so the code cannot be validated
+ERROR: Observation/exemplo-observation-number-healthcare-visits-last-12-months: Observation.subject: Unable to resolve resource with reference 'Patient/example'
+WARNING: Observation/exemplo-observation-number-healthcare-visits-last-12-months: Observation: Best Practice Recommendation: In general, all observations should have a performer
+ERROR: Observation.text.div: Hyperlink 'Patient/example' at 'div/p/a' for 'Patient/example' does not resolve
+== fsh-generated/resources/Observation-exemplo-observation-pregnancy.json ==
+ERROR: Observation/exemplo-observation-pregnancy: Observation.component[0]: Slicing cannot be evaluated: Could not match discriminator (1) for slice [code] in profile Observation.component:gestationalAge - the discriminator https://hl7.pt/fhir/community-health/StructureDefinition/observation-pregnancy|1.0.1 does not have fixed value, binding or existence assertions
+ERROR: Observation/exemplo-observation-pregnancy: Observation.component[1]: Slicing cannot be evaluated: Could not match discriminator (1) for slice [code] in profile Observation.component:gestationalAge - the discriminator https://hl7.pt/fhir/community-health/StructureDefinition/observation-pregnancy|1.0.1 does not have fixed value, binding or existence assertions
+ERROR: Observation/exemplo-observation-pregnancy: Observation.component[2]: Slicing cannot be evaluated: Could not match discriminator (1) for slice [code] in profile Observation.component:gestationalAge - the discriminator https://hl7.pt/fhir/community-health/StructureDefinition/observation-pregnancy|1.0.1 does not have fixed value, binding or existence assertions
+ERROR: Observation/exemplo-observation-pregnancy: Observation.component[0]: Slicing cannot be evaluated: Could not match discriminator (1) for slice [code] in profile Observation.component:pregnancyNumber - the discriminator https://hl7.pt/fhir/community-health/StructureDefinition/observation-pregnancy|1.0.1 does not have fixed value, binding or existence assertions
+ERROR: Observation/exemplo-observation-pregnancy: Observation.component[1]: Slicing cannot be evaluated: Could not match discriminator (1) for slice [code] in profile Observation.component:pregnancyNumber - the discriminator https://hl7.pt/fhir/community-health/StructureDefinition/observation-pregnancy|1.0.1 does not have fixed value, binding or existence assertions
+ERROR: Observation/exemplo-observation-pregnancy: Observation.component[2]: Slicing cannot be evaluated: Could not match discriminator (1) for slice [code] in profile Observation.component:pregnancyNumber - the discriminator https://hl7.pt/fhir/community-health/StructureDefinition/observation-pregnancy|1.0.1 does not have fixed value, binding or existence assertions
+ERROR: Observation/exemplo-observation-pregnancy: Observation.component[0]: Slicing cannot be evaluated: Could not match discriminator (1) for slice [code] in profile Observation.component:numberOfChild - the discriminator https://hl7.pt/fhir/community-health/StructureDefinition/observation-pregnancy|1.0.1 does not have fixed value, binding or existence assertions
+ERROR: Observation/exemplo-observation-pregnancy: Observation.component[1]: Slicing cannot be evaluated: Could not match discriminator (1) for slice [code] in profile Observation.component:numberOfChild - the discriminator https://hl7.pt/fhir/community-health/StructureDefinition/observation-pregnancy|1.0.1 does not have fixed value, binding or existence assertions
+ERROR: Observation/exemplo-observation-pregnancy: Observation.component[2]: Slicing cannot be evaluated: Could not match discriminator (1) for slice [code] in profile Observation.component:numberOfChild - the discriminator https://hl7.pt/fhir/community-health/StructureDefinition/observation-pregnancy|1.0.1 does not have fixed value, binding or existence assertions
+ERROR: Observation/exemplo-observation-pregnancy: Observation.component[2].code.coding[0].display: Wrong Display Name 'Number of live births' for http://loinc.org#11636-8. There are no valid display names found for language(s) 'en'. Default display is '[#] Births.live'
+WARNING: Observation/exemplo-observation-pregnancy: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Organization-P5Organization.json ==
+== fsh-generated/resources/Organization-TCCSTeam.json ==
+== fsh-generated/resources/Patient-exemplo-patient-1.json ==
+ERROR: Patient/exemplo-patient-1: Patient.identifier[0]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: url in profile https://hl7.pt/fhir/community-health/StructureDefinition/patient-tccs on element Patient.identifier:HealthcareNumber, looking in profile https://hl7.pt/fhir/community-health/StructureDefinition/patient-tccs (@char 1)
+WARNING: Patient/exemplo-patient-1: Patient.meta.profile[1]: Profile reference 'https://ehr.testing.p5.pt/api/fhir/StructureDefinition/PatientTCCS' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
+== fsh-generated/resources/Patient-exemplo-patient-2.json ==
+ERROR: Patient/exemplo-patient-2: Patient.identifier[0]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: url in profile https://hl7.pt/fhir/community-health/StructureDefinition/patient-tccs on element Patient.identifier:HealthcareNumber, looking in profile https://hl7.pt/fhir/community-health/StructureDefinition/patient-tccs (@char 1)
+WARNING: Patient/exemplo-patient-2: Patient.meta.profile[1]: Profile reference 'https://ehr.testing.p5.pt/api/fhir/StructureDefinition/PatientTCCS' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
+== fsh-generated/resources/Patient-exemplo-patient-3.json ==
+ERROR: Patient/exemplo-patient-3: Patient.identifier[0]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: url in profile https://hl7.pt/fhir/community-health/StructureDefinition/patient-tccs on element Patient.identifier:HealthcareNumber, looking in profile https://hl7.pt/fhir/community-health/StructureDefinition/patient-tccs (@char 1)
+WARNING: Patient/exemplo-patient-3: Patient.meta.profile[1]: Profile reference 'https://ehr.testing.p5.pt/api/fhir/StructureDefinition/PatientTCCS' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
+== fsh-generated/resources/Practitioner-exemplo-practitioner-1.json ==
+== fsh-generated/resources/QuestionnaireResponse-exemplo-questionnaireResponse.json ==
+INFORMATION: QuestionnaireResponse/exemplo-questionnaireResponse: QuestionnaireResponse: No questionnaire is identified, so no validation can be performed against the base questionnaire
+== fsh-generated/resources/RelatedPerson-exemplo-relatedPerson-1.json ==
+INFORMATION: RelatedPerson/exemplo-relatedPerson-1: RelatedPerson.extension[0]: This element does not match any known slice defined in the profile https://hl7.pt/fhir/community-health/StructureDefinition/RelatedPersonTCCS|1.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
+ERROR: RelatedPerson/exemplo-relatedPerson-1: RelatedPerson: Slice 'RelatedPerson.extension:patientIdentifier': a matching slice is required, but not found (from https://hl7.pt/fhir/community-health/StructureDefinition/RelatedPersonTCCS|1.0.1). Note that other slices are allowed in addition to this required slice
+ERROR: RelatedPerson/exemplo-relatedPerson-1: RelatedPerson.extension[0]: The extension https://ehr.testing.p5.pt/api/fhir/StructureDefinition/PatientIdentifier could not be found so is not allowed here
+WARNING: RelatedPerson/exemplo-relatedPerson-1: RelatedPerson.meta.profile[1]: Profile reference 'https://ehr.testing.p5.pt/api/fhir/StructureDefinition/RelatedPersonTCCS' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
+== fsh-generated/resources/RelatedPerson-exemplo-relatedPerson-2.json ==
+INFORMATION: RelatedPerson/exemplo-relatedPerson-2: RelatedPerson.extension[0]: This element does not match any known slice defined in the profile https://hl7.pt/fhir/community-health/StructureDefinition/RelatedPersonTCCS|1.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
+ERROR: RelatedPerson/exemplo-relatedPerson-2: RelatedPerson: Slice 'RelatedPerson.extension:patientIdentifier': a matching slice is required, but not found (from https://hl7.pt/fhir/community-health/StructureDefinition/RelatedPersonTCCS|1.0.1). Note that other slices are allowed in addition to this required slice
+ERROR: RelatedPerson/exemplo-relatedPerson-2: RelatedPerson.extension[0]: The extension https://ehr.testing.p5.pt/api/fhir/StructureDefinition/PatientIdentifier could not be found so is not allowed here
+WARNING: RelatedPerson/exemplo-relatedPerson-2: RelatedPerson.meta.profile[1]: Profile reference 'https://ehr.testing.p5.pt/api/fhir/StructureDefinition/RelatedPersonTCCS' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
+== fsh-generated/resources/StructureDefinition-Extension-GrantedOrganization.json ==
+ERROR: StructureDefinition.where(url = 'https://hl7.pt/fhir/community-health/StructureDefinition/Extension-GrantedOrganization'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-Extension-GrantedOrganization.json - the canonical URL (http://hl7.pt/fhir/StructureDefinition/Extension-GrantedOrganization) does not match the URL (https://hl7.pt/fhir/community-health/StructureDefinition/Extension-GrantedOrganization)
+WARNING: StructureDefinition/Extension-GrantedOrganization: StructureDefinition.context[0]: Review the extension type for Extension-GrantedOrganization: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition.where(url = 'https://hl7.pt/fhir/community-health/StructureDefinition/Extension-GrantedOrganization'): The Implementation Guide contains no examples for this extension
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-Extension-GrantedOrganization: URL Mismatch http://hl7.pt/fhir/StructureDefinition/Extension-GrantedOrganization vs https://hl7.pt/fhir/community-health/StructureDefinition/Extension-GrantedOrganization
+== fsh-generated/resources/StructureDefinition-HumanMessages.json ==
+ERROR: StructureDefinition.where(url = 'https://hl7.pt/fhir/community-health/StructureDefinition/HumanMessages'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-HumanMessages.json - the canonical URL (http://hl7.pt/fhir/StructureDefinition/HumanMessages) does not match the URL (https://hl7.pt/fhir/community-health/StructureDefinition/HumanMessages)
+WARNING: StructureDefinition.where(url = 'https://hl7.pt/fhir/community-health/StructureDefinition/HumanMessages'): The Implementation Guide contains no examples for this profile
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-HumanMessages: URL Mismatch http://hl7.pt/fhir/StructureDefinition/HumanMessages vs https://hl7.pt/fhir/community-health/StructureDefinition/HumanMessages
+== fsh-generated/resources/StructureDefinition-PatientIdentifier.json ==
+ERROR: StructureDefinition.where(url = 'https://hl7.pt/fhir/community-health/StructureDefinition/PatientIdentifier'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-PatientIdentifier.json - the canonical URL (http://hl7.pt/fhir/StructureDefinition/PatientIdentifier) does not match the URL (https://hl7.pt/fhir/community-health/StructureDefinition/PatientIdentifier)
+WARNING: StructureDefinition/PatientIdentifier: StructureDefinition.context[0]: Review the extension type for PatientIdentifier: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition.where(url = 'https://hl7.pt/fhir/community-health/StructureDefinition/PatientIdentifier'): The Implementation Guide contains no examples for this extension
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-PatientIdentifier: URL Mismatch http://hl7.pt/fhir/StructureDefinition/PatientIdentifier vs https://hl7.pt/fhir/community-health/StructureDefinition/PatientIdentifier
+== fsh-generated/resources/StructureDefinition-RelatedPersonTCCS.json ==
+ERROR: StructureDefinition.where(url = 'https://hl7.pt/fhir/community-health/StructureDefinition/RelatedPersonTCCS'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-RelatedPersonTCCS.json - the canonical URL (http://hl7.pt/fhir/StructureDefinition/RelatedPersonTCCS) does not match the URL (https://hl7.pt/fhir/community-health/StructureDefinition/RelatedPersonTCCS)
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-RelatedPersonTCCS: URL Mismatch http://hl7.pt/fhir/StructureDefinition/RelatedPersonTCCS vs https://hl7.pt/fhir/community-health/StructureDefinition/RelatedPersonTCCS
+== fsh-generated/resources/StructureDefinition-allergy-intolerance-patient-allergy.json ==
+ERROR: StructureDefinition.where(url = 'https://hl7.pt/fhir/community-health/StructureDefinition/allergy-intolerance-patient-allergy'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-allergy-intolerance-patient-allergy.json - the canonical URL (http://hl7.pt/fhir/StructureDefinition/allergy-intolerance-patient-allergy) does not match the URL (https://hl7.pt/fhir/community-health/StructureDefinition/allergy-intolerance-patient-allergy)
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-allergy-intolerance-patient-allergy: URL Mismatch http://hl7.pt/fhir/StructureDefinition/allergy-intolerance-patient-allergy vs https://hl7.pt/fhir/community-health/StructureDefinition/allergy-intolerance-patient-allergy
+== fsh-generated/resources/StructureDefinition-care-plan-treatmentPlan.json ==
+ERROR: StructureDefinition.where(url = 'https://hl7.pt/fhir/community-health/StructureDefinition/care-plan-treatmentPlan'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-care-plan-treatmentPlan.json - the canonical URL (http://hl7.pt/fhir/StructureDefinition/care-plan-treatmentPlan) does not match the URL (https://hl7.pt/fhir/community-health/StructureDefinition/care-plan-treatmentPlan)
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-care-plan-treatmentPlan: URL Mismatch http://hl7.pt/fhir/StructureDefinition/care-plan-treatmentPlan vs https://hl7.pt/fhir/community-health/StructureDefinition/care-plan-treatmentPlan
+== fsh-generated/resources/StructureDefinition-condition-chronic-disease.json ==
+ERROR: StructureDefinition.where(url = 'https://hl7.pt/fhir/community-health/StructureDefinition/condition-chronic-disease'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-condition-chronic-disease.json - the canonical URL (http://hl7.pt/fhir/StructureDefinition/condition-chronic-disease) does not match the URL (https://hl7.pt/fhir/community-health/StructureDefinition/condition-chronic-disease)
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-condition-chronic-disease: URL Mismatch http://hl7.pt/fhir/StructureDefinition/condition-chronic-disease vs https://hl7.pt/fhir/community-health/StructureDefinition/condition-chronic-disease
+== fsh-generated/resources/StructureDefinition-condition-chronic-disease-asthma.json ==
+ERROR: StructureDefinition.where(url = 'https://hl7.pt/fhir/community-health/StructureDefinition/condition-chronic-disease-asthma'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-condition-chronic-disease-asthma.json - the canonical URL (http://hl7.pt/fhir/StructureDefinition/condition-chronic-disease-asthma) does not match the URL (https://hl7.pt/fhir/community-health/StructureDefinition/condition-chronic-disease-asthma)
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-condition-chronic-disease-asthma: URL Mismatch http://hl7.pt/fhir/StructureDefinition/condition-chronic-disease-asthma vs https://hl7.pt/fhir/community-health/StructureDefinition/condition-chronic-disease-asthma
+== fsh-generated/resources/StructureDefinition-condition-chronic-disease-chronic-obstructive-pulmonary-disease.json ==
+ERROR: StructureDefinition.where(url = 'https://hl7.pt/fhir/community-health/StructureDefinition/condition-chronic-disease-chronic-obstructive-pulmonary-disease'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-condition-chronic-disease-chronic-obstructive-pulmonary-disease.json - the canonical URL (http://hl7.pt/fhir/StructureDefinition/condition-chronic-disease-chronic-obstructive-pulmonary-disease) does not match the URL (https://hl7.pt/fhir/community-health/StructureDefinition/condition-chronic-disease-chronic-obstructive-pulmonary-disease)
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-condition-chronic-disease-chronic-obstructive-pulmonary-disease: URL Mismatch http://hl7.pt/fhir/StructureDefinition/condition-chronic-disease-chronic-obstructive-pulmonary-disease vs https://hl7.pt/fhir/community-health/StructureDefinition/condition-chronic-disease-chronic-obstructive-pulmonary-disease
+== fsh-generated/resources/StructureDefinition-condition-chronic-disease-diabetes.json ==
+ERROR: StructureDefinition.where(url = 'https://hl7.pt/fhir/community-health/StructureDefinition/condition-chronic-disease-diabetes'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-condition-chronic-disease-diabetes.json - the canonical URL (http://hl7.pt/fhir/StructureDefinition/condition-chronic-disease-diabetes) does not match the URL (https://hl7.pt/fhir/community-health/StructureDefinition/condition-chronic-disease-diabetes)
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-condition-chronic-disease-diabetes: URL Mismatch http://hl7.pt/fhir/StructureDefinition/condition-chronic-disease-diabetes vs https://hl7.pt/fhir/community-health/StructureDefinition/condition-chronic-disease-diabetes
+== fsh-generated/resources/StructureDefinition-condition-chronic-disease-dyslipidemia.json ==
+ERROR: StructureDefinition.where(url = 'https://hl7.pt/fhir/community-health/StructureDefinition/condition-chronic-disease-dyslipidemia'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-condition-chronic-disease-dyslipidemia.json - the canonical URL (http://hl7.pt/fhir/StructureDefinition/condition-chronic-disease-dyslipidemia) does not match the URL (https://hl7.pt/fhir/community-health/StructureDefinition/condition-chronic-disease-dyslipidemia)
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-condition-chronic-disease-dyslipidemia: URL Mismatch http://hl7.pt/fhir/StructureDefinition/condition-chronic-disease-dyslipidemia vs https://hl7.pt/fhir/community-health/StructureDefinition/condition-chronic-disease-dyslipidemia
+== fsh-generated/resources/StructureDefinition-condition-chronic-disease-hypertension.json ==
+ERROR: StructureDefinition.where(url = 'https://hl7.pt/fhir/community-health/StructureDefinition/condition-chronic-disease-hypertension'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-condition-chronic-disease-hypertension.json - the canonical URL (http://hl7.pt/fhir/StructureDefinition/condition-chronic-disease-hypertension) does not match the URL (https://hl7.pt/fhir/community-health/StructureDefinition/condition-chronic-disease-hypertension)
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-condition-chronic-disease-hypertension: URL Mismatch http://hl7.pt/fhir/StructureDefinition/condition-chronic-disease-hypertension vs https://hl7.pt/fhir/community-health/StructureDefinition/condition-chronic-disease-hypertension
+== fsh-generated/resources/StructureDefinition-condition-critical-disease.json ==
+ERROR: StructureDefinition.where(url = 'https://hl7.pt/fhir/community-health/StructureDefinition/condition-critical-disease'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-condition-critical-disease.json - the canonical URL (http://hl7.pt/fhir/StructureDefinition/condition-critical-disease) does not match the URL (https://hl7.pt/fhir/community-health/StructureDefinition/condition-critical-disease)
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-condition-critical-disease: URL Mismatch http://hl7.pt/fhir/StructureDefinition/condition-critical-disease vs https://hl7.pt/fhir/community-health/StructureDefinition/condition-critical-disease
+== fsh-generated/resources/StructureDefinition-condition-diagnosis.json ==
+ERROR: StructureDefinition.where(url = 'https://hl7.pt/fhir/community-health/StructureDefinition/condition-diagnosis'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-condition-diagnosis.json - the canonical URL (http://hl7.pt/fhir/StructureDefinition/condition-diagnosis) does not match the URL (https://hl7.pt/fhir/community-health/StructureDefinition/condition-diagnosis)
+ERROR: StructureDefinition/condition-diagnosis: StructureDefinition.snapshot.element[26].binding.extension[0].extension[1].value.ofType(canonical): Canonical URL 'http://hl7.org/fhir/sid/icd-10' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]
+ERROR: StructureDefinition/condition-diagnosis: StructureDefinition.differential.element[6].binding.extension[0].extension[1].value.ofType(canonical): Canonical URL 'http://hl7.org/fhir/sid/icd-10' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]
+ERROR: StructureDefinition/condition-diagnosis: StructureDefinition.differential.element[6].binding.extension[0]: The valueSet reference http://hl7.org/fhir/sid/icd-10 on element Condition.code points to something that is not a value set (CodeSystem)
+ERROR: StructureDefinition/condition-diagnosis: StructureDefinition.snapshot.element[26].binding.extension[0]: The valueSet reference http://hl7.org/fhir/sid/icd-10 on element Condition.code points to something that is not a value set (CodeSystem)
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-condition-diagnosis: URL Mismatch http://hl7.pt/fhir/StructureDefinition/condition-diagnosis vs https://hl7.pt/fhir/community-health/StructureDefinition/condition-diagnosis
+== fsh-generated/resources/StructureDefinition-encounter-ai-algorithm.json ==
+ERROR: StructureDefinition.where(url = 'https://hl7.pt/fhir/community-health/StructureDefinition/encounter-ai-algorithm'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-encounter-ai-algorithm.json - the canonical URL (http://hl7.pt/fhir/StructureDefinition/encounter-ai-algorithm) does not match the URL (https://hl7.pt/fhir/community-health/StructureDefinition/encounter-ai-algorithm)
+WARNING: StructureDefinition/encounter-ai-algorithm: StructureDefinition.snapshot.element[17].pattern.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/encounter-ai-algorithm: StructureDefinition.differential.element[2].pattern.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-encounter-ai-algorithm: URL Mismatch http://hl7.pt/fhir/StructureDefinition/encounter-ai-algorithm vs https://hl7.pt/fhir/community-health/StructureDefinition/encounter-ai-algorithm
+== fsh-generated/resources/StructureDefinition-encounter-finish.json ==
+ERROR: StructureDefinition.where(url = 'https://hl7.pt/fhir/community-health/StructureDefinition/encounter-finish'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-encounter-finish.json - the canonical URL (http://hl7.pt/fhir/StructureDefinition/encounter-finish) does not match the URL (https://hl7.pt/fhir/community-health/StructureDefinition/encounter-finish)
+WARNING: StructureDefinition/encounter-finish: StructureDefinition.snapshot.element[17].pattern.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/encounter-finish: StructureDefinition.differential.element[2].pattern.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-encounter-finish: URL Mismatch http://hl7.pt/fhir/StructureDefinition/encounter-finish vs https://hl7.pt/fhir/community-health/StructureDefinition/encounter-finish
+== fsh-generated/resources/StructureDefinition-encounter-follow-up.json ==
+ERROR: StructureDefinition.where(url = 'https://hl7.pt/fhir/community-health/StructureDefinition/encounter-follow-up'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-encounter-follow-up.json - the canonical URL (http://hl7.pt/fhir/StructureDefinition/encounter-follow-up) does not match the URL (https://hl7.pt/fhir/community-health/StructureDefinition/encounter-follow-up)
+WARNING: StructureDefinition/encounter-follow-up: StructureDefinition.snapshot.element[17].pattern.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/encounter-follow-up: StructureDefinition.differential.element[2].pattern.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-encounter-follow-up: URL Mismatch http://hl7.pt/fhir/StructureDefinition/encounter-follow-up vs https://hl7.pt/fhir/community-health/StructureDefinition/encounter-follow-up
+== fsh-generated/resources/StructureDefinition-encounter-validation.json ==
+ERROR: StructureDefinition.where(url = 'https://hl7.pt/fhir/community-health/StructureDefinition/encounter-validation'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-encounter-validation.json - the canonical URL (http://hl7.pt/fhir/StructureDefinition/encounter-validation) does not match the URL (https://hl7.pt/fhir/community-health/StructureDefinition/encounter-validation)
+WARNING: StructureDefinition/encounter-validation: StructureDefinition.snapshot.element[17].pattern.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/encounter-validation: StructureDefinition.differential.element[2].pattern.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-encounter-validation: URL Mismatch http://hl7.pt/fhir/StructureDefinition/encounter-validation vs https://hl7.pt/fhir/community-health/StructureDefinition/encounter-validation
+== fsh-generated/resources/StructureDefinition-episodeOfCare-standard.json ==
+ERROR: StructureDefinition.where(url = 'https://hl7.pt/fhir/community-health/StructureDefinition/episodeOfCare-standard'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-episodeOfCare-standard.json - the canonical URL (http://hl7.pt/fhir/StructureDefinition/episodeOfCare-standard) does not match the URL (https://hl7.pt/fhir/community-health/StructureDefinition/episodeOfCare-standard)
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-episodeOfCare-standard: URL Mismatch http://hl7.pt/fhir/StructureDefinition/episodeOfCare-standard vs https://hl7.pt/fhir/community-health/StructureDefinition/episodeOfCare-standard
+== fsh-generated/resources/StructureDefinition-flag-critical-disease.json ==
+ERROR: StructureDefinition.where(url = 'https://hl7.pt/fhir/community-health/StructureDefinition/flag-critical-disease'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-flag-critical-disease.json - the canonical URL (http://hl7.pt/fhir/StructureDefinition/flag-critical-disease) does not match the URL (https://hl7.pt/fhir/community-health/StructureDefinition/flag-critical-disease)
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-flag-critical-disease: URL Mismatch http://hl7.pt/fhir/StructureDefinition/flag-critical-disease vs https://hl7.pt/fhir/community-health/StructureDefinition/flag-critical-disease
+== fsh-generated/resources/StructureDefinition-flag-detail.json ==
+ERROR: StructureDefinition.where(url = 'https://hl7.pt/fhir/community-health/StructureDefinition/flag-detail'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-flag-detail.json - the canonical URL (http://hl7.pt/fhir/StructureDefinition/flag-detail) does not match the URL (https://hl7.pt/fhir/community-health/StructureDefinition/flag-detail)
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-flag-detail: URL Mismatch http://hl7.pt/fhir/StructureDefinition/flag-detail vs https://hl7.pt/fhir/community-health/StructureDefinition/flag-detail
+== fsh-generated/resources/StructureDefinition-immunization-vaccine.json ==
+ERROR: StructureDefinition.where(url = 'https://hl7.pt/fhir/community-health/StructureDefinition/immunization-vaccine'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-immunization-vaccine.json - the canonical URL (http://hl7.pt/fhir/StructureDefinition/immunization-vaccine) does not match the URL (https://hl7.pt/fhir/community-health/StructureDefinition/immunization-vaccine)
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-immunization-vaccine: URL Mismatch http://hl7.pt/fhir/StructureDefinition/immunization-vaccine vs https://hl7.pt/fhir/community-health/StructureDefinition/immunization-vaccine
+== fsh-generated/resources/StructureDefinition-medication-request-standard.json ==
+ERROR: StructureDefinition.where(url = 'https://hl7.pt/fhir/community-health/StructureDefinition/medication-request-standard'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-medication-request-standard.json - the canonical URL (http://hl7.pt/fhir/StructureDefinition/medication-request-standard) does not match the URL (https://hl7.pt/fhir/community-health/StructureDefinition/medication-request-standard)
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-medication-request-standard: URL Mismatch http://hl7.pt/fhir/StructureDefinition/medication-request-standard vs https://hl7.pt/fhir/community-health/StructureDefinition/medication-request-standard
+== fsh-generated/resources/StructureDefinition-medication-standard.json ==
+ERROR: StructureDefinition.where(url = 'https://hl7.pt/fhir/community-health/StructureDefinition/medication-standard'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-medication-standard.json - the canonical URL (http://hl7.pt/fhir/StructureDefinition/medication-standard) does not match the URL (https://hl7.pt/fhir/community-health/StructureDefinition/medication-standard)
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-medication-standard: URL Mismatch http://hl7.pt/fhir/StructureDefinition/medication-standard vs https://hl7.pt/fhir/community-health/StructureDefinition/medication-standard
+== fsh-generated/resources/StructureDefinition-medication-statement-standard.json ==
+ERROR: StructureDefinition.where(url = 'https://hl7.pt/fhir/community-health/StructureDefinition/medication-statement-standard'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-medication-statement-standard.json - the canonical URL (http://hl7.pt/fhir/StructureDefinition/medication-statement-standard) does not match the URL (https://hl7.pt/fhir/community-health/StructureDefinition/medication-statement-standard)
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-medication-statement-standard: URL Mismatch http://hl7.pt/fhir/StructureDefinition/medication-statement-standard vs https://hl7.pt/fhir/community-health/StructureDefinition/medication-statement-standard
+== fsh-generated/resources/StructureDefinition-observation-number-healthcare-visits-last-12-months.json ==
+ERROR: StructureDefinition.where(url = 'https://hl7.pt/fhir/community-health/StructureDefinition/observation-number-healthcare-visits-last-12-months'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-observation-number-healthcare-visits-last-12-months.json - the canonical URL (http://hl7.pt/fhir/StructureDefinition/observation-number-healthcare-visits-last-12-months) does not match the URL (https://hl7.pt/fhir/community-health/StructureDefinition/observation-number-healthcare-visits-last-12-months)
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-observation-number-healthcare-visits-last-12-months: URL Mismatch http://hl7.pt/fhir/StructureDefinition/observation-number-healthcare-visits-last-12-months vs https://hl7.pt/fhir/community-health/StructureDefinition/observation-number-healthcare-visits-last-12-months
+== fsh-generated/resources/StructureDefinition-observation-pregnancy.json ==
+ERROR: StructureDefinition.where(url = 'https://hl7.pt/fhir/community-health/StructureDefinition/observation-pregnancy'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-observation-pregnancy.json - the canonical URL (http://hl7.pt/fhir/StructureDefinition/observation-pregnancy) does not match the URL (https://hl7.pt/fhir/community-health/StructureDefinition/observation-pregnancy)
+INFORMATION: StructureDefinition/observation-pregnancy: StructureDefinition.differential.element[7].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/observation-pregnancy: StructureDefinition.snapshot.element[52].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-observation-pregnancy: URL Mismatch http://hl7.pt/fhir/StructureDefinition/observation-pregnancy vs https://hl7.pt/fhir/community-health/StructureDefinition/observation-pregnancy
+== fsh-generated/resources/StructureDefinition-observation-symptom.json ==
+ERROR: StructureDefinition.where(url = 'https://hl7.pt/fhir/community-health/StructureDefinition/observation-symptom'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-observation-symptom.json - the canonical URL (http://hl7.pt/fhir/StructureDefinition/observation-symptom) does not match the URL (https://hl7.pt/fhir/community-health/StructureDefinition/observation-symptom)
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-observation-symptom: URL Mismatch http://hl7.pt/fhir/StructureDefinition/observation-symptom vs https://hl7.pt/fhir/community-health/StructureDefinition/observation-symptom
+== fsh-generated/resources/StructureDefinition-observation-symptom-duration-body-site.json ==
+ERROR: StructureDefinition.where(url = 'https://hl7.pt/fhir/community-health/StructureDefinition/observation-symptom-duration-body-site'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-observation-symptom-duration-body-site.json - the canonical URL (http://hl7.pt/fhir/StructureDefinition/observation-symptom-duration-body-site) does not match the URL (https://hl7.pt/fhir/community-health/StructureDefinition/observation-symptom-duration-body-site)
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-observation-symptom-duration-body-site: URL Mismatch http://hl7.pt/fhir/StructureDefinition/observation-symptom-duration-body-site vs https://hl7.pt/fhir/community-health/StructureDefinition/observation-symptom-duration-body-site
+== fsh-generated/resources/StructureDefinition-observation-symptom-severity.json ==
+ERROR: StructureDefinition.where(url = 'https://hl7.pt/fhir/community-health/StructureDefinition/observation-symptom-severity'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-observation-symptom-severity.json - the canonical URL (http://hl7.pt/fhir/StructureDefinition/observation-symptom-severity) does not match the URL (https://hl7.pt/fhir/community-health/StructureDefinition/observation-symptom-severity)
+WARNING: StructureDefinition.where(url = 'https://hl7.pt/fhir/community-health/StructureDefinition/observation-symptom-severity'): The Implementation Guide contains no examples for this profile
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-observation-symptom-severity: URL Mismatch http://hl7.pt/fhir/StructureDefinition/observation-symptom-severity vs https://hl7.pt/fhir/community-health/StructureDefinition/observation-symptom-severity
+== fsh-generated/resources/StructureDefinition-patient-tccs.json ==
+ERROR: StructureDefinition.where(url = 'https://hl7.pt/fhir/community-health/StructureDefinition/patient-tccs'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-patient-tccs.json - the canonical URL (http://hl7.pt/fhir/StructureDefinition/patient-tccs) does not match the URL (https://hl7.pt/fhir/community-health/StructureDefinition/patient-tccs)
+ERROR: StructureDefinition/patient-tccs: StructureDefinition.snapshot.element[9].slicing.discriminator[0]: The discriminator path 'url' does not appear to be valid for the element that is being sliced 'Patient.identifier'
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-patient-tccs: URL Mismatch http://hl7.pt/fhir/StructureDefinition/patient-tccs vs https://hl7.pt/fhir/community-health/StructureDefinition/patient-tccs
+== fsh-generated/resources/StructureDefinition-probability.json ==
+ERROR: StructureDefinition.where(url = 'https://hl7.pt/fhir/community-health/StructureDefinition/probability'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-probability.json - the canonical URL (http://hl7.pt/fhir/StructureDefinition/probability) does not match the URL (https://hl7.pt/fhir/community-health/StructureDefinition/probability)
+WARNING: StructureDefinition/probability: StructureDefinition.context[0]: Review the extension type for probability: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition.where(url = 'https://hl7.pt/fhir/community-health/StructureDefinition/probability'): The Implementation Guide contains no examples for this extension
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-probability: URL Mismatch http://hl7.pt/fhir/StructureDefinition/probability vs https://hl7.pt/fhir/community-health/StructureDefinition/probability
+== fsh-generated/resources/StructureDefinition-questionnaire-response-app.json ==
+ERROR: StructureDefinition.where(url = 'https://hl7.pt/fhir/community-health/StructureDefinition/questionnaire-response-app'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-questionnaire-response-app.json - the canonical URL (http://hl7.pt/fhir/StructureDefinition/questionnaire-response-app) does not match the URL (https://hl7.pt/fhir/community-health/StructureDefinition/questionnaire-response-app)
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-questionnaire-response-app: URL Mismatch http://hl7.pt/fhir/StructureDefinition/questionnaire-response-app vs https://hl7.pt/fhir/community-health/StructureDefinition/questionnaire-response-app
+== fsh-generated/resources/ValueSet-episode-of-care-status-subset.json ==
+ERROR: ValueSet.where(url = 'https://hl7.pt/fhir/community-health/ValueSet/episode-of-care-status-subset'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-episode-of-care-status-subset.json - the canonical URL (http://hl7.pt/fhir/ValueSet/episode-of-care-status-subset) does not match the URL (https://hl7.pt/fhir/community-health/ValueSet/episode-of-care-status-subset)
+ERROR: ValueSet/episode-of-care-status-subset: ValueSet: Value sets published by HL7 SHALL conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: /github/workspace/fsh-generated/resources/ValueSet-episode-of-care-status-subset: URL Mismatch http://hl7.pt/fhir/ValueSet/episode-of-care-status-subset vs https://hl7.pt/fhir/community-health/ValueSet/episode-of-care-status-subset

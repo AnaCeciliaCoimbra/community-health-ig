@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CarePlan xmlns="http://hl7.org/fhir">
+  <id value="exemplo-carePlan-plano-de-tratamento-fecho-caso"/>
+  <meta>
+    <profile value="https://hl7.pt/fhir/community-health/StructureDefinition/care-plan-treatmentPlan"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CarePlan exemplo-carePlan-plano-de-tratamento-fecho-caso</b></p><a name="exemplo-carePlan-plano-de-tratamento-fecho-caso"> </a><a name="hcexemplo-carePlan-plano-de-tratamento-fecho-caso"> </a><a name="exemplo-carePlan-plano-de-tratamento-fecho-caso-en-US"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Plan</p><p><b>subject</b>: <a href="Patient-exemplo-patient-1.html">John Doe  Male, DoB: 2009-02-09 ( https://ehr.testing.p5.pt/api/fhir#12345678)</a></p><p><b>encounter</b>: <a href="Encounter-exemplo-encounter-fecho-caso.html">Encounter: status = finished; class = emergency (ActCode#EMER); type = Avaliador de Sintomas; serviceType = Fecho de caso; period = 2024-10-20 14:00:06+0000 --&gt; (ongoing)</a></p><p><b>period</b>: 2024-10-20 00:00:00+0000 --&gt; (ongoing)</p><blockquote><p><b>activity</b></p><h3>Details</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Kind</b></td><td><b>Code</b></td><td><b>Status</b></td><td><b>Description</b></td></tr><tr><td style="display: none">*</td><td>Task</td><td><span title="Codes:{http://localhost:8081/api/fhirValueSet/care-plan-activity-type non-pharmacological-plan}">non-pharmacological-plan</span></td><td>In Progress</td><td>lavagem ocular com soro</td></tr></table></blockquote><p><b>note</b>: Paciente estava melhor, mas foi recomendado a agendar uma consulta presencial com oftamologista</p></div>
+  </text>
+  <status value="active"/>
+  <intent value="plan"/>
+  <subject>
+    <reference value="Patient/exemplo-patient-1"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/exemplo-encounter-fecho-caso"/>
+  </encounter>
+  <period>
+    <start value="2024-10-20T00:00:00+00:00"/>
+  </period>
+  <activity>
+    <detail>
+      <kind value="Task"/>
+      <code>
+        <coding>
+          <system value="http://localhost:8081/api/fhirValueSet/care-plan-activity-type"/>
+          <code value="non-pharmacological-plan"/>
+        </coding>
+      </code>
+      <status value="in-progress"/>
+      <description value="lavagem ocular com soro"/>
+    </detail>
+  </activity>
+  <note>
+    <text value="Paciente estava melhor, mas foi recomendado a agendar uma consulta presencial com oftamologista"/>
+  </note>
+</CarePlan>

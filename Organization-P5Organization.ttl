@@ -1,0 +1,18 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.pt/fhir/Organization/P5Organization> a fhir:Organization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "P5Organization"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization P5Organization</b></p><a name=\"P5Organization\"> </a><a name=\"hcP5Organization\"> </a><a name=\"P5Organization-en-US\"> </a><p><b>name</b>: P5</p></div>"
+  ] ; # 
+  fhir:name [ fhir:v "P5"] . # 
+
+# -------------------------------------------------------------------------------------
+

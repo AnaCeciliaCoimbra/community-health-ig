@@ -1,0 +1,60 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "symptom-properties",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem symptom-properties</b></p><a name=\"symptom-properties\"> </a><a name=\"hcsymptom-properties\"> </a><a name=\"symptom-properties-en-US\"> </a><p>This  code system <code>https://hl7.pt/fhir/community-health/CodeSystem/symptom-properties</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">isSpecific<a name=\"symptom-properties-isSpecific\"> </a></td><td>Specific symptom</td></tr><tr><td style=\"white-space:nowrap\">isNonSpecific<a name=\"symptom-properties-isNonSpecific\"> </a></td><td>Non-specific symptom</td></tr><tr><td style=\"white-space:nowrap\">isGeneral<a name=\"symptom-properties-isGeneral\"> </a></td><td>General symptom</td></tr><tr><td style=\"white-space:nowrap\">parentId<a name=\"symptom-properties-parentId\"> </a></td><td>Parent ID</td></tr></table></div>"
+  },
+  "url" : "https://hl7.pt/fhir/community-health/CodeSystem/symptom-properties",
+  "version" : "1.0.1",
+  "name" : "SymptomPropertiesCodeSystem",
+  "title" : "Symptom Properties CodeSystem",
+  "status" : "active",
+  "date" : "2024-12-12T12:37:03+00:00",
+  "publisher" : "HL7 Portugal",
+  "contact" : [{
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.pt"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.pt"
+    }]
+  },
+  {
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "geral@hl7.pt",
+      "use" : "work"
+    }]
+  }],
+  "description" : "CodeSystem defining properties related to symptoms.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "content" : "complete",
+  "count" : 4,
+  "concept" : [{
+    "code" : "isSpecific",
+    "display" : "Specific symptom"
+  },
+  {
+    "code" : "isNonSpecific",
+    "display" : "Non-specific symptom"
+  },
+  {
+    "code" : "isGeneral",
+    "display" : "General symptom"
+  },
+  {
+    "code" : "parentId",
+    "display" : "Parent ID"
+  }]
+}

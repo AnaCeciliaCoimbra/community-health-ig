@@ -1,0 +1,2 @@
+URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
+https://hl7.pt/fhir/community-health/ValueSet/episode-of-care-status-subset,1.0.1,active,,EpisodeOfCareStatusSubset,Subset of Episode Of Care Status,"A subset of allowed statuses for EpisodeOfCare.",,"hl7.fhir.r4.core"

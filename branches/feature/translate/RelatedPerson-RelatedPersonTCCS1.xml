@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelatedPerson xmlns="http://hl7.org/fhir">
+  <id value="RelatedPersonTCCS1"/>
+  <meta>
+    <profile value="https://ehr.testing.p5.pt/api/fhir/StructureDefinition/RelatedPersonTCCS"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: RelatedPerson RelatedPersonTCCS1</b></p><a name="RelatedPersonTCCS1"> </a><a name="hcRelatedPersonTCCS1"> </a><a name="RelatedPersonTCCS1-en-US"> </a><p><b>pt/api/fhir/StructureDefinition/PatientIdentifier</b>: <a href="Patient-PatientTCCS1.html">Jane Smith  Female, DoB: 2010-05-15 ( https://ehr.testing.p5.pt/api/fhir#87654321)</a></p><p><b>name</b>: Emily Smith </p><p><b>telecom</b>: <a href="tel:+351888888888">+351888888888</a></p></div>
+  </text>
+  <extension url="https://ehr.testing.p5.pt/api/fhir/StructureDefinition/PatientIdentifier">
+    <valueReference>
+      <reference value="Patient/PatientTCCS1"/>
+    </valueReference>
+  </extension>
+  <name>
+    <family value="Smith"/>
+    <given value="Emily"/>
+  </name>
+  <telecom>
+    <system value="phone"/>
+    <value value="+351888888888"/>
+  </telecom>
+</RelatedPerson>

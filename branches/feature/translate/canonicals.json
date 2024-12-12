@@ -1,0 +1,128 @@
+[
+  {
+    "id" : "my-ig",
+    "type" : "ImplementationGuide",
+    "url" : "http://example.com/fhir/example",
+    "version" : "1.0.0",
+    "name" : "ExampleIG"
+  },
+  {
+    "id" : "AllergyIntoleranceTCSS",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/AllergyIntoleranceTCSS",
+    "version" : "1.0.0",
+    "name" : "AllergyIntoleranceTCSS"
+  },
+  {
+    "id" : "CarePlanEncounter",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/CarePlanEncounter",
+    "version" : "1.0.0",
+    "name" : "CarePlanEncounter"
+  },
+  {
+    "id" : "ClinicalImpressionEncounter",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/ClinicalImpressionEncounter",
+    "version" : "1.0.0",
+    "name" : "ClinicalImpressionEncounter"
+  },
+  {
+    "id" : "ConditionDiagnosis",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/ConditionDiagnosis",
+    "version" : "1.0.0",
+    "name" : "ConditionDiagnosis"
+  },
+  {
+    "id" : "DiagnosisProbability",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/DiagnosisProbability",
+    "version" : "1.0.0",
+    "name" : "DiagnosisProbability"
+  },
+  {
+    "id" : "EncounterFirst",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/EncounterFirst",
+    "version" : "1.0.0",
+    "name" : "EncounterFirst"
+  },
+  {
+    "id" : "EpisodeOfCareTCCS",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/EpisodeOfCareTCCS",
+    "version" : "1.0.0",
+    "name" : "EpisodeOfCareTCCS"
+  },
+  {
+    "id" : "HumanEncounter",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/HumanEncounter",
+    "version" : "1.0.0",
+    "name" : "HumanEncounter"
+  },
+  {
+    "id" : "HumanMessages",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/HumanMessages",
+    "version" : "1.0.0",
+    "name" : "HumanMessages"
+  },
+  {
+    "id" : "MedicationRequestEncounter",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/MedicationRequestEncounter",
+    "version" : "1.0.0",
+    "name" : "MedicationRequestEncounter"
+  },
+  {
+    "id" : "MedicationStatementEncounter",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/MedicationStatementEncounter",
+    "version" : "1.0.0",
+    "name" : "MedicationStatementEncounter"
+  },
+  {
+    "id" : "ModifierExtensionOrganization",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/ModifierExtensionOrganization",
+    "version" : "1.0.0",
+    "name" : "ModifierExtensionOrganization"
+  },
+  {
+    "id" : "ObservationSymptomDuration",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/ObservationSymptomDuration",
+    "version" : "1.0.0",
+    "name" : "ObservationSymptomDuration"
+  },
+  {
+    "id" : "ObservationSymptoms",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/ObservationSymptoms",
+    "version" : "1.0.0",
+    "name" : "ObservationSymptoms"
+  },
+  {
+    "id" : "PatientIdentifier",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/PatientIdentifier",
+    "version" : "1.0.0",
+    "name" : "PatientIdentifier"
+  },
+  {
+    "id" : "PatientTCCS",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/PatientTCCS",
+    "version" : "1.0.0",
+    "name" : "PatientTCCS"
+  },
+  {
+    "id" : "RelatedPersonTCCS",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/RelatedPersonTCCS",
+    "version" : "1.0.0",
+    "name" : "RelatedPersonTCCS"
+  }
+]

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AllergyIntolerance xmlns="http://hl7.org/fhir">
+  <id value="example-allergyIntolerance"/>
+  <meta>
+    <profile value="https://hl7.pt/fhir/community-health/StructureDefinition/allergy-intolerance-patient-allergy"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: AllergyIntolerance example-allergyIntolerance</b></p><a name="example-allergyIntolerance"> </a><a name="hcexample-allergyIntolerance"> </a><a name="example-allergyIntolerance-en-US"> </a><p><b>clinicalStatus</b>: <span title="Codes:">active</span></p><p><b>verificationStatus</b>: <span title="Codes:">unconfirmed</span></p><p><b>type</b>: Allergy</p><p><b>category</b>: Food</p><p><b>criticality</b>: Low Risk</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 235719002}">foodIntolerance</span></p><p><b>patient</b>: <a href="Patient-exemplo-patient-1.html">John Doe  Male, DoB: 2009-02-09 ( https://ehr.testing.p5.pt/api/fhir#12345678)</a></p><p><b>encounter</b>: <a href="Encounter-exemplo-encounter-seguimento.html">Encounter: status = finished; class = emergency (ActCode#EMER); type = Avaliador de Sintomas; serviceType = Seguimento de caso; period = 2024-10-10 14:00:06+0000 --&gt; (ongoing)</a></p><p><b>onset</b>: 20 years</p><p><b>recordedDate</b>: 2024-02-09 18:17:42+0000</p><p><b>lastOccurrence</b>: 2024-02-07 18:17:42+0000</p><h3>Reactions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Substance</b></td><td><b>Manifestation</b></td><td><b>Description</b></td><td><b>Onset</b></td><td><b>Severity</b></td><td><b>ExposureRoute</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://snomed.info/sct 3718001}">Cow's milk</span></td><td><span title="Codes:{http://snomed.info/sct 2919008}">Nausea, vomiting and diarrhea</span></td><td>some text</td><td>2024-02-08 18:17:00+0000</td><td>Severe</td><td><span title="Codes:{http://snomed.info/sct 6064005}">Topical route</span></td></tr></table></div>
+  </text>
+  <clinicalStatus>
+    <coding>
+      <code value="active"/>
+    </coding>
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <code value="unconfirmed"/>
+    </coding>
+  </verificationStatus>
+  <type value="allergy"/>
+  <category value="food"/>
+  <criticality value="low"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="235719002"/>
+      <display value="foodIntolerance"/>
+    </coding>
+  </code>
+  <patient>
+    <reference value="Patient/exemplo-patient-1"/>
+  </patient>
+  <encounter>
+    <reference value="Encounter/exemplo-encounter-seguimento"/>
+  </encounter>
+  <onsetAge>
+    <value value="20"/>
+    <unit value="years"/>
+  </onsetAge>
+  <recordedDate value="2024-02-09T18:17:42.599Z"/>
+  <lastOccurrence value="2024-02-07T18:17:42.599Z"/>
+  <reaction>
+    <substance>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="3718001"/>
+        <display value="Cow's milk"/>
+      </coding>
+    </substance>
+    <manifestation>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="2919008"/>
+        <display value="Nausea, vomiting and diarrhea"/>
+      </coding>
+    </manifestation>
+    <description value="some text"/>
+    <onset value="2024-02-08T18:17:00.000Z"/>
+    <severity value="severe"/>
+    <exposureRoute>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="6064005"/>
+        <display value="Topical route"/>
+      </coding>
+    </exposureRoute>
+  </reaction>
+</AllergyIntolerance>
